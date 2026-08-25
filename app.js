@@ -5,6 +5,10 @@ L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
   attribution: "© OpenStreetMap contributors"
 }).addTo(map);
 
+document.getElementById("no-interp-checkbox").addEventListener("change", e => {
+  document.getElementById("map").classList.toggle("no-interp", e.target.checked);
+});
+
 function continentColor(continent) {
   const colors = {
     Europe: "#1f77b4",

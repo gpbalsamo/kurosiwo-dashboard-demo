@@ -208,6 +208,30 @@ main {
   border-color: #1f2937;
 }
 
+#no-interp-toggle {
+  display: block;
+  font-size: 12px;
+  color: #444;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+#no-interp-toggle input {
+  margin-right: 4px;
+  vertical-align: -1px;
+}
+
+/* Leaflet image overlays get this class; scoping to #map.no-interp lets
+   the browser's native smoothing stay on by default (matches how the
+   underlying raster was rendered) while still letting a viewer switch to
+   native 1 arcmin pixels when they want to inspect data, not smoothing,
+   while zoomed in. */
+#map.no-interp .leaflet-image-layer {
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+}
+
 .layer-row {
   padding: 4px 0;
   border-bottom: 1px solid #eee;
