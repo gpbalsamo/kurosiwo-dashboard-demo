@@ -1,0 +1,184 @@
+{
+  "layers_meta": {
+    "cama_flood": {
+      "label": "CaMa-Flood (IFS model)",
+      "color": "#1e3c96"
+    },
+    "viirs": {
+      "label": "VIIRS (observation)",
+      "color": "#e67e22"
+    },
+    "modis": {
+      "label": "MODIS (observation)",
+      "color": "#27ae60"
+    },
+    "reference_water": {
+      "label": "Reference water (lakes/rivers, not flood)",
+      "color": "#00acc1"
+    }
+  },
+  "thresholds": [
+    {
+      "key": "t05",
+      "value": 0.05,
+      "label": "5%"
+    },
+    {
+      "key": "t10",
+      "value": 0.1,
+      "label": "10%"
+    },
+    {
+      "key": "t25",
+      "value": 0.25,
+      "label": "25%"
+    },
+    {
+      "key": "t50",
+      "value": 0.5,
+      "label": "50%"
+    }
+  ],
+  "default_threshold": "t05",
+  "events": {
+    "Queensland_Floods": {
+      "cama_flood": {
+        "png": {
+          "t05": "layers/t05/Queensland_Floods_cama_flood.png?v=1787675626",
+          "t10": "layers/t10/Queensland_Floods_cama_flood.png?v=1787675626",
+          "t25": "layers/t25/Queensland_Floods_cama_flood.png?v=1787675626",
+          "t50": "layers/t50/Queensland_Floods_cama_flood.png?v=1787675626"
+        },
+        "bounds": [
+          [
+            -25.47499999999726,
+            134.52500000000302
+          ],
+          [
+            -9.524999999997034,
+            150.47500000000664
+          ]
+        ],
+        "date": "2025-12-29"
+      },
+      "viirs": {
+        "png": {
+          "t05": "layers/t05/Queensland_Floods_viirs.png?v=1787675627",
+          "t10": "layers/t10/Queensland_Floods_viirs.png?v=1787675627",
+          "t25": "layers/t25/Queensland_Floods_viirs.png?v=1787675627",
+          "t50": "layers/t50/Queensland_Floods_viirs.png?v=1787675627"
+        },
+        "bounds": [
+          [
+            -25.016666666666666,
+            135.0
+          ],
+          [
+            -9.983333333333334,
+            150.01666666666665
+          ]
+        ],
+        "date": "20251229",
+        "scores": {
+          "t05": {
+            "csi": 0.1002835782418149,
+            "far": 0.8965700611539484,
+            "hr": 0.7672583826429981,
+            "n_valid": 6074,
+            "n_ref_water_excluded": 4
+          },
+          "t10": {
+            "csi": 0.08353317346123101,
+            "far": 0.9106837606837607,
+            "hr": 0.5633423180592992,
+            "n_valid": 6074,
+            "n_ref_water_excluded": 4
+          },
+          "t25": {
+            "csi": 0.06451612903225806,
+            "far": 0.9232736572890026,
+            "hr": 0.28846153846153844,
+            "n_valid": 6074,
+            "n_ref_water_excluded": 4
+          },
+          "t50": {
+            "csi": 0.0421455938697318,
+            "far": 0.9398907103825137,
+            "hr": 0.12359550561797752,
+            "n_valid": 6074,
+            "n_ref_water_excluded": 4
+          }
+        }
+      },
+      "modis": {
+        "png": {
+          "t05": "layers/t05/Queensland_Floods_modis.png?v=1787675629",
+          "t10": "layers/t10/Queensland_Floods_modis.png?v=1787675629",
+          "t25": "layers/t25/Queensland_Floods_modis.png?v=1787675629",
+          "t50": "layers/t50/Queensland_Floods_modis.png?v=1787675629"
+        },
+        "bounds": [
+          [
+            -25.0,
+            135.0
+          ],
+          [
+            -10.0,
+            150.0
+          ]
+        ],
+        "date": "2025-12-29",
+        "scores": {
+          "t05": {
+            "csi": 0.5,
+            "far": 0.5,
+            "hr": 1.0,
+            "n_valid": 4,
+            "n_ref_water_excluded": 4
+          },
+          "t10": {
+            "csi": 0.6666666666666666,
+            "far": 0.3333333333333333,
+            "hr": 1.0,
+            "n_valid": 4,
+            "n_ref_water_excluded": 4
+          },
+          "t25": {
+            "csi": 0.5,
+            "far": 0.0,
+            "hr": 0.5,
+            "n_valid": 4,
+            "n_ref_water_excluded": 4
+          },
+          "t50": {
+            "csi": 0.0,
+            "far": null,
+            "hr": 0.0,
+            "n_valid": 4,
+            "n_ref_water_excluded": 4
+          }
+        }
+      },
+      "reference_water": {
+        "png": {
+          "t05": "layers/t05/Queensland_Floods_reference_water.png?v=1787675631",
+          "t10": "layers/t10/Queensland_Floods_reference_water.png?v=1787675631",
+          "t25": "layers/t25/Queensland_Floods_reference_water.png?v=1787675631",
+          "t50": "layers/t50/Queensland_Floods_reference_water.png?v=1787675631"
+        },
+        "bounds": [
+          [
+            -25.0,
+            135.0
+          ],
+          [
+            -10.0,
+            150.0
+          ]
+        ],
+        "date": null,
+        "source_used": "modis"
+      }
+    }
+  }
+}
