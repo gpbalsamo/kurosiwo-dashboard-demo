@@ -1,0 +1,2744 @@
+{
+  "layers_meta": {
+    "cama_flood": {
+      "label": "CaMa-Flood (IFS model)",
+      "color": "#1e3c96"
+    },
+    "viirs": {
+      "label": "VIIRS (observation)",
+      "color": "#e67e22"
+    },
+    "gfm": {
+      "label": "GFM Sentinel-1 (observation)",
+      "color": "#9b26b6"
+    },
+    "modis": {
+      "label": "MODIS (observation)",
+      "color": "#27ae60"
+    },
+    "reference_water": {
+      "label": "Reference water (lakes/rivers, not flood)",
+      "color": "#00acc1"
+    }
+  },
+  "thresholds": [
+    {
+      "key": "t05",
+      "value": 0.05,
+      "label": "5%"
+    },
+    {
+      "key": "t10",
+      "value": 0.1,
+      "label": "10%"
+    },
+    {
+      "key": "t25",
+      "value": 0.25,
+      "label": "25%"
+    },
+    {
+      "key": "t50",
+      "value": 0.5,
+      "label": "50%"
+    }
+  ],
+  "default_threshold": "t05",
+  "events": {
+    "Parana_Paraguay_Floods": {
+      "viirs": {
+        "png": {
+          "t05": "layers/t05/Parana_Paraguay_Floods_viirs.png?v=1787676110",
+          "t10": "layers/t10/Parana_Paraguay_Floods_viirs.png?v=1787676110",
+          "t25": "layers/t25/Parana_Paraguay_Floods_viirs.png?v=1787676110",
+          "t50": "layers/t50/Parana_Paraguay_Floods_viirs.png?v=1787676110"
+        },
+        "bounds": [
+          [
+            -38.51666666666664,
+            -64.51666666666667
+          ],
+          [
+            -19.983333333333334,
+            -52.98333333333337
+          ]
+        ],
+        "date": "20160116"
+      },
+      "gfm": {
+        "png": {
+          "t05": "layers/t05/Parana_Paraguay_Floods_gfm.png?v=1787676110",
+          "t10": "layers/t10/Parana_Paraguay_Floods_gfm.png?v=1787676110",
+          "t25": "layers/t25/Parana_Paraguay_Floods_gfm.png?v=1787676110",
+          "t50": "layers/t50/Parana_Paraguay_Floods_gfm.png?v=1787676110"
+        },
+        "bounds": [
+          [
+            -38.50000000000003,
+            -64.5
+          ],
+          [
+            -20.0,
+            -53.000000000000036
+          ]
+        ],
+        "date": "20160116"
+      },
+      "modis": {
+        "png": {
+          "t05": "layers/t05/Parana_Paraguay_Floods_modis.png?v=1787676111",
+          "t10": "layers/t10/Parana_Paraguay_Floods_modis.png?v=1787676111",
+          "t25": "layers/t25/Parana_Paraguay_Floods_modis.png?v=1787676112",
+          "t50": "layers/t50/Parana_Paraguay_Floods_modis.png?v=1787676112"
+        },
+        "bounds": [
+          [
+            -38.5,
+            -64.5
+          ],
+          [
+            -20.0,
+            -53.0
+          ]
+        ],
+        "date": "2016-01-16"
+      },
+      "reference_water": {
+        "png": {
+          "t05": "layers/t05/Parana_Paraguay_Floods_reference_water.png?v=1787676113",
+          "t10": "layers/t10/Parana_Paraguay_Floods_reference_water.png?v=1787676113",
+          "t25": "layers/t25/Parana_Paraguay_Floods_reference_water.png?v=1787676113",
+          "t50": "layers/t50/Parana_Paraguay_Floods_reference_water.png?v=1787676113"
+        },
+        "bounds": [
+          [
+            -38.5,
+            -64.5
+          ],
+          [
+            -20.0,
+            -53.0
+          ]
+        ],
+        "date": null,
+        "source_used": "modis"
+      }
+    },
+    "Yangtze_River_Floods": {
+      "cama_flood": {
+        "png": {
+          "t05": "layers/t05/Yangtze_River_Floods_cama_flood.png?v=1787676113",
+          "t10": "layers/t10/Yangtze_River_Floods_cama_flood.png?v=1787676113",
+          "t25": "layers/t25/Yangtze_River_Floods_cama_flood.png?v=1787676113",
+          "t50": "layers/t50/Yangtze_River_Floods_cama_flood.png?v=1787676113"
+        },
+        "bounds": [
+          [
+            25.50737700000554,
+            107.50853243200257
+          ],
+          [
+            34.99090000000591,
+            122.49189351352848
+          ]
+        ],
+        "date": "2016-07-23"
+      },
+      "viirs": {
+        "png": {
+          "t05": "layers/t05/Yangtze_River_Floods_viirs.png?v=1787676113",
+          "t10": "layers/t10/Yangtze_River_Floods_viirs.png?v=1787676113",
+          "t25": "layers/t25/Yangtze_River_Floods_viirs.png?v=1787676113",
+          "t50": "layers/t50/Yangtze_River_Floods_viirs.png?v=1787676113"
+        },
+        "bounds": [
+          [
+            30.233333333333334,
+            117.31666666666666
+          ],
+          [
+            34.516666666666666,
+            122.01666666666664
+          ]
+        ],
+        "date": "20160723",
+        "scores": {
+          "t05": {
+            "csi": 0.3795782463928968,
+            "far": 0.6073478760045924,
+            "hr": 0.9193548387096774,
+            "n_valid": 7165,
+            "n_ref_water_excluded": 2447
+          },
+          "t10": {
+            "csi": 0.24833303297891512,
+            "far": 0.737473804534197,
+            "hr": 0.8212157330154947,
+            "n_valid": 7165,
+            "n_ref_water_excluded": 2447
+          },
+          "t25": {
+            "csi": 0.10581851070244197,
+            "far": 0.8835820895522388,
+            "hr": 0.5375191424196019,
+            "n_valid": 7165,
+            "n_ref_water_excluded": 2447
+          },
+          "t50": {
+            "csi": 0.03626943005181347,
+            "far": 0.961512027491409,
+            "hr": 0.38620689655172413,
+            "n_valid": 7165,
+            "n_ref_water_excluded": 2447
+          }
+        }
+      },
+      "gfm": {
+        "png": {
+          "t05": "layers/t05/Yangtze_River_Floods_gfm.png?v=1787676113",
+          "t10": "layers/t10/Yangtze_River_Floods_gfm.png?v=1787676113",
+          "t25": "layers/t25/Yangtze_River_Floods_gfm.png?v=1787676113",
+          "t50": "layers/t50/Yangtze_River_Floods_gfm.png?v=1787676113"
+        },
+        "bounds": [
+          [
+            30.25,
+            117.33333333333331
+          ],
+          [
+            34.5,
+            122.0
+          ]
+        ],
+        "date": "20160723",
+        "scores": {
+          "t05": {
+            "csi": 0.05266781411359724,
+            "far": 0.9471867449085261,
+            "hr": 0.9503105590062112,
+            "n_valid": 6818,
+            "n_ref_water_excluded": 2352
+          },
+          "t10": {
+            "csi": 0.02615167974250654,
+            "far": 0.973753280839895,
+            "hr": 0.8783783783783784,
+            "n_valid": 6818,
+            "n_ref_water_excluded": 2352
+          },
+          "t25": {
+            "csi": 0.000693721817551162,
+            "far": 0.9993060374739764,
+            "hr": 0.6666666666666666,
+            "n_valid": 6818,
+            "n_ref_water_excluded": 2352
+          },
+          "t50": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 6818,
+            "n_ref_water_excluded": 2352
+          }
+        }
+      },
+      "modis": {
+        "png": {
+          "t05": "layers/t05/Yangtze_River_Floods_modis.png?v=1787676114",
+          "t10": "layers/t10/Yangtze_River_Floods_modis.png?v=1787676114",
+          "t25": "layers/t25/Yangtze_River_Floods_modis.png?v=1787676114",
+          "t50": "layers/t50/Yangtze_River_Floods_modis.png?v=1787676114"
+        },
+        "bounds": [
+          [
+            26.0,
+            108.0
+          ],
+          [
+            34.5,
+            122.0
+          ]
+        ],
+        "date": "2016-07-23",
+        "scores": {
+          "t05": {
+            "csi": 0.1003312101910828,
+            "far": 0.8986931467380119,
+            "hr": 0.91241890639481,
+            "n_valid": 22467,
+            "n_ref_water_excluded": 5422
+          },
+          "t10": {
+            "csi": 0.06637323943661971,
+            "far": 0.9325500954198473,
+            "hr": 0.8061297220242338,
+            "n_valid": 22467,
+            "n_ref_water_excluded": 5422
+          },
+          "t25": {
+            "csi": 0.035773145904023265,
+            "far": 0.9631773276120148,
+            "hr": 0.5565610859728507,
+            "n_valid": 22467,
+            "n_ref_water_excluded": 5422
+          },
+          "t50": {
+            "csi": 0.014413047600986157,
+            "far": 0.985095116689547,
+            "hr": 0.304,
+            "n_valid": 22467,
+            "n_ref_water_excluded": 5422
+          }
+        }
+      },
+      "reference_water": {
+        "png": {
+          "t05": "layers/t05/Yangtze_River_Floods_reference_water.png?v=1787676115",
+          "t10": "layers/t10/Yangtze_River_Floods_reference_water.png?v=1787676115",
+          "t25": "layers/t25/Yangtze_River_Floods_reference_water.png?v=1787676115",
+          "t50": "layers/t50/Yangtze_River_Floods_reference_water.png?v=1787676115"
+        },
+        "bounds": [
+          [
+            26.0,
+            108.0
+          ],
+          [
+            34.5,
+            122.0
+          ]
+        ],
+        "date": null,
+        "source_used": "modis"
+      }
+    },
+    "Brahmaputra_Assam_Floods": {
+      "cama_flood": {
+        "png": {
+          "t05": "layers/t05/Brahmaputra_Assam_Floods_cama_flood.png?v=1787676115",
+          "t10": "layers/t10/Brahmaputra_Assam_Floods_cama_flood.png?v=1787676115",
+          "t25": "layers/t25/Brahmaputra_Assam_Floods_cama_flood.png?v=1787676115",
+          "t50": "layers/t50/Brahmaputra_Assam_Floods_cama_flood.png?v=1787676115"
+        },
+        "bounds": [
+          [
+            23.50733700000533,
+            89.00849817116412
+          ],
+          [
+            28.99078000000591,
+            97.99184814106675
+          ]
+        ],
+        "date": "2020-06-30"
+      },
+      "viirs": {
+        "png": {
+          "t05": "layers/t05/Brahmaputra_Assam_Floods_viirs.png?v=1787676115",
+          "t10": "layers/t10/Brahmaputra_Assam_Floods_viirs.png?v=1787676115",
+          "t25": "layers/t25/Brahmaputra_Assam_Floods_viirs.png?v=1787676115",
+          "t50": "layers/t50/Brahmaputra_Assam_Floods_viirs.png?v=1787676115"
+        },
+        "bounds": [
+          [
+            23.983333333333334,
+            93.48333333333335
+          ],
+          [
+            28.516666666666666,
+            97.5
+          ]
+        ],
+        "date": "20200630",
+        "scores": {
+          "t05": {
+            "csi": 0.548051948051948,
+            "far": 0.42112482853223593,
+            "hr": 0.9114470842332614,
+            "n_valid": 820,
+            "n_ref_water_excluded": 271
+          },
+          "t10": {
+            "csi": 0.4246575342465753,
+            "far": 0.508716323296355,
+            "hr": 0.7579462102689487,
+            "n_valid": 820,
+            "n_ref_water_excluded": 271
+          },
+          "t25": {
+            "csi": 0.23809523809523808,
+            "far": 0.6761658031088082,
+            "hr": 0.4734848484848485,
+            "n_valid": 820,
+            "n_ref_water_excluded": 271
+          },
+          "t50": {
+            "csi": 0.15,
+            "far": 0.8170731707317073,
+            "hr": 0.45454545454545453,
+            "n_valid": 820,
+            "n_ref_water_excluded": 271
+          }
+        }
+      },
+      "gfm": {
+        "png": {
+          "t05": "layers/t05/Brahmaputra_Assam_Floods_gfm.png?v=1787676115",
+          "t10": "layers/t10/Brahmaputra_Assam_Floods_gfm.png?v=1787676115",
+          "t25": "layers/t25/Brahmaputra_Assam_Floods_gfm.png?v=1787676115",
+          "t50": "layers/t50/Brahmaputra_Assam_Floods_gfm.png?v=1787676115"
+        },
+        "bounds": [
+          [
+            24.0,
+            93.5
+          ],
+          [
+            28.5,
+            97.49999999999999
+          ]
+        ],
+        "date": "20200630",
+        "scores": {
+          "t05": {
+            "csi": 0.1522911051212938,
+            "far": 0.8434903047091413,
+            "hr": 0.849624060150376,
+            "n_valid": 813,
+            "n_ref_water_excluded": 271
+          },
+          "t10": {
+            "csi": 0.09305993690851735,
+            "far": 0.905448717948718,
+            "hr": 0.855072463768116,
+            "n_valid": 813,
+            "n_ref_water_excluded": 271
+          },
+          "t25": {
+            "csi": 0.002617801047120419,
+            "far": 0.9973821989528796,
+            "hr": 1.0,
+            "n_valid": 813,
+            "n_ref_water_excluded": 271
+          },
+          "t50": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 813,
+            "n_ref_water_excluded": 271
+          }
+        }
+      },
+      "modis": {
+        "png": {
+          "t05": "layers/t05/Brahmaputra_Assam_Floods_modis.png?v=1787676115",
+          "t10": "layers/t10/Brahmaputra_Assam_Floods_modis.png?v=1787676115",
+          "t25": "layers/t25/Brahmaputra_Assam_Floods_modis.png?v=1787676115",
+          "t50": "layers/t50/Brahmaputra_Assam_Floods_modis.png?v=1787676115"
+        },
+        "bounds": [
+          [
+            24.0,
+            89.5
+          ],
+          [
+            28.5,
+            97.5
+          ]
+        ],
+        "date": "2020-06-30",
+        "scores": {
+          "t05": {
+            "csi": 0.37381043014845833,
+            "far": 0.6150529204233633,
+            "hr": 0.9281663516068053,
+            "n_valid": 2751,
+            "n_ref_water_excluded": 3216
+          },
+          "t10": {
+            "csi": 0.28976572133168926,
+            "far": 0.6941431670281996,
+            "hr": 0.8463385354141657,
+            "n_valid": 2751,
+            "n_ref_water_excluded": 3216
+          },
+          "t25": {
+            "csi": 0.1402936378466558,
+            "far": 0.8438256658595642,
+            "hr": 0.5797752808988764,
+            "n_valid": 2751,
+            "n_ref_water_excluded": 3216
+          },
+          "t50": {
+            "csi": 0.06207482993197279,
+            "far": 0.9287804878048781,
+            "hr": 0.32589285714285715,
+            "n_valid": 2751,
+            "n_ref_water_excluded": 3216
+          }
+        }
+      },
+      "reference_water": {
+        "png": {
+          "t05": "layers/t05/Brahmaputra_Assam_Floods_reference_water.png?v=1787676115",
+          "t10": "layers/t10/Brahmaputra_Assam_Floods_reference_water.png?v=1787676115",
+          "t25": "layers/t25/Brahmaputra_Assam_Floods_reference_water.png?v=1787676116",
+          "t50": "layers/t50/Brahmaputra_Assam_Floods_reference_water.png?v=1787676116"
+        },
+        "bounds": [
+          [
+            24.0,
+            89.5
+          ],
+          [
+            28.5,
+            97.5
+          ]
+        ],
+        "date": null,
+        "source_used": "modis"
+      }
+    },
+    "Henan_China_Floods": {
+      "cama_flood": {
+        "png": {
+          "t05": "layers/t05/Henan_China_Floods_cama_flood.png?v=1787676116",
+          "t10": "layers/t10/Henan_China_Floods_cama_flood.png?v=1787676116",
+          "t25": "layers/t25/Henan_China_Floods_cama_flood.png?v=1787676116",
+          "t50": "layers/t50/Henan_China_Floods_cama_flood.png?v=1787676116"
+        },
+        "bounds": [
+          [
+            30.50747700000607,
+            109.508536135877
+          ],
+          [
+            37.29094600000566,
+            116.99188332787381
+          ]
+        ],
+        "date": "2021-07-26"
+      },
+      "gfm": {
+        "png": {
+          "t05": "layers/t05/Henan_China_Floods_gfm.png?v=1787676116",
+          "t10": "layers/t10/Henan_China_Floods_gfm.png?v=1787676116",
+          "t25": "layers/t25/Henan_China_Floods_gfm.png?v=1787676116",
+          "t50": "layers/t50/Henan_China_Floods_gfm.png?v=1787676116"
+        },
+        "bounds": [
+          [
+            31.0,
+            110.0
+          ],
+          [
+            36.800000000000004,
+            116.49999999999999
+          ]
+        ],
+        "date": "20210727",
+        "scores": {
+          "t05": {
+            "csi": 0.04940441320054677,
+            "far": 0.9504698512137824,
+            "hr": 0.9511278195488722,
+            "n_valid": 5774,
+            "n_ref_water_excluded": 96
+          },
+          "t10": {
+            "csi": 0.03295454545454545,
+            "far": 0.9669251824817519,
+            "hr": 0.9006211180124224,
+            "n_valid": 5774,
+            "n_ref_water_excluded": 96
+          },
+          "t25": {
+            "csi": 0.008831521739130434,
+            "far": 0.991162474507138,
+            "hr": 0.9285714285714286,
+            "n_valid": 5774,
+            "n_ref_water_excluded": 96
+          },
+          "t50": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 5774,
+            "n_ref_water_excluded": 96
+          }
+        }
+      },
+      "modis": {
+        "png": {
+          "t05": "layers/t05/Henan_China_Floods_modis.png?v=1787676116",
+          "t10": "layers/t10/Henan_China_Floods_modis.png?v=1787676116",
+          "t25": "layers/t25/Henan_China_Floods_modis.png?v=1787676116",
+          "t50": "layers/t50/Henan_China_Floods_modis.png?v=1787676116"
+        },
+        "bounds": [
+          [
+            30.999999999999996,
+            110.0
+          ],
+          [
+            36.8,
+            116.5
+          ]
+        ],
+        "date": "2021-07-26",
+        "scores": {
+          "t05": {
+            "csi": 0.0519854210627278,
+            "far": 0.9479646697388633,
+            "hr": 0.9818840579710145,
+            "n_valid": 5878,
+            "n_ref_water_excluded": 97
+          },
+          "t10": {
+            "csi": 0.04792688363798484,
+            "far": 0.9519123238649072,
+            "hr": 0.9347826086956522,
+            "n_valid": 5878,
+            "n_ref_water_excluded": 97
+          },
+          "t25": {
+            "csi": 0.043074884029158385,
+            "far": 0.9566088117489987,
+            "hr": 0.8552631578947368,
+            "n_valid": 5878,
+            "n_ref_water_excluded": 97
+          },
+          "t50": {
+            "csi": 0.03103263777421081,
+            "far": 0.9685807150595883,
+            "hr": 0.7160493827160493,
+            "n_valid": 5878,
+            "n_ref_water_excluded": 97
+          }
+        }
+      },
+      "reference_water": {
+        "png": {
+          "t05": "layers/t05/Henan_China_Floods_reference_water.png?v=1787676116",
+          "t10": "layers/t10/Henan_China_Floods_reference_water.png?v=1787676116",
+          "t25": "layers/t25/Henan_China_Floods_reference_water.png?v=1787676116",
+          "t50": "layers/t50/Henan_China_Floods_reference_water.png?v=1787676116"
+        },
+        "bounds": [
+          [
+            30.999999999999996,
+            110.0
+          ],
+          [
+            36.8,
+            116.5
+          ]
+        ],
+        "date": null,
+        "source_used": "modis"
+      }
+    },
+    "Western_Europe_Floods": {
+      "cama_flood": {
+        "png": {
+          "t05": "layers/t05/Western_Europe_Floods_cama_flood.png?v=1787676116",
+          "t10": "layers/t10/Western_Europe_Floods_cama_flood.png?v=1787676116",
+          "t25": "layers/t25/Western_Europe_Floods_cama_flood.png?v=1787676116",
+          "t50": "layers/t50/Western_Europe_Floods_cama_flood.png?v=1787676116"
+        },
+        "bounds": [
+          [
+            47.507817000004565,
+            3.008338904538042
+          ],
+          [
+            52.991260000003976,
+            10.9916870225066
+          ]
+        ],
+        "date": "2021-07-18"
+      },
+      "modis": {
+        "png": {
+          "t05": "layers/t05/Western_Europe_Floods_modis.png?v=1787676116",
+          "t10": "layers/t10/Western_Europe_Floods_modis.png?v=1787676116",
+          "t25": "layers/t25/Western_Europe_Floods_modis.png?v=1787676116",
+          "t50": "layers/t50/Western_Europe_Floods_modis.png?v=1787676116"
+        },
+        "bounds": [
+          [
+            48.0,
+            3.5
+          ],
+          [
+            52.5,
+            10.5
+          ]
+        ],
+        "date": "2021-07-18",
+        "scores": {
+          "t05": {
+            "csi": 0.07048872180451128,
+            "far": 0.9292452830188679,
+            "hr": 0.9493670886075949,
+            "n_valid": 1137,
+            "n_ref_water_excluded": 175
+          },
+          "t10": {
+            "csi": 0.04842105263157895,
+            "far": 0.9513742071881607,
+            "hr": 0.92,
+            "n_valid": 1137,
+            "n_ref_water_excluded": 175
+          },
+          "t25": {
+            "csi": 0.011385199240986717,
+            "far": 0.9885057471264368,
+            "hr": 0.5454545454545454,
+            "n_valid": 1137,
+            "n_ref_water_excluded": 175
+          },
+          "t50": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": 0.0,
+            "n_valid": 1137,
+            "n_ref_water_excluded": 175
+          }
+        }
+      },
+      "reference_water": {
+        "png": {
+          "t05": "layers/t05/Western_Europe_Floods_reference_water.png?v=1787676117",
+          "t10": "layers/t10/Western_Europe_Floods_reference_water.png?v=1787676117",
+          "t25": "layers/t25/Western_Europe_Floods_reference_water.png?v=1787676117",
+          "t50": "layers/t50/Western_Europe_Floods_reference_water.png?v=1787676117"
+        },
+        "bounds": [
+          [
+            48.0,
+            3.5
+          ],
+          [
+            52.5,
+            10.5
+          ]
+        ],
+        "date": null,
+        "source_used": "modis"
+      }
+    },
+    "Malaysia_Floods": {
+      "cama_flood": {
+        "png": {
+          "t05": "layers/t05/Malaysia_Floods_cama_flood.png?v=1787676117",
+          "t10": "layers/t10/Malaysia_Floods_cama_flood.png?v=1787676117",
+          "t25": "layers/t25/Malaysia_Floods_cama_flood.png?v=1787676117",
+          "t50": "layers/t50/Malaysia_Floods_cama_flood.png?v=1787676117"
+        },
+        "bounds": [
+          [
+            0.5068770000045468,
+            99.00851669053625
+          ],
+          [
+            8.290366000004541,
+            105.29186166020841
+          ]
+        ],
+        "date": "2022-01-06"
+      },
+      "gfm": {
+        "png": {
+          "t05": "layers/t05/Malaysia_Floods_gfm.png?v=1787676117",
+          "t10": "layers/t10/Malaysia_Floods_gfm.png?v=1787676117",
+          "t25": "layers/t25/Malaysia_Floods_gfm.png?v=1787676117",
+          "t50": "layers/t50/Malaysia_Floods_gfm.png?v=1787676117"
+        },
+        "bounds": [
+          [
+            1.0000000000000018,
+            99.5
+          ],
+          [
+            7.799999999999997,
+            104.8
+          ]
+        ],
+        "date": "20220108",
+        "scores": {
+          "t05": {
+            "csi": 0.00897226753670473,
+            "far": 0.9910204081632653,
+            "hr": 0.9166666666666666,
+            "n_valid": 1506,
+            "n_ref_water_excluded": 216
+          },
+          "t10": {
+            "csi": 0.0009124087591240876,
+            "far": 0.9990875912408759,
+            "hr": 1.0,
+            "n_valid": 1506,
+            "n_ref_water_excluded": 216
+          },
+          "t25": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 1506,
+            "n_ref_water_excluded": 216
+          },
+          "t50": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 1506,
+            "n_ref_water_excluded": 216
+          }
+        }
+      },
+      "modis": {
+        "png": {
+          "t05": "layers/t05/Malaysia_Floods_modis.png?v=1787676117",
+          "t10": "layers/t10/Malaysia_Floods_modis.png?v=1787676117",
+          "t25": "layers/t25/Malaysia_Floods_modis.png?v=1787676117",
+          "t50": "layers/t50/Malaysia_Floods_modis.png?v=1787676117"
+        },
+        "bounds": [
+          [
+            1.0,
+            99.5
+          ],
+          [
+            7.8,
+            104.8
+          ]
+        ],
+        "date": "2022-01-06",
+        "scores": {
+          "t05": {
+            "csi": 0.031604054859868815,
+            "far": 0.9682254196642686,
+            "hr": 0.8548387096774194,
+            "n_valid": 1988,
+            "n_ref_water_excluded": 419
+          },
+          "t10": {
+            "csi": 0.021490933512424447,
+            "far": 0.9784075573549258,
+            "hr": 0.8205128205128205,
+            "n_valid": 1988,
+            "n_ref_water_excluded": 419
+          },
+          "t25": {
+            "csi": 0.005940594059405941,
+            "far": 0.9939759036144579,
+            "hr": 0.3,
+            "n_valid": 1988,
+            "n_ref_water_excluded": 419
+          },
+          "t50": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": 0.0,
+            "n_valid": 1988,
+            "n_ref_water_excluded": 419
+          }
+        }
+      },
+      "reference_water": {
+        "png": {
+          "t05": "layers/t05/Malaysia_Floods_reference_water.png?v=1787676117",
+          "t10": "layers/t10/Malaysia_Floods_reference_water.png?v=1787676117",
+          "t25": "layers/t25/Malaysia_Floods_reference_water.png?v=1787676117",
+          "t50": "layers/t50/Malaysia_Floods_reference_water.png?v=1787676117"
+        },
+        "bounds": [
+          [
+            1.0,
+            99.5
+          ],
+          [
+            7.8,
+            104.8
+          ]
+        ],
+        "date": null,
+        "source_used": "modis"
+      }
+    },
+    "Eastern_Australia_Floods": {
+      "cama_flood": {
+        "png": {
+          "t05": "layers/t05/Eastern_Australia_Floods_cama_flood.png?v=1787676117",
+          "t10": "layers/t10/Eastern_Australia_Floods_cama_flood.png?v=1787676117",
+          "t25": "layers/t25/Eastern_Australia_Floods_cama_flood.png?v=1787676117",
+          "t50": "layers/t50/Eastern_Australia_Floods_cama_flood.png?v=1787676117"
+        },
+        "bounds": [
+          [
+            -36.9938729999966,
+            145.50860280561668
+          ],
+          [
+            -22.51024999999613,
+            154.99195370148792
+          ]
+        ],
+        "date": "2022-03-19"
+      },
+      "gfm": {
+        "png": {
+          "t05": "layers/t05/Eastern_Australia_Floods_gfm.png?v=1787676117",
+          "t10": "layers/t10/Eastern_Australia_Floods_gfm.png?v=1787676117",
+          "t25": "layers/t25/Eastern_Australia_Floods_gfm.png?v=1787676117",
+          "t50": "layers/t50/Eastern_Australia_Floods_gfm.png?v=1787676117"
+        },
+        "bounds": [
+          [
+            -27.5,
+            150.25
+          ],
+          [
+            -23.0,
+            154.50000000000003
+          ]
+        ],
+        "date": "20220319",
+        "scores": {
+          "t05": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 278,
+            "n_ref_water_excluded": 27
+          },
+          "t10": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 278,
+            "n_ref_water_excluded": 27
+          },
+          "t25": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 278,
+            "n_ref_water_excluded": 27
+          },
+          "t50": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 278,
+            "n_ref_water_excluded": 27
+          }
+        }
+      },
+      "modis": {
+        "png": {
+          "t05": "layers/t05/Eastern_Australia_Floods_modis.png?v=1787676118",
+          "t10": "layers/t10/Eastern_Australia_Floods_modis.png?v=1787676118",
+          "t25": "layers/t25/Eastern_Australia_Floods_modis.png?v=1787676118",
+          "t50": "layers/t50/Eastern_Australia_Floods_modis.png?v=1787676118"
+        },
+        "bounds": [
+          [
+            -36.5,
+            146.0
+          ],
+          [
+            -23.0,
+            154.5
+          ]
+        ],
+        "date": "2022-03-19",
+        "scores": {
+          "t05": {
+            "csi": 0.02872531418312388,
+            "far": 0.9710773680404917,
+            "hr": 0.8080808080808081,
+            "n_valid": 3247,
+            "n_ref_water_excluded": 199
+          },
+          "t10": {
+            "csi": 0.01406702523789822,
+            "far": 0.9858215179316097,
+            "hr": 0.6415094339622641,
+            "n_valid": 3247,
+            "n_ref_water_excluded": 199
+          },
+          "t25": {
+            "csi": 0.004608294930875576,
+            "far": 0.9952874646559849,
+            "hr": 0.1724137931034483,
+            "n_valid": 3247,
+            "n_ref_water_excluded": 199
+          },
+          "t50": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": 0.0,
+            "n_valid": 3247,
+            "n_ref_water_excluded": 199
+          }
+        }
+      },
+      "reference_water": {
+        "png": {
+          "t05": "layers/t05/Eastern_Australia_Floods_reference_water.png?v=1787676119",
+          "t10": "layers/t10/Eastern_Australia_Floods_reference_water.png?v=1787676119",
+          "t25": "layers/t25/Eastern_Australia_Floods_reference_water.png?v=1787676119",
+          "t50": "layers/t50/Eastern_Australia_Floods_reference_water.png?v=1787676119"
+        },
+        "bounds": [
+          [
+            -36.5,
+            146.0
+          ],
+          [
+            -23.0,
+            154.5
+          ]
+        ],
+        "date": null,
+        "source_used": "modis"
+      }
+    },
+    "South_Africa_KwaZulu_Natal_Floods": {
+      "cama_flood": {
+        "png": {
+          "t05": "layers/t05/South_Africa_KwaZulu_Natal_Floods_cama_flood.png?v=1787676119",
+          "t10": "layers/t10/South_Africa_KwaZulu_Natal_Floods_cama_flood.png?v=1787676119",
+          "t25": "layers/t25/South_Africa_KwaZulu_Natal_Floods_cama_flood.png?v=1787676119",
+          "t50": "layers/t50/South_Africa_KwaZulu_Natal_Floods_cama_flood.png?v=1787676119"
+        },
+        "bounds": [
+          [
+            -33.99381299999692,
+            28.50838612894759
+          ],
+          [
+            -26.510329999996554,
+            33.99172961707231
+          ]
+        ],
+        "date": "2022-04-20"
+      },
+      "gfm": {
+        "png": {
+          "t05": "layers/t05/South_Africa_KwaZulu_Natal_Floods_gfm.png?v=1787676119",
+          "t10": "layers/t10/South_Africa_KwaZulu_Natal_Floods_gfm.png?v=1787676119",
+          "t25": "layers/t25/South_Africa_KwaZulu_Natal_Floods_gfm.png?v=1787676119",
+          "t50": "layers/t50/South_Africa_KwaZulu_Natal_Floods_gfm.png?v=1787676119"
+        },
+        "bounds": [
+          [
+            -30.25,
+            29.0
+          ],
+          [
+            -27.0,
+            33.5
+          ]
+        ],
+        "date": "20220420",
+        "scores": {
+          "t05": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 172,
+            "n_ref_water_excluded": 112
+          },
+          "t10": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 172,
+            "n_ref_water_excluded": 112
+          },
+          "t25": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 172,
+            "n_ref_water_excluded": 112
+          },
+          "t50": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 172,
+            "n_ref_water_excluded": 112
+          }
+        }
+      },
+      "modis": {
+        "png": {
+          "t05": "layers/t05/South_Africa_KwaZulu_Natal_Floods_modis.png?v=1787676119",
+          "t10": "layers/t10/South_Africa_KwaZulu_Natal_Floods_modis.png?v=1787676119",
+          "t25": "layers/t25/South_Africa_KwaZulu_Natal_Floods_modis.png?v=1787676119",
+          "t50": "layers/t50/South_Africa_KwaZulu_Natal_Floods_modis.png?v=1787676119"
+        },
+        "bounds": [
+          [
+            -33.5,
+            29.0
+          ],
+          [
+            -27.0,
+            33.5
+          ]
+        ],
+        "date": "2022-04-20",
+        "scores": {
+          "t05": {
+            "csi": 0.1125,
+            "far": 0.8838709677419355,
+            "hr": 0.782608695652174,
+            "n_valid": 183,
+            "n_ref_water_excluded": 127
+          },
+          "t10": {
+            "csi": 0.05806451612903226,
+            "far": 0.9391891891891891,
+            "hr": 0.5625,
+            "n_valid": 183,
+            "n_ref_water_excluded": 127
+          },
+          "t25": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": 0.0,
+            "n_valid": 183,
+            "n_ref_water_excluded": 127
+          },
+          "t50": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 183,
+            "n_ref_water_excluded": 127
+          }
+        }
+      },
+      "reference_water": {
+        "png": {
+          "t05": "layers/t05/South_Africa_KwaZulu_Natal_Floods_reference_water.png?v=1787676120",
+          "t10": "layers/t10/South_Africa_KwaZulu_Natal_Floods_reference_water.png?v=1787676120",
+          "t25": "layers/t25/South_Africa_KwaZulu_Natal_Floods_reference_water.png?v=1787676120",
+          "t50": "layers/t50/South_Africa_KwaZulu_Natal_Floods_reference_water.png?v=1787676120"
+        },
+        "bounds": [
+          [
+            -33.5,
+            29.0
+          ],
+          [
+            -27.0,
+            33.5
+          ]
+        ],
+        "date": null,
+        "source_used": "modis"
+      }
+    },
+    "Pakistan_Monsoon_Floods": {
+      "cama_flood": {
+        "png": {
+          "t05": "layers/t05/Pakistan_Monsoon_Floods_cama_flood.png?v=1787676120",
+          "t10": "layers/t10/Pakistan_Monsoon_Floods_cama_flood.png?v=1787676120",
+          "t25": "layers/t25/Pakistan_Monsoon_Floods_cama_flood.png?v=1787676120",
+          "t50": "layers/t50/Pakistan_Monsoon_Floods_cama_flood.png?v=1787676120"
+        },
+        "bounds": [
+          [
+            22.507317000005223,
+            65.5084546506396
+          ],
+          [
+            37.49095000000564,
+            75.49180647247945
+          ]
+        ],
+        "date": "2022-08-31"
+      },
+      "gfm": {
+        "png": {
+          "t05": "layers/t05/Pakistan_Monsoon_Floods_gfm.png?v=1787676120",
+          "t10": "layers/t10/Pakistan_Monsoon_Floods_gfm.png?v=1787676120",
+          "t25": "layers/t25/Pakistan_Monsoon_Floods_gfm.png?v=1787676120",
+          "t50": "layers/t50/Pakistan_Monsoon_Floods_gfm.png?v=1787676120"
+        },
+        "bounds": [
+          [
+            32.333333333333336,
+            70.5
+          ],
+          [
+            37.0,
+            74.99999999999999
+          ]
+        ],
+        "date": "20220831",
+        "scores": {
+          "t05": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 124,
+            "n_ref_water_excluded": 34
+          },
+          "t10": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 124,
+            "n_ref_water_excluded": 34
+          },
+          "t25": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 124,
+            "n_ref_water_excluded": 34
+          },
+          "t50": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 124,
+            "n_ref_water_excluded": 34
+          }
+        }
+      },
+      "modis": {
+        "png": {
+          "t05": "layers/t05/Pakistan_Monsoon_Floods_modis.png?v=1787676120",
+          "t10": "layers/t10/Pakistan_Monsoon_Floods_modis.png?v=1787676120",
+          "t25": "layers/t25/Pakistan_Monsoon_Floods_modis.png?v=1787676121",
+          "t50": "layers/t50/Pakistan_Monsoon_Floods_modis.png?v=1787676121"
+        },
+        "bounds": [
+          [
+            23.0,
+            66.0
+          ],
+          [
+            37.0,
+            75.0
+          ]
+        ],
+        "date": "2022-08-31",
+        "scores": {
+          "t05": {
+            "csi": 0.37580391596398455,
+            "far": 0.6184014802452563,
+            "hr": 0.9611623869140089,
+            "n_valid": 31095,
+            "n_ref_water_excluded": 3949
+          },
+          "t10": {
+            "csi": 0.3324925934822644,
+            "far": 0.6563637868255544,
+            "hr": 0.9111354909489852,
+            "n_valid": 31095,
+            "n_ref_water_excluded": 3949
+          },
+          "t25": {
+            "csi": 0.301139262030267,
+            "far": 0.6793022273193698,
+            "hr": 0.8315855376428236,
+            "n_valid": 31095,
+            "n_ref_water_excluded": 3949
+          },
+          "t50": {
+            "csi": 0.25575235888097997,
+            "far": 0.7219472689642761,
+            "hr": 0.7612712490761271,
+            "n_valid": 31095,
+            "n_ref_water_excluded": 3949
+          }
+        }
+      },
+      "reference_water": {
+        "png": {
+          "t05": "layers/t05/Pakistan_Monsoon_Floods_reference_water.png?v=1787676121",
+          "t10": "layers/t10/Pakistan_Monsoon_Floods_reference_water.png?v=1787676121",
+          "t25": "layers/t25/Pakistan_Monsoon_Floods_reference_water.png?v=1787676121",
+          "t50": "layers/t50/Pakistan_Monsoon_Floods_reference_water.png?v=1787676121"
+        },
+        "bounds": [
+          [
+            23.0,
+            66.0
+          ],
+          [
+            37.0,
+            75.0
+          ]
+        ],
+        "date": null,
+        "source_used": "modis"
+      }
+    },
+    "California_Atmospheric_River_Floods": {
+      "cama_flood": {
+        "png": {
+          "t05": "layers/t05/California_Atmospheric_River_Floods_cama_flood.png?v=1787676121",
+          "t10": "layers/t10/California_Atmospheric_River_Floods_cama_flood.png?v=1787676121",
+          "t25": "layers/t25/California_Atmospheric_River_Floods_cama_flood.png?v=1787676121",
+          "t50": "layers/t50/California_Atmospheric_River_Floods_cama_flood.png?v=1787676121"
+        },
+        "bounds": [
+          [
+            31.507497000006175,
+            -125.99189999539047
+          ],
+          [
+            42.99106000000505,
+            -112.50854169177038
+          ]
+        ],
+        "date": "2023-03-17"
+      },
+      "gfm": {
+        "png": {
+          "t05": "layers/t05/California_Atmospheric_River_Floods_gfm.png?v=1787676121",
+          "t10": "layers/t10/California_Atmospheric_River_Floods_gfm.png?v=1787676121",
+          "t25": "layers/t25/California_Atmospheric_River_Floods_gfm.png?v=1787676121",
+          "t50": "layers/t50/California_Atmospheric_River_Floods_gfm.png?v=1787676121"
+        },
+        "bounds": [
+          [
+            39.0,
+            -117.18333333333334
+          ],
+          [
+            42.5,
+            -113.00000000000001
+          ]
+        ],
+        "date": "20230317",
+        "scores": {
+          "t05": {
+            "csi": 0.08363636363636363,
+            "far": 0.9089108910891089,
+            "hr": 0.5054945054945055,
+            "n_valid": 810,
+            "n_ref_water_excluded": 24
+          },
+          "t10": {
+            "csi": 0.03275109170305677,
+            "far": 0.9636803874092009,
+            "hr": 0.25,
+            "n_valid": 810,
+            "n_ref_water_excluded": 24
+          },
+          "t25": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": 0.0,
+            "n_valid": 810,
+            "n_ref_water_excluded": 24
+          },
+          "t50": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 810,
+            "n_ref_water_excluded": 24
+          }
+        }
+      },
+      "modis": {
+        "png": {
+          "t05": "layers/t05/California_Atmospheric_River_Floods_modis.png?v=1787676122",
+          "t10": "layers/t10/California_Atmospheric_River_Floods_modis.png?v=1787676122",
+          "t25": "layers/t25/California_Atmospheric_River_Floods_modis.png?v=1787676122",
+          "t50": "layers/t50/California_Atmospheric_River_Floods_modis.png?v=1787676122"
+        },
+        "bounds": [
+          [
+            32.0,
+            -125.5
+          ],
+          [
+            42.5,
+            -113.0
+          ]
+        ],
+        "date": "2023-03-17",
+        "scores": {
+          "t05": {
+            "csi": 0.0770941438102298,
+            "far": 0.922233300099701,
+            "hr": 0.899135446685879,
+            "n_valid": 4894,
+            "n_ref_water_excluded": 477
+          },
+          "t10": {
+            "csi": 0.05230940456316082,
+            "far": 0.9468776490534049,
+            "hr": 0.7736625514403292,
+            "n_valid": 4894,
+            "n_ref_water_excluded": 477
+          },
+          "t25": {
+            "csi": 0.03339041095890411,
+            "far": 0.9657744624835454,
+            "hr": 0.5777777777777777,
+            "n_valid": 4894,
+            "n_ref_water_excluded": 477
+          },
+          "t50": {
+            "csi": 0.009282178217821782,
+            "far": 0.9905422446406053,
+            "hr": 0.3333333333333333,
+            "n_valid": 4894,
+            "n_ref_water_excluded": 477
+          }
+        }
+      },
+      "reference_water": {
+        "png": {
+          "t05": "layers/t05/California_Atmospheric_River_Floods_reference_water.png?v=1787676123",
+          "t10": "layers/t10/California_Atmospheric_River_Floods_reference_water.png?v=1787676123",
+          "t25": "layers/t25/California_Atmospheric_River_Floods_reference_water.png?v=1787676123",
+          "t50": "layers/t50/California_Atmospheric_River_Floods_reference_water.png?v=1787676123"
+        },
+        "bounds": [
+          [
+            32.0,
+            -125.5
+          ],
+          [
+            42.5,
+            -113.0
+          ]
+        ],
+        "date": null,
+        "source_used": "modis"
+      }
+    },
+    "Libya_Derna_Floods": {
+      "cama_flood": {
+        "png": {
+          "t05": "layers/t05/Libya_Derna_Floods_cama_flood.png?v=1787676123",
+          "t10": "layers/t10/Libya_Derna_Floods_cama_flood.png?v=1787676123",
+          "t25": "layers/t25/Libya_Derna_Floods_cama_flood.png?v=1787676123",
+          "t50": "layers/t50/Libya_Derna_Floods_cama_flood.png?v=1787676123"
+        },
+        "bounds": [
+          [
+            29.507457000005964,
+            19.50836946150883
+          ],
+          [
+            34.29088600000598,
+            24.991712949633555
+          ]
+        ],
+        "date": "2023-09-20"
+      },
+      "viirs": {
+        "png": {
+          "t05": "layers/t05/Libya_Derna_Floods_viirs.png?v=1787676123",
+          "t10": "layers/t10/Libya_Derna_Floods_viirs.png?v=1787676123",
+          "t25": "layers/t25/Libya_Derna_Floods_viirs.png?v=1787676123",
+          "t50": "layers/t50/Libya_Derna_Floods_viirs.png?v=1787676123"
+        },
+        "bounds": [
+          [
+            29.983333333333334,
+            19.98333333333332
+          ],
+          [
+            33.81666666666667,
+            24.51666666666665
+          ]
+        ],
+        "date": "2023-09-23",
+        "scores": {
+          "t05": {
+            "csi": 0.30677290836653387,
+            "far": 0.673728813559322,
+            "hr": 0.8369565217391305,
+            "n_valid": 309,
+            "n_ref_water_excluded": 31
+          },
+          "t10": {
+            "csi": 0.23348017621145375,
+            "far": 0.7414634146341463,
+            "hr": 0.7066666666666667,
+            "n_valid": 309,
+            "n_ref_water_excluded": 31
+          },
+          "t25": {
+            "csi": 0.19753086419753085,
+            "far": 0.6190476190476191,
+            "hr": 0.2909090909090909,
+            "n_valid": 309,
+            "n_ref_water_excluded": 31
+          },
+          "t50": {
+            "csi": 0.06,
+            "far": 0.75,
+            "hr": 0.07317073170731707,
+            "n_valid": 309,
+            "n_ref_water_excluded": 31
+          }
+        }
+      },
+      "gfm": {
+        "png": {
+          "t05": "layers/t05/Libya_Derna_Floods_gfm.png?v=1787676124",
+          "t10": "layers/t10/Libya_Derna_Floods_gfm.png?v=1787676124",
+          "t25": "layers/t25/Libya_Derna_Floods_gfm.png?v=1787676124",
+          "t50": "layers/t50/Libya_Derna_Floods_gfm.png?v=1787676124"
+        },
+        "bounds": [
+          [
+            30.0,
+            20.0
+          ],
+          [
+            33.800000000000004,
+            24.5
+          ]
+        ],
+        "date": "20230917",
+        "scores": {
+          "t05": {
+            "csi": 0.1469387755102041,
+            "far": 0.8454935622317596,
+            "hr": 0.75,
+            "n_valid": 306,
+            "n_ref_water_excluded": 31
+          },
+          "t10": {
+            "csi": 0.11848341232227488,
+            "far": 0.8762376237623762,
+            "hr": 0.7352941176470589,
+            "n_valid": 306,
+            "n_ref_water_excluded": 31
+          },
+          "t25": {
+            "csi": 0.20454545454545456,
+            "far": 0.7857142857142857,
+            "hr": 0.8181818181818182,
+            "n_valid": 306,
+            "n_ref_water_excluded": 31
+          },
+          "t50": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 306,
+            "n_ref_water_excluded": 31
+          }
+        }
+      },
+      "modis": {
+        "png": {
+          "t05": "layers/t05/Libya_Derna_Floods_modis.png?v=1787676124",
+          "t10": "layers/t10/Libya_Derna_Floods_modis.png?v=1787676124",
+          "t25": "layers/t25/Libya_Derna_Floods_modis.png?v=1787676124",
+          "t50": "layers/t50/Libya_Derna_Floods_modis.png?v=1787676124"
+        },
+        "bounds": [
+          [
+            29.999999999999996,
+            20.0
+          ],
+          [
+            33.8,
+            24.5
+          ]
+        ],
+        "date": "2023-09-20",
+        "scores": {
+          "t05": {
+            "csi": 0.11403508771929824,
+            "far": 0.8844444444444445,
+            "hr": 0.896551724137931,
+            "n_valid": 298,
+            "n_ref_water_excluded": 31
+          },
+          "t10": {
+            "csi": 0.07575757575757576,
+            "far": 0.9226804123711341,
+            "hr": 0.7894736842105263,
+            "n_valid": 298,
+            "n_ref_water_excluded": 31
+          },
+          "t25": {
+            "csi": 0.07692307692307693,
+            "far": 0.9047619047619048,
+            "hr": 0.2857142857142857,
+            "n_valid": 298,
+            "n_ref_water_excluded": 31
+          },
+          "t50": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": 0.0,
+            "n_valid": 298,
+            "n_ref_water_excluded": 31
+          }
+        }
+      },
+      "reference_water": {
+        "png": {
+          "t05": "layers/t05/Libya_Derna_Floods_reference_water.png?v=1787676124",
+          "t10": "layers/t10/Libya_Derna_Floods_reference_water.png?v=1787676124",
+          "t25": "layers/t25/Libya_Derna_Floods_reference_water.png?v=1787676124",
+          "t50": "layers/t50/Libya_Derna_Floods_reference_water.png?v=1787676124"
+        },
+        "bounds": [
+          [
+            29.999999999999996,
+            20.0
+          ],
+          [
+            33.8,
+            24.5
+          ]
+        ],
+        "date": null,
+        "source_used": "modis"
+      }
+    },
+    "East_Africa_Floods": {
+      "cama_flood": {
+        "png": {
+          "t05": "layers/t05/East_Africa_Floods_cama_flood.png?v=1787676124",
+          "t10": "layers/t10/East_Africa_Floods_cama_flood.png?v=1787676124",
+          "t25": "layers/t25/East_Africa_Floods_cama_flood.png?v=1787676124",
+          "t50": "layers/t50/East_Africa_Floods_cama_flood.png?v=1787676124"
+        },
+        "bounds": [
+          [
+            -12.493382999995445,
+            27.50838427700995
+          ],
+          [
+            5.490310000004543,
+            42.491745358542246
+          ]
+        ],
+        "date": "2024-04-30"
+      },
+      "viirs": {
+        "png": {
+          "t05": "layers/t05/East_Africa_Floods_viirs.png?v=1787676124",
+          "t10": "layers/t10/East_Africa_Floods_viirs.png?v=1787676124",
+          "t25": "layers/t25/East_Africa_Floods_viirs.png?v=1787676124",
+          "t50": "layers/t50/East_Africa_Floods_viirs.png?v=1787676124"
+        },
+        "bounds": [
+          [
+            0.7333333333333343,
+            27.98333333333332
+          ],
+          [
+            5.016666666666666,
+            42.01666666666671
+          ]
+        ],
+        "date": "20240430",
+        "scores": {
+          "t05": {
+            "csi": 0.3962900505902192,
+            "far": 0.5773381294964028,
+            "hr": 0.8639705882352942,
+            "n_valid": 2000,
+            "n_ref_water_excluded": 4597
+          },
+          "t10": {
+            "csi": 0.2358550540368722,
+            "far": 0.7448418156808804,
+            "hr": 0.7571428571428571,
+            "n_valid": 2000,
+            "n_ref_water_excluded": 4597
+          },
+          "t25": {
+            "csi": 0.06374085684430512,
+            "far": 0.9278959810874704,
+            "hr": 0.3546511627906977,
+            "n_valid": 2000,
+            "n_ref_water_excluded": 4597
+          },
+          "t50": {
+            "csi": 0.023255813953488372,
+            "far": 0.9737470167064439,
+            "hr": 0.16923076923076924,
+            "n_valid": 2000,
+            "n_ref_water_excluded": 4597
+          }
+        }
+      },
+      "gfm": {
+        "png": {
+          "t05": "layers/t05/East_Africa_Floods_gfm.png?v=1787676124",
+          "t10": "layers/t10/East_Africa_Floods_gfm.png?v=1787676124",
+          "t25": "layers/t25/East_Africa_Floods_gfm.png?v=1787676124",
+          "t50": "layers/t50/East_Africa_Floods_gfm.png?v=1787676124"
+        },
+        "bounds": [
+          [
+            0.7500000000000009,
+            28.0
+          ],
+          [
+            5.0,
+            41.99999999999997
+          ]
+        ],
+        "date": "20240430",
+        "scores": {
+          "t05": {
+            "csi": 0.04772727272727273,
+            "far": 0.951276102088167,
+            "hr": 0.7,
+            "n_valid": 1073,
+            "n_ref_water_excluded": 3981
+          },
+          "t10": {
+            "csi": 0.02546916890080429,
+            "far": 0.9739726027397261,
+            "hr": 0.5428571428571428,
+            "n_valid": 1073,
+            "n_ref_water_excluded": 3981
+          },
+          "t25": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": 0.0,
+            "n_valid": 1073,
+            "n_ref_water_excluded": 3981
+          },
+          "t50": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 1073,
+            "n_ref_water_excluded": 3981
+          }
+        }
+      },
+      "modis": {
+        "png": {
+          "t05": "layers/t05/East_Africa_Floods_modis.png?v=1787676125",
+          "t10": "layers/t10/East_Africa_Floods_modis.png?v=1787676126",
+          "t25": "layers/t25/East_Africa_Floods_modis.png?v=1787676126",
+          "t50": "layers/t50/East_Africa_Floods_modis.png?v=1787676126"
+        },
+        "bounds": [
+          [
+            -12.0,
+            28.0
+          ],
+          [
+            5.0,
+            42.0
+          ]
+        ],
+        "date": "2024-04-30",
+        "scores": {
+          "t05": {
+            "csi": 0.09899702823179791,
+            "far": 0.899812030075188,
+            "hr": 0.8927973199329984,
+            "n_valid": 6189,
+            "n_ref_water_excluded": 30746
+          },
+          "t10": {
+            "csi": 0.06285253827558421,
+            "far": 0.9360524697683952,
+            "hr": 0.7858942065491183,
+            "n_valid": 6189,
+            "n_ref_water_excluded": 30746
+          },
+          "t25": {
+            "csi": 0.0249920911104081,
+            "far": 0.9742503259452412,
+            "hr": 0.45930232558139533,
+            "n_valid": 6189,
+            "n_ref_water_excluded": 30746
+          },
+          "t50": {
+            "csi": 0.006910167818361303,
+            "far": 0.9929113924050633,
+            "hr": 0.2153846153846154,
+            "n_valid": 6189,
+            "n_ref_water_excluded": 30746
+          }
+        }
+      },
+      "reference_water": {
+        "png": {
+          "t05": "layers/t05/East_Africa_Floods_reference_water.png?v=1787676127",
+          "t10": "layers/t10/East_Africa_Floods_reference_water.png?v=1787676127",
+          "t25": "layers/t25/East_Africa_Floods_reference_water.png?v=1787676127",
+          "t50": "layers/t50/East_Africa_Floods_reference_water.png?v=1787676127"
+        },
+        "bounds": [
+          [
+            -12.0,
+            28.0
+          ],
+          [
+            5.0,
+            42.0
+          ]
+        ],
+        "date": null,
+        "source_used": "modis"
+      }
+    },
+    "Brazil_Rio_Grande_do_Sul_Floods": {
+      "cama_flood": {
+        "png": {
+          "t05": "layers/t05/Brazil_Rio_Grande_do_Sul_Floods_cama_flood.png?v=1787676127",
+          "t10": "layers/t10/Brazil_Rio_Grande_do_Sul_Floods_cama_flood.png?v=1787676127",
+          "t25": "layers/t25/Brazil_Rio_Grande_do_Sul_Floods_cama_flood.png?v=1787676127",
+          "t50": "layers/t50/Brazil_Rio_Grande_do_Sul_Floods_cama_flood.png?v=1787676127"
+        },
+        "bounds": [
+          [
+            -33.99381299999692,
+            -57.991774063657395
+          ],
+          [
+            -26.510329999996554,
+            -48.50842316778211
+          ]
+        ],
+        "date": "2024-05-15"
+      },
+      "viirs": {
+        "png": {
+          "t05": "layers/t05/Brazil_Rio_Grande_do_Sul_Floods_viirs.png?v=1787676127",
+          "t10": "layers/t10/Brazil_Rio_Grande_do_Sul_Floods_viirs.png?v=1787676128",
+          "t25": "layers/t25/Brazil_Rio_Grande_do_Sul_Floods_viirs.png?v=1787676128",
+          "t50": "layers/t50/Brazil_Rio_Grande_do_Sul_Floods_viirs.png?v=1787676128"
+        },
+        "bounds": [
+          [
+            -33.516666666666666,
+            -57.516666666666666
+          ],
+          [
+            -26.983333333333334,
+            -48.983333333333334
+          ]
+        ],
+        "date": "20240515",
+        "scores": {
+          "t05": {
+            "csi": 0.6725425754406932,
+            "far": 0.2314783202458177,
+            "hr": 0.8433870363431997,
+            "n_valid": 3591,
+            "n_ref_water_excluded": 5707
+          },
+          "t10": {
+            "csi": 0.5413971539456662,
+            "far": 0.30481727574750833,
+            "hr": 0.7099236641221374,
+            "n_valid": 3591,
+            "n_ref_water_excluded": 5707
+          },
+          "t25": {
+            "csi": 0.3637984841729826,
+            "far": 0.37327188940092165,
+            "hr": 0.46442800227660785,
+            "n_valid": 3591,
+            "n_ref_water_excluded": 5707
+          },
+          "t50": {
+            "csi": 0.2389649923896499,
+            "far": 0.45674740484429066,
+            "hr": 0.29904761904761906,
+            "n_valid": 3591,
+            "n_ref_water_excluded": 5707
+          }
+        }
+      },
+      "gfm": {
+        "png": {
+          "t05": "layers/t05/Brazil_Rio_Grande_do_Sul_Floods_gfm.png?v=1787676128",
+          "t10": "layers/t10/Brazil_Rio_Grande_do_Sul_Floods_gfm.png?v=1787676128",
+          "t25": "layers/t25/Brazil_Rio_Grande_do_Sul_Floods_gfm.png?v=1787676128",
+          "t50": "layers/t50/Brazil_Rio_Grande_do_Sul_Floods_gfm.png?v=1787676128"
+        },
+        "bounds": [
+          [
+            -33.5,
+            -57.5
+          ],
+          [
+            -27.0,
+            -49.0
+          ]
+        ],
+        "date": "20240515",
+        "scores": {
+          "t05": {
+            "csi": 0.0673963133640553,
+            "far": 0.9314586994727593,
+            "hr": 0.8013698630136986,
+            "n_valid": 2120,
+            "n_ref_water_excluded": 2712
+          },
+          "t10": {
+            "csi": 0.042523033309709427,
+            "far": 0.9559794570799707,
+            "hr": 0.5555555555555556,
+            "n_valid": 2120,
+            "n_ref_water_excluded": 2712
+          },
+          "t25": {
+            "csi": 0.0028208744710860366,
+            "far": 0.9971671388101983,
+            "hr": 0.4,
+            "n_valid": 2120,
+            "n_ref_water_excluded": 2712
+          },
+          "t50": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 2120,
+            "n_ref_water_excluded": 2712
+          }
+        }
+      },
+      "modis": {
+        "png": {
+          "t05": "layers/t05/Brazil_Rio_Grande_do_Sul_Floods_modis.png?v=1787676128",
+          "t10": "layers/t10/Brazil_Rio_Grande_do_Sul_Floods_modis.png?v=1787676128",
+          "t25": "layers/t25/Brazil_Rio_Grande_do_Sul_Floods_modis.png?v=1787676128",
+          "t50": "layers/t50/Brazil_Rio_Grande_do_Sul_Floods_modis.png?v=1787676128"
+        },
+        "bounds": [
+          [
+            -33.5,
+            -57.5
+          ],
+          [
+            -27.0,
+            -49.0
+          ]
+        ],
+        "date": "2024-05-15",
+        "scores": {
+          "t05": {
+            "csi": 0.5777851021753461,
+            "far": 0.35998539612997443,
+            "hr": 0.85595703125,
+            "n_valid": 3345,
+            "n_ref_water_excluded": 5707
+          },
+          "t10": {
+            "csi": 0.4636891793754539,
+            "far": 0.43294849023090587,
+            "hr": 0.7178189994378864,
+            "n_valid": 3345,
+            "n_ref_water_excluded": 5707
+          },
+          "t25": {
+            "csi": 0.34782608695652173,
+            "far": 0.4696485623003195,
+            "hr": 0.5026495079485238,
+            "n_valid": 3345,
+            "n_ref_water_excluded": 5707
+          },
+          "t50": {
+            "csi": 0.24739336492890995,
+            "far": 0.5254545454545455,
+            "hr": 0.34073107049608353,
+            "n_valid": 3345,
+            "n_ref_water_excluded": 5707
+          }
+        }
+      },
+      "reference_water": {
+        "png": {
+          "t05": "layers/t05/Brazil_Rio_Grande_do_Sul_Floods_reference_water.png?v=1787676128",
+          "t10": "layers/t10/Brazil_Rio_Grande_do_Sul_Floods_reference_water.png?v=1787676128",
+          "t25": "layers/t25/Brazil_Rio_Grande_do_Sul_Floods_reference_water.png?v=1787676128",
+          "t50": "layers/t50/Brazil_Rio_Grande_do_Sul_Floods_reference_water.png?v=1787676128"
+        },
+        "bounds": [
+          [
+            -33.5,
+            -57.5
+          ],
+          [
+            -27.0,
+            -49.0
+          ]
+        ],
+        "date": null,
+        "source_used": "modis"
+      }
+    },
+    "Bangladesh_Monsoon_Floods": {
+      "cama_flood": {
+        "png": {
+          "t05": "layers/t05/Bangladesh_Monsoon_Floods_cama_flood.png?v=1787676128",
+          "t10": "layers/t10/Bangladesh_Monsoon_Floods_cama_flood.png?v=1787676128",
+          "t25": "layers/t25/Bangladesh_Monsoon_Floods_cama_flood.png?v=1787676128",
+          "t50": "layers/t50/Bangladesh_Monsoon_Floods_cama_flood.png?v=1787676128"
+        },
+        "bounds": [
+          [
+            20.00726700000496,
+            87.5084953932583
+          ],
+          [
+            27.49075000000575,
+            93.4918398073493
+          ]
+        ],
+        "date": "2024-07-15"
+      },
+      "viirs": {
+        "png": {
+          "t05": "layers/t05/Bangladesh_Monsoon_Floods_viirs.png?v=1787676128",
+          "t10": "layers/t10/Bangladesh_Monsoon_Floods_viirs.png?v=1787676129",
+          "t25": "layers/t25/Bangladesh_Monsoon_Floods_viirs.png?v=1787676129",
+          "t50": "layers/t50/Bangladesh_Monsoon_Floods_viirs.png?v=1787676129"
+        },
+        "bounds": [
+          [
+            20.483333333333334,
+            87.98333333333335
+          ],
+          [
+            27.016666666666666,
+            93.01666666666664
+          ]
+        ],
+        "date": "20240715",
+        "scores": {
+          "t05": {
+            "csi": 0.37126895450917796,
+            "far": 0.621049201694363,
+            "hr": 0.9482266612311455,
+            "n_valid": 13193,
+            "n_ref_water_excluded": 5391
+          },
+          "t10": {
+            "csi": 0.2858480926430518,
+            "far": 0.7043332746168751,
+            "hr": 0.8959167333867094,
+            "n_valid": 13193,
+            "n_ref_water_excluded": 5391
+          },
+          "t25": {
+            "csi": 0.17418244406196212,
+            "far": 0.8139249816131405,
+            "hr": 0.7315662650602409,
+            "n_valid": 13193,
+            "n_ref_water_excluded": 5391
+          },
+          "t50": {
+            "csi": 0.07918552036199095,
+            "far": 0.9155374048635604,
+            "hr": 0.558968058968059,
+            "n_valid": 13193,
+            "n_ref_water_excluded": 5391
+          }
+        }
+      },
+      "gfm": {
+        "png": {
+          "t05": "layers/t05/Bangladesh_Monsoon_Floods_gfm.png?v=1787676129",
+          "t10": "layers/t10/Bangladesh_Monsoon_Floods_gfm.png?v=1787676129",
+          "t25": "layers/t25/Bangladesh_Monsoon_Floods_gfm.png?v=1787676129",
+          "t50": "layers/t50/Bangladesh_Monsoon_Floods_gfm.png?v=1787676129"
+        },
+        "bounds": [
+          [
+            20.5,
+            88.0
+          ],
+          [
+            27.0,
+            92.99999999999999
+          ]
+        ],
+        "date": "20240715",
+        "scores": {
+          "t05": {
+            "csi": 0.10096943805455143,
+            "far": 0.8986308149125701,
+            "hr": 0.9624119028974158,
+            "n_valid": 13020,
+            "n_ref_water_excluded": 5338
+          },
+          "t10": {
+            "csi": 0.036589698046181174,
+            "far": 0.9632700365516627,
+            "hr": 0.9054945054945055,
+            "n_valid": 13020,
+            "n_ref_water_excluded": 5338
+          },
+          "t25": {
+            "csi": 0.005079915747738818,
+            "far": 0.9949175653898599,
+            "hr": 0.9111111111111111,
+            "n_valid": 13020,
+            "n_ref_water_excluded": 5338
+          },
+          "t50": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 13020,
+            "n_ref_water_excluded": 5338
+          }
+        }
+      },
+      "modis": {
+        "png": {
+          "t05": "layers/t05/Bangladesh_Monsoon_Floods_modis.png?v=1787676129",
+          "t10": "layers/t10/Bangladesh_Monsoon_Floods_modis.png?v=1787676129",
+          "t25": "layers/t25/Bangladesh_Monsoon_Floods_modis.png?v=1787676129",
+          "t50": "layers/t50/Bangladesh_Monsoon_Floods_modis.png?v=1787676129"
+        },
+        "bounds": [
+          [
+            20.5,
+            88.0
+          ],
+          [
+            27.0,
+            93.0
+          ]
+        ],
+        "date": "2024-07-15",
+        "scores": {
+          "t05": {
+            "csi": 0.12497154564079217,
+            "far": 0.8743131868131868,
+            "hr": 0.9564459930313589,
+            "n_valid": 4585,
+            "n_ref_water_excluded": 5391
+          },
+          "t10": {
+            "csi": 0.08688367640019148,
+            "far": 0.9122340425531915,
+            "hr": 0.8962962962962963,
+            "n_valid": 4585,
+            "n_ref_water_excluded": 5391
+          },
+          "t25": {
+            "csi": 0.0475873544093178,
+            "far": 0.951027397260274,
+            "hr": 0.6271929824561403,
+            "n_valid": 4585,
+            "n_ref_water_excluded": 5391
+          },
+          "t50": {
+            "csi": 0.02944015444015444,
+            "far": 0.9692849949647533,
+            "hr": 0.41496598639455784,
+            "n_valid": 4585,
+            "n_ref_water_excluded": 5391
+          }
+        }
+      },
+      "reference_water": {
+        "png": {
+          "t05": "layers/t05/Bangladesh_Monsoon_Floods_reference_water.png?v=1787676129",
+          "t10": "layers/t10/Bangladesh_Monsoon_Floods_reference_water.png?v=1787676129",
+          "t25": "layers/t25/Bangladesh_Monsoon_Floods_reference_water.png?v=1787676129",
+          "t50": "layers/t50/Bangladesh_Monsoon_Floods_reference_water.png?v=1787676129"
+        },
+        "bounds": [
+          [
+            20.5,
+            88.0
+          ],
+          [
+            27.0,
+            93.0
+          ]
+        ],
+        "date": null,
+        "source_used": "modis"
+      }
+    },
+    "Central_European_Floods": {
+      "cama_flood": {
+        "png": {
+          "t05": "layers/t05/Central_European_Floods_cama_flood.png?v=1787676129",
+          "t10": "layers/t10/Central_European_Floods_cama_flood.png?v=1787676129",
+          "t25": "layers/t25/Central_European_Floods_cama_flood.png?v=1787676129",
+          "t50": "layers/t50/Central_European_Floods_cama_flood.png?v=1787676129"
+        },
+        "bounds": [
+          [
+            44.50775700000489,
+            9.508350942132434
+          ],
+          [
+            54.491290000003815,
+            25.991714801571195
+          ]
+        ],
+        "date": "2024-09-21"
+      },
+      "viirs": {
+        "png": {
+          "t05": "layers/t05/Central_European_Floods_viirs.png?v=1787676129",
+          "t10": "layers/t10/Central_European_Floods_viirs.png?v=1787676129",
+          "t25": "layers/t25/Central_European_Floods_viirs.png?v=1787676129",
+          "t50": "layers/t50/Central_European_Floods_viirs.png?v=1787676129"
+        },
+        "bounds": [
+          [
+            45.0,
+            9.98333333333332
+          ],
+          [
+            54.016666666666666,
+            25.516666666666566
+          ]
+        ],
+        "date": "20240921",
+        "scores": {
+          "t05": {
+            "csi": 0.1950286806883365,
+            "far": 0.8027079303675049,
+            "hr": 0.9444444444444444,
+            "n_valid": 596,
+            "n_ref_water_excluded": 343
+          },
+          "t10": {
+            "csi": 0.11205073995771671,
+            "far": 0.8862660944206009,
+            "hr": 0.8833333333333333,
+            "n_valid": 596,
+            "n_ref_water_excluded": 343
+          },
+          "t25": {
+            "csi": 0.01694915254237288,
+            "far": 0.9824561403508771,
+            "hr": 0.3333333333333333,
+            "n_valid": 596,
+            "n_ref_water_excluded": 343
+          },
+          "t50": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": 0.0,
+            "n_valid": 596,
+            "n_ref_water_excluded": 343
+          }
+        }
+      },
+      "gfm": {
+        "png": {
+          "t05": "layers/t05/Central_European_Floods_gfm.png?v=1787676129",
+          "t10": "layers/t10/Central_European_Floods_gfm.png?v=1787676129",
+          "t25": "layers/t25/Central_European_Floods_gfm.png?v=1787676129",
+          "t50": "layers/t50/Central_European_Floods_gfm.png?v=1787676129"
+        },
+        "bounds": [
+          [
+            45.0,
+            10.0
+          ],
+          [
+            54.0,
+            25.49999999999997
+          ]
+        ],
+        "date": "20240921",
+        "scores": {
+          "t05": {
+            "csi": 0.005964214711729622,
+            "far": 0.9940119760479041,
+            "hr": 0.6,
+            "n_valid": 579,
+            "n_ref_water_excluded": 343
+          },
+          "t10": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": 0.0,
+            "n_valid": 579,
+            "n_ref_water_excluded": 343
+          },
+          "t25": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 579,
+            "n_ref_water_excluded": 343
+          },
+          "t50": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 579,
+            "n_ref_water_excluded": 343
+          }
+        }
+      },
+      "modis": {
+        "png": {
+          "t05": "layers/t05/Central_European_Floods_modis.png?v=1787676130",
+          "t10": "layers/t10/Central_European_Floods_modis.png?v=1787676130",
+          "t25": "layers/t25/Central_European_Floods_modis.png?v=1787676130",
+          "t50": "layers/t50/Central_European_Floods_modis.png?v=1787676130"
+        },
+        "bounds": [
+          [
+            45.0,
+            10.0
+          ],
+          [
+            54.0,
+            25.5
+          ]
+        ],
+        "date": "2024-09-21",
+        "scores": {
+          "t05": {
+            "csi": 0.006902502157031924,
+            "far": 0.9930915371329879,
+            "hr": 0.8888888888888888,
+            "n_valid": 1379,
+            "n_ref_water_excluded": 485
+          },
+          "t10": {
+            "csi": 0.001941747572815534,
+            "far": 0.9980544747081712,
+            "hr": 0.5,
+            "n_valid": 1379,
+            "n_ref_water_excluded": 485
+          },
+          "t25": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": 0.0,
+            "n_valid": 1379,
+            "n_ref_water_excluded": 485
+          },
+          "t50": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 1379,
+            "n_ref_water_excluded": 485
+          }
+        }
+      },
+      "reference_water": {
+        "png": {
+          "t05": "layers/t05/Central_European_Floods_reference_water.png?v=1787676131",
+          "t10": "layers/t10/Central_European_Floods_reference_water.png?v=1787676131",
+          "t25": "layers/t25/Central_European_Floods_reference_water.png?v=1787676131",
+          "t50": "layers/t50/Central_European_Floods_reference_water.png?v=1787676131"
+        },
+        "bounds": [
+          [
+            45.0,
+            10.0
+          ],
+          [
+            54.0,
+            25.5
+          ]
+        ],
+        "date": null,
+        "source_used": "modis"
+      }
+    },
+    "Amazon_Floods": {
+      "cama_flood": {
+        "png": {
+          "t05": "layers/t05/Amazon_Floods_cama_flood.png?v=1787676131",
+          "t10": "layers/t10/Amazon_Floods_cama_flood.png?v=1787676131",
+          "t25": "layers/t25/Amazon_Floods_cama_flood.png?v=1787676131",
+          "t50": "layers/t50/Amazon_Floods_cama_flood.png?v=1787676131"
+        },
+        "bounds": [
+          [
+            -12.493382999995445,
+            -78.99181295434144
+          ],
+          [
+            4.990300000004543,
+            -46.50841946390683
+          ]
+        ],
+        "date": "2025-04-17"
+      },
+      "viirs": {
+        "png": {
+          "t05": "layers/t05/Amazon_Floods_viirs.png?v=1787676131",
+          "t10": "layers/t10/Amazon_Floods_viirs.png?v=1787676132",
+          "t25": "layers/t25/Amazon_Floods_viirs.png?v=1787676132",
+          "t50": "layers/t50/Amazon_Floods_viirs.png?v=1787676132"
+        },
+        "bounds": [
+          [
+            -7.883333333333308,
+            -78.51666666666667
+          ],
+          [
+            4.516666666666666,
+            -46.983333333333434
+          ]
+        ],
+        "date": "20250417",
+        "scores": {
+          "t05": {
+            "csi": 0.17039670260885997,
+            "far": 0.8290217455708953,
+            "hr": 0.9804294645284044,
+            "n_valid": 95785,
+            "n_ref_water_excluded": 10848
+          },
+          "t10": {
+            "csi": 0.11027608784974884,
+            "far": 0.8893690579083837,
+            "hr": 0.9717355758000468,
+            "n_valid": 95785,
+            "n_ref_water_excluded": 10848
+          },
+          "t25": {
+            "csi": 0.043242461493961964,
+            "far": 0.9566399593952797,
+            "hr": 0.940991345397325,
+            "n_valid": 95785,
+            "n_ref_water_excluded": 10848
+          },
+          "t50": {
+            "csi": 0.010029284474045663,
+            "far": 0.9899626517273576,
+            "hr": 0.9258373205741627,
+            "n_valid": 95785,
+            "n_ref_water_excluded": 10848
+          }
+        }
+      },
+      "gfm": {
+        "png": {
+          "t05": "layers/t05/Amazon_Floods_gfm.png?v=1787676132",
+          "t10": "layers/t10/Amazon_Floods_gfm.png?v=1787676132",
+          "t25": "layers/t25/Amazon_Floods_gfm.png?v=1787676132",
+          "t50": "layers/t50/Amazon_Floods_gfm.png?v=1787676132"
+        },
+        "bounds": [
+          [
+            -7.883333333333308,
+            -78.5
+          ],
+          [
+            4.5,
+            -47.00000000000009
+          ]
+        ],
+        "date": "20250417",
+        "scores": {
+          "t05": {
+            "csi": 0.005951549358741513,
+            "far": 0.9940480348734858,
+            "hr": 0.988399071925754,
+            "n_valid": 81294,
+            "n_ref_water_excluded": 9713
+          },
+          "t10": {
+            "csi": 0.001914536352651319,
+            "far": 0.9980851330989452,
+            "hr": 0.9172932330827067,
+            "n_valid": 81294,
+            "n_ref_water_excluded": 9713
+          },
+          "t25": {
+            "csi": 8.51263061567601e-05,
+            "far": 0.9999148646347693,
+            "hr": 0.4444444444444444,
+            "n_valid": 81294,
+            "n_ref_water_excluded": 9713
+          },
+          "t50": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 81294,
+            "n_ref_water_excluded": 9713
+          }
+        }
+      },
+      "modis": {
+        "png": {
+          "t05": "layers/t05/Amazon_Floods_modis.png?v=1787676135",
+          "t10": "layers/t10/Amazon_Floods_modis.png?v=1787676136",
+          "t25": "layers/t25/Amazon_Floods_modis.png?v=1787676136",
+          "t50": "layers/t50/Amazon_Floods_modis.png?v=1787676136"
+        },
+        "bounds": [
+          [
+            -12.0,
+            -78.5
+          ],
+          [
+            4.5,
+            -47.0
+          ]
+        ],
+        "date": "2025-04-17",
+        "scores": {
+          "t05": {
+            "csi": 0.02370649340932048,
+            "far": 0.9762763474809999,
+            "hr": 0.9703930576824911,
+            "n_valid": 89215,
+            "n_ref_water_excluded": 11073
+          },
+          "t10": {
+            "csi": 0.011486299474121229,
+            "far": 0.9885047919782838,
+            "hr": 0.9367945823927766,
+            "n_valid": 89215,
+            "n_ref_water_excluded": 11073
+          },
+          "t25": {
+            "csi": 0.004349883517763541,
+            "far": 0.9956467888237223,
+            "hr": 0.8505338078291815,
+            "n_valid": 89215,
+            "n_ref_water_excluded": 11073
+          },
+          "t50": {
+            "csi": 0.0019560909067510876,
+            "far": 0.9980422966950877,
+            "hr": 0.7037037037037037,
+            "n_valid": 89215,
+            "n_ref_water_excluded": 11073
+          }
+        }
+      },
+      "reference_water": {
+        "png": {
+          "t05": "layers/t05/Amazon_Floods_reference_water.png?v=1787676139",
+          "t10": "layers/t10/Amazon_Floods_reference_water.png?v=1787676140",
+          "t25": "layers/t25/Amazon_Floods_reference_water.png?v=1787676140",
+          "t50": "layers/t50/Amazon_Floods_reference_water.png?v=1787676140"
+        },
+        "bounds": [
+          [
+            -12.0,
+            -78.5
+          ],
+          [
+            4.5,
+            -47.0
+          ]
+        ],
+        "date": null,
+        "source_used": "modis"
+      }
+    },
+    "US_Midwest_Floods": {
+      "cama_flood": {
+        "png": {
+          "t05": "layers/t05/US_Midwest_Floods_cama_flood.png?v=1787676140",
+          "t10": "layers/t10/US_Midwest_Floods_cama_flood.png?v=1787676140",
+          "t25": "layers/t25/US_Midwest_Floods_cama_flood.png?v=1787676140",
+          "t50": "layers/t50/US_Midwest_Floods_cama_flood.png?v=1787676140"
+        },
+        "bounds": [
+          [
+            33.50753700000607,
+            -104.49186017874038
+          ],
+          [
+            46.491130000004674,
+            -81.50848428171676
+          ]
+        ],
+        "date": "2025-04-08"
+      },
+      "viirs": {
+        "png": {
+          "t05": "layers/t05/US_Midwest_Floods_viirs.png?v=1787676140",
+          "t10": "layers/t10/US_Midwest_Floods_viirs.png?v=1787676140",
+          "t25": "layers/t25/US_Midwest_Floods_viirs.png?v=1787676140",
+          "t50": "layers/t50/US_Midwest_Floods_viirs.png?v=1787676140"
+        },
+        "bounds": [
+          [
+            33.983333333333334,
+            -104.01666666666667
+          ],
+          [
+            46.016666666666666,
+            -81.98333333333338
+          ]
+        ],
+        "date": "20250408",
+        "scores": {
+          "t05": {
+            "csi": 0.22400750767830735,
+            "far": 0.7672900233389465,
+            "hr": 0.856940818102698,
+            "n_valid": 36148,
+            "n_ref_water_excluded": 15759
+          },
+          "t10": {
+            "csi": 0.16144648585593468,
+            "far": 0.8272914456854059,
+            "hr": 0.712300566134843,
+            "n_valid": 36148,
+            "n_ref_water_excluded": 15759
+          },
+          "t25": {
+            "csi": 0.06973398132753549,
+            "far": 0.9224726290345514,
+            "hr": 0.4095774647887324,
+            "n_valid": 36148,
+            "n_ref_water_excluded": 15759
+          },
+          "t50": {
+            "csi": 0.023532808777882046,
+            "far": 0.9744574159680326,
+            "hr": 0.23022598870056496,
+            "n_valid": 36148,
+            "n_ref_water_excluded": 15759
+          }
+        }
+      },
+      "gfm": {
+        "png": {
+          "t05": "layers/t05/US_Midwest_Floods_gfm.png?v=1787676140",
+          "t10": "layers/t10/US_Midwest_Floods_gfm.png?v=1787676140",
+          "t25": "layers/t25/US_Midwest_Floods_gfm.png?v=1787676140",
+          "t50": "layers/t50/US_Midwest_Floods_gfm.png?v=1787676140"
+        },
+        "bounds": [
+          [
+            34.0,
+            -104.0
+          ],
+          [
+            46.0,
+            -82.00000000000003
+          ]
+        ],
+        "date": "20250408",
+        "scores": {
+          "t05": {
+            "csi": 0.07755546152451188,
+            "far": 0.9215386497064579,
+            "hr": 0.8704206241519674,
+            "n_valid": 34811,
+            "n_ref_water_excluded": 15500
+          },
+          "t10": {
+            "csi": 0.04160738562711436,
+            "far": 0.9576440296105568,
+            "hr": 0.7018666666666666,
+            "n_valid": 34811,
+            "n_ref_water_excluded": 15500
+          },
+          "t25": {
+            "csi": 0.006499400893213754,
+            "far": 0.9934712039975198,
+            "hr": 0.5907590759075908,
+            "n_valid": 34811,
+            "n_ref_water_excluded": 15500
+          },
+          "t50": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 34811,
+            "n_ref_water_excluded": 15500
+          }
+        }
+      },
+      "modis": {
+        "png": {
+          "t05": "layers/t05/US_Midwest_Floods_modis.png?v=1787676142",
+          "t10": "layers/t10/US_Midwest_Floods_modis.png?v=1787676142",
+          "t25": "layers/t25/US_Midwest_Floods_modis.png?v=1787676142",
+          "t50": "layers/t50/US_Midwest_Floods_modis.png?v=1787676142"
+        },
+        "bounds": [
+          [
+            34.0,
+            -104.0
+          ],
+          [
+            46.0,
+            -82.0
+          ]
+        ],
+        "date": "2025-04-08",
+        "scores": {
+          "t05": {
+            "csi": 0.30878239791161666,
+            "far": 0.6770670826833073,
+            "hr": 0.8757271285034374,
+            "n_valid": 12221,
+            "n_ref_water_excluded": 15759
+          },
+          "t10": {
+            "csi": 0.24034380305602718,
+            "far": 0.7381805571610218,
+            "hr": 0.7455562870309415,
+            "n_valid": 12221,
+            "n_ref_water_excluded": 15759
+          },
+          "t25": {
+            "csi": 0.15345478417856556,
+            "far": 0.8208812260536399,
+            "hr": 0.5171460176991151,
+            "n_valid": 12221,
+            "n_ref_water_excluded": 15759
+          },
+          "t50": {
+            "csi": 0.08881042911461162,
+            "far": 0.894345718901454,
+            "hr": 0.35776805251641136,
+            "n_valid": 12221,
+            "n_ref_water_excluded": 15759
+          }
+        }
+      },
+      "reference_water": {
+        "png": {
+          "t05": "layers/t05/US_Midwest_Floods_reference_water.png?v=1787676144",
+          "t10": "layers/t10/US_Midwest_Floods_reference_water.png?v=1787676144",
+          "t25": "layers/t25/US_Midwest_Floods_reference_water.png?v=1787676144",
+          "t50": "layers/t50/US_Midwest_Floods_reference_water.png?v=1787676144"
+        },
+        "bounds": [
+          [
+            34.0,
+            -104.0
+          ],
+          [
+            46.0,
+            -82.0
+          ]
+        ],
+        "date": null,
+        "source_used": "modis"
+      }
+    }
+  }
+}

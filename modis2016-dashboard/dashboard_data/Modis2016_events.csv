@@ -1,0 +1,18 @@
+flood_case,country,continent,date_start,date_end,lat_min,lat_max,lon_min,lon_max,max_flood_extent_km2,date_of_max_flood_extent,main_river_system
+Parana_Paraguay_Floods,Argentina / Paraguay / Uruguay,South America,2015-12-01,2016-02-15,-38.5,-20.0,-64.5,-53.0,45000,2016-01-16,Parana-Paraguay
+Yangtze_River_Floods,China,Asia,2016-06-15,2016-07-31,26.0,34.5,108.0,122.0,55000,2016-07-23,Yangtze
+Brahmaputra_Assam_Floods,India,Asia,2020-06-15,2020-08-31,24.0,28.5,89.5,97.5,30000,2020-06-30,Brahmaputra
+Henan_China_Floods,China,Asia,2021-07-17,2021-07-31,31.0,36.8,110.0,116.5,18000,2021-07-26,Yellow-Huai
+Western_Europe_Floods,Germany / Belgium / Netherlands,Europe,2021-07-12,2021-07-25,48.0,52.5,3.5,10.5,12000,2021-07-18,Rhine-Meuse
+Malaysia_Floods,Malaysia,Asia,2021-12-10,2022-01-10,1.0,7.8,99.5,104.8,15000,2022-01-06,Pahang-Kelang
+Eastern_Australia_Floods,Australia,Oceania,2022-02-20,2022-03-20,-36.5,-23.0,146.0,154.5,35000,2022-03-19,Brisbane-Clarence
+South_Africa_KwaZulu_Natal_Floods,South Africa,Africa,2022-04-10,2022-04-25,-33.5,-27.0,29.0,33.5,8000,2022-04-20,Tugela
+Pakistan_Monsoon_Floods,Pakistan,Asia,2022-06-15,2022-10-15,23.0,37.0,66.0,75.0,100000,2022-08-31,Indus
+California_Atmospheric_River_Floods,United States,North America,2022-12-26,2023-03-25,32.0,42.5,-125.5,-113.0,18000,2023-03-17,Sacramento-San Joaquin
+Libya_Derna_Floods,Libya,Africa,2023-09-08,2023-09-20,30.0,33.8,20.0,24.5,5000,2023-09-20,Wadi Derna
+East_Africa_Floods,Kenya / Tanzania / Burundi,Africa,2024-03-01,2024-05-31,-12.0,5.0,28.0,42.0,25000,2024-04-30,Rufiji-Tana
+Brazil_Rio_Grande_do_Sul_Floods,Brazil,South America,2024-04-25,2024-05-25,-33.5,-27.0,-57.5,-49.0,22000,2024-05-15,Jacuí-Guaíba
+Bangladesh_Monsoon_Floods,Bangladesh,Asia,2024-06-15,2024-08-15,20.5,27.0,88.0,93.0,28000,2024-07-15,Ganges-Brahmaputra-Meghna
+Central_European_Floods,Poland / Czechia / Austria / Romania,Europe,2024-09-14,2024-09-21,45.0,54.0,10.0,25.5,15000,2024-09-21,Oder-Danube
+Amazon_Floods,Brazil / Peru / Colombia,South America,2025-02-01,2025-04-30,-12.0,4.5,-78.5,-47.0,60000,2025-04-17,Amazon
+US_Midwest_Floods,United States,North America,2025-03-10,2025-04-15,34.0,46.0,-104.0,-82.0,20000,2025-04-08,Missouri-Mississippi
