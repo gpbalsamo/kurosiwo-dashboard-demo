@@ -294,7 +294,13 @@ function renderEventList(events) {
   });
 }
 
-fetch("dashboard_data/layers.json")
+// Cache-bust the manifest + catalogue CSV so a page load always sees the
+// latest data, not a browser-cached copy from a previous run against the
+// same URL (dashboard_shell.py serves plain http.server, no cache-control
+// headers of its own).
+const PAGE_LOAD_CACHE_BUST = Date.now();
+
+fetch(`dashboard_data/layers.json?v=${PAGE_LOAD_CACHE_BUST}`)
   .then(r => (r.ok ? r.json() : { layers_meta: {}, thresholds: [], events: {} }))
   .catch(() => ({ layers_meta: {}, thresholds: [], events: {} }))
   .then(manifest => {
@@ -305,7 +311,7 @@ fetch("dashboard_data/layers.json")
     renderThresholdControls();
     renderLayerControls();
 
-    Papa.parse("dashboard_data/KuroSiwo_events.csv", {
+    Papa.parse(`dashboard_data/KuroSiwo_events.csv?v=${PAGE_LOAD_CACHE_BUST}`, {
       download: true,
       header: true,
       dynamicTyping: true,
