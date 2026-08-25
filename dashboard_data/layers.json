@@ -1,0 +1,6784 @@
+{
+  "layers_meta": {
+    "cama_flood": {
+      "label": "CaMa-Flood (IFS model)",
+      "color": "#1e3c96"
+    },
+    "viirs": {
+      "label": "VIIRS (observation)",
+      "color": "#e67e22"
+    },
+    "gfm": {
+      "label": "GFM Sentinel-1 (observation)",
+      "color": "#9b26b6"
+    },
+    "modis": {
+      "label": "MODIS (observation)",
+      "color": "#27ae60"
+    },
+    "reference_water": {
+      "label": "Reference water (lakes/rivers, not flood)",
+      "color": "#00acc1"
+    }
+  },
+  "thresholds": [
+    {
+      "key": "t05",
+      "value": 0.05,
+      "label": "5%"
+    },
+    {
+      "key": "t10",
+      "value": 0.1,
+      "label": "10%"
+    },
+    {
+      "key": "t25",
+      "value": 0.25,
+      "label": "25%"
+    },
+    {
+      "key": "t50",
+      "value": 0.5,
+      "label": "50%"
+    }
+  ],
+  "default_threshold": "t05",
+  "events": {
+    "KuroSiwo_1111002": {
+      "cama_flood": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_1111002_cama_flood.png",
+          "t10": "layers/t10/KuroSiwo_1111002_cama_flood.png",
+          "t25": "layers/t25/KuroSiwo_1111002_cama_flood.png",
+          "t50": "layers/t50/KuroSiwo_1111002_cama_flood.png"
+        },
+        "bounds": [
+          [
+            11.690434000004538,
+            14.308359831433105
+          ],
+          [
+            12.807123000004538,
+            15.408361868564509
+          ]
+        ],
+        "date": "2020-09-15"
+      },
+      "viirs": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_1111002_viirs.png",
+          "t10": "layers/t10/KuroSiwo_1111002_viirs.png",
+          "t25": "layers/t25/KuroSiwo_1111002_viirs.png",
+          "t50": "layers/t50/KuroSiwo_1111002_viirs.png"
+        },
+        "bounds": [
+          [
+            12.166666666666671,
+            14.783333333333331
+          ],
+          [
+            12.316666666666663,
+            14.933333333333339
+          ]
+        ],
+        "date": "2020-09-17",
+        "scores": {
+          "t05": {
+            "csi": 0.45,
+            "far": 0.5263157894736842,
+            "hr": 0.9,
+            "n_valid": 21,
+            "n_ref_water_excluded": 0
+          },
+          "t10": {
+            "csi": 0.3125,
+            "far": 0.6875,
+            "hr": 1.0,
+            "n_valid": 21,
+            "n_ref_water_excluded": 0
+          },
+          "t25": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": 0.0,
+            "n_valid": 21,
+            "n_ref_water_excluded": 0
+          },
+          "t50": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 21,
+            "n_ref_water_excluded": 0
+          }
+        }
+      },
+      "gfm": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_1111002_gfm.png",
+          "t10": "layers/t10/KuroSiwo_1111002_gfm.png",
+          "t25": "layers/t25/KuroSiwo_1111002_gfm.png",
+          "t50": "layers/t50/KuroSiwo_1111002_gfm.png"
+        },
+        "bounds": [
+          [
+            12.166666666666671,
+            14.783333333333331
+          ],
+          [
+            12.316666666666663,
+            14.933333333333339
+          ]
+        ],
+        "date": "20200915",
+        "scores": {
+          "t05": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 21,
+            "n_ref_water_excluded": 0
+          },
+          "t10": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 21,
+            "n_ref_water_excluded": 0
+          },
+          "t25": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 21,
+            "n_ref_water_excluded": 0
+          },
+          "t50": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 21,
+            "n_ref_water_excluded": 0
+          }
+        }
+      },
+      "modis": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_1111002_modis.png",
+          "t10": "layers/t10/KuroSiwo_1111002_modis.png",
+          "t25": "layers/t25/KuroSiwo_1111002_modis.png",
+          "t50": "layers/t50/KuroSiwo_1111002_modis.png"
+        },
+        "bounds": [
+          [
+            12.183333333333334,
+            14.783333333333333
+          ],
+          [
+            12.316666666666666,
+            14.916666666666666
+          ]
+        ],
+        "date": "2020-09-15",
+        "scores": {
+          "t05": {
+            "csi": null,
+            "far": null,
+            "hr": null,
+            "n_valid": 0,
+            "n_ref_water_excluded": 0
+          },
+          "t10": {
+            "csi": null,
+            "far": null,
+            "hr": null,
+            "n_valid": 0,
+            "n_ref_water_excluded": 0
+          },
+          "t25": {
+            "csi": null,
+            "far": null,
+            "hr": null,
+            "n_valid": 0,
+            "n_ref_water_excluded": 0
+          },
+          "t50": {
+            "csi": null,
+            "far": null,
+            "hr": null,
+            "n_valid": 0,
+            "n_ref_water_excluded": 0
+          }
+        }
+      }
+    },
+    "KuroSiwo_1111003": {
+      "cama_flood": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_1111003_cama_flood.png",
+          "t10": "layers/t10/KuroSiwo_1111003_cama_flood.png",
+          "t25": "layers/t25/KuroSiwo_1111003_cama_flood.png",
+          "t50": "layers/t50/KuroSiwo_1111003_cama_flood.png"
+        },
+        "bounds": [
+          [
+            10.990420000004539,
+            42.59174554373601
+          ],
+          [
+            12.107109000004538,
+            43.70841427839971
+          ]
+        ],
+        "date": "2019-11-27"
+      },
+      "viirs": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_1111003_viirs.png",
+          "t10": "layers/t10/KuroSiwo_1111003_viirs.png",
+          "t25": "layers/t25/KuroSiwo_1111003_viirs.png",
+          "t50": "layers/t50/KuroSiwo_1111003_viirs.png"
+        },
+        "bounds": [
+          [
+            11.483333333333334,
+            43.08333333333334
+          ],
+          [
+            11.616666666666676,
+            43.21666666666667
+          ]
+        ],
+        "date": "2019-12-02",
+        "scores": {
+          "t05": {
+            "csi": 0.5,
+            "far": 0.5,
+            "hr": 1.0,
+            "n_valid": 4,
+            "n_ref_water_excluded": 0
+          },
+          "t10": {
+            "csi": 0.5,
+            "far": 0.5,
+            "hr": 1.0,
+            "n_valid": 4,
+            "n_ref_water_excluded": 0
+          },
+          "t25": {
+            "csi": 0.0,
+            "far": null,
+            "hr": 0.0,
+            "n_valid": 4,
+            "n_ref_water_excluded": 0
+          },
+          "t50": {
+            "csi": null,
+            "far": null,
+            "hr": null,
+            "n_valid": 4,
+            "n_ref_water_excluded": 0
+          }
+        }
+      },
+      "gfm": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_1111003_gfm.png",
+          "t10": "layers/t10/KuroSiwo_1111003_gfm.png",
+          "t25": "layers/t25/KuroSiwo_1111003_gfm.png",
+          "t50": "layers/t50/KuroSiwo_1111003_gfm.png"
+        },
+        "bounds": [
+          [
+            11.483333333333334,
+            43.08333333333334
+          ],
+          [
+            11.616666666666676,
+            43.21666666666667
+          ]
+        ],
+        "date": "20191127",
+        "scores": {
+          "t05": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 4,
+            "n_ref_water_excluded": 0
+          },
+          "t10": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 4,
+            "n_ref_water_excluded": 0
+          },
+          "t25": {
+            "csi": null,
+            "far": null,
+            "hr": null,
+            "n_valid": 4,
+            "n_ref_water_excluded": 0
+          },
+          "t50": {
+            "csi": null,
+            "far": null,
+            "hr": null,
+            "n_valid": 4,
+            "n_ref_water_excluded": 0
+          }
+        }
+      },
+      "modis": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_1111003_modis.png",
+          "t10": "layers/t10/KuroSiwo_1111003_modis.png",
+          "t25": "layers/t25/KuroSiwo_1111003_modis.png",
+          "t50": "layers/t50/KuroSiwo_1111003_modis.png"
+        },
+        "bounds": [
+          [
+            11.483333333333334,
+            43.083333333333336
+          ],
+          [
+            11.616666666666667,
+            43.21666666666667
+          ]
+        ],
+        "date": "2019-11-27",
+        "scores": {
+          "t05": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 4,
+            "n_ref_water_excluded": 0
+          },
+          "t10": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 4,
+            "n_ref_water_excluded": 0
+          },
+          "t25": {
+            "csi": null,
+            "far": null,
+            "hr": null,
+            "n_valid": 4,
+            "n_ref_water_excluded": 0
+          },
+          "t50": {
+            "csi": null,
+            "far": null,
+            "hr": null,
+            "n_valid": 4,
+            "n_ref_water_excluded": 0
+          }
+        }
+      },
+      "reference_water": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_1111003_reference_water.png",
+          "t10": "layers/t10/KuroSiwo_1111003_reference_water.png",
+          "t25": "layers/t25/KuroSiwo_1111003_reference_water.png",
+          "t50": "layers/t50/KuroSiwo_1111003_reference_water.png"
+        },
+        "bounds": [
+          [
+            11.483333333333334,
+            43.083333333333336
+          ],
+          [
+            11.616666666666667,
+            43.21666666666667
+          ]
+        ],
+        "date": null,
+        "source_used": "modis"
+      }
+    },
+    "KuroSiwo_1111004": {
+      "cama_flood": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_1111004_cama_flood.png",
+          "t10": "layers/t10/KuroSiwo_1111004_cama_flood.png",
+          "t25": "layers/t25/KuroSiwo_1111004_cama_flood.png",
+          "t50": "layers/t50/KuroSiwo_1111004_cama_flood.png"
+        },
+        "bounds": [
+          [
+            27.740755000005777,
+            -97.75851437569648
+          ],
+          [
+            30.290806000006047,
+            -95.04184267793372
+          ]
+        ],
+        "date": "2017-08-29"
+      },
+      "viirs": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_1111004_viirs.png",
+          "t10": "layers/t10/KuroSiwo_1111004_viirs.png",
+          "t25": "layers/t25/KuroSiwo_1111004_viirs.png",
+          "t50": "layers/t50/KuroSiwo_1111004_viirs.png"
+        },
+        "bounds": [
+          [
+            28.233333333333334,
+            -97.28333333333333
+          ],
+          [
+            29.81666666666667,
+            -95.53333333333335
+          ]
+        ],
+        "date": "2017-08-30",
+        "scores": {
+          "t05": {
+            "csi": 0.43299319727891156,
+            "far": 0.5476190476190477,
+            "hr": 0.9099356683345247,
+            "n_valid": 3219,
+            "n_ref_water_excluded": 8
+          },
+          "t10": {
+            "csi": 0.35631741140215717,
+            "far": 0.6134559130798162,
+            "hr": 0.8200354609929078,
+            "n_valid": 3219,
+            "n_ref_water_excluded": 8
+          },
+          "t25": {
+            "csi": 0.2023121387283237,
+            "far": 0.7571131158917418,
+            "hr": 0.5477308294209703,
+            "n_valid": 3219,
+            "n_ref_water_excluded": 8
+          },
+          "t50": {
+            "csi": 0.08193484698914116,
+            "far": 0.9005988023952096,
+            "hr": 0.31800766283524906,
+            "n_valid": 3219,
+            "n_ref_water_excluded": 8
+          }
+        }
+      },
+      "gfm": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_1111004_gfm.png",
+          "t10": "layers/t10/KuroSiwo_1111004_gfm.png",
+          "t25": "layers/t25/KuroSiwo_1111004_gfm.png",
+          "t50": "layers/t50/KuroSiwo_1111004_gfm.png"
+        },
+        "bounds": [
+          [
+            28.233333333333334,
+            -97.28333333333333
+          ],
+          [
+            29.81666666666667,
+            -95.53333333333335
+          ]
+        ],
+        "date": "20170829",
+        "scores": {
+          "t05": {
+            "csi": 0.13779803646563815,
+            "far": 0.8603411513859275,
+            "hr": 0.9118329466357309,
+            "n_valid": 3219,
+            "n_ref_water_excluded": 8
+          },
+          "t10": {
+            "csi": 0.06735537190082645,
+            "far": 0.931884663602173,
+            "hr": 0.8578947368421053,
+            "n_valid": 3219,
+            "n_ref_water_excluded": 8
+          },
+          "t25": {
+            "csi": 0.0061770761839396015,
+            "far": 0.9937543372657877,
+            "hr": 0.36,
+            "n_valid": 3219,
+            "n_ref_water_excluded": 8
+          },
+          "t50": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 3219,
+            "n_ref_water_excluded": 8
+          }
+        }
+      },
+      "modis": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_1111004_modis.png",
+          "t10": "layers/t10/KuroSiwo_1111004_modis.png",
+          "t25": "layers/t25/KuroSiwo_1111004_modis.png",
+          "t50": "layers/t50/KuroSiwo_1111004_modis.png"
+        },
+        "bounds": [
+          [
+            28.233333333333334,
+            -97.28333333333333
+          ],
+          [
+            29.816666666666666,
+            -95.53333333333333
+          ]
+        ],
+        "date": "2017-08-29",
+        "scores": {
+          "t05": {
+            "csi": 0.06498194945848375,
+            "far": 0.9350180505415162,
+            "hr": 1.0,
+            "n_valid": 337,
+            "n_ref_water_excluded": 8
+          },
+          "t10": {
+            "csi": 0.048034934497816595,
+            "far": 0.9519650655021834,
+            "hr": 1.0,
+            "n_valid": 337,
+            "n_ref_water_excluded": 8
+          },
+          "t25": {
+            "csi": 0.029411764705882353,
+            "far": 0.9703703703703703,
+            "hr": 0.8,
+            "n_valid": 337,
+            "n_ref_water_excluded": 8
+          },
+          "t50": {
+            "csi": 0.029411764705882353,
+            "far": 0.9701492537313433,
+            "hr": 0.6666666666666666,
+            "n_valid": 337,
+            "n_ref_water_excluded": 8
+          }
+        }
+      },
+      "reference_water": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_1111004_reference_water.png",
+          "t10": "layers/t10/KuroSiwo_1111004_reference_water.png",
+          "t25": "layers/t25/KuroSiwo_1111004_reference_water.png",
+          "t50": "layers/t50/KuroSiwo_1111004_reference_water.png"
+        },
+        "bounds": [
+          [
+            28.233333333333334,
+            -97.28333333333333
+          ],
+          [
+            29.816666666666666,
+            -95.53333333333333
+          ]
+        ],
+        "date": null,
+        "source_used": "modis"
+      }
+    },
+    "KuroSiwo_1111005": {
+      "cama_flood": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_1111005_cama_flood.png",
+          "t10": "layers/t10/KuroSiwo_1111005_cama_flood.png",
+          "t25": "layers/t25/KuroSiwo_1111005_cama_flood.png",
+          "t50": "layers/t50/KuroSiwo_1111005_cama_flood.png"
+        },
+        "bounds": [
+          [
+            -18.560170999995712,
+            47.45842122316586
+          ],
+          [
+            -16.66013299999551,
+            49.291757951718196
+          ]
+        ],
+        "date": "2020-01-26"
+      },
+      "viirs": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_1111005_viirs.png",
+          "t10": "layers/t10/KuroSiwo_1111005_viirs.png",
+          "t25": "layers/t25/KuroSiwo_1111005_viirs.png",
+          "t50": "layers/t50/KuroSiwo_1111005_viirs.png"
+        },
+        "bounds": [
+          [
+            -18.066666666666663,
+            47.93333333333334
+          ],
+          [
+            -17.14999999999999,
+            48.79999999999998
+          ]
+        ],
+        "date": "2020-01-24",
+        "scores": {
+          "t05": {
+            "csi": 0.7244094488188977,
+            "far": 0.24279835390946503,
+            "hr": 0.9435897435897436,
+            "n_valid": 257,
+            "n_ref_water_excluded": 0
+          },
+          "t10": {
+            "csi": 0.6518218623481782,
+            "far": 0.27802690582959644,
+            "hr": 0.8702702702702703,
+            "n_valid": 257,
+            "n_ref_water_excluded": 0
+          },
+          "t25": {
+            "csi": 0.48034934497816595,
+            "far": 0.42105263157894735,
+            "hr": 0.738255033557047,
+            "n_valid": 257,
+            "n_ref_water_excluded": 0
+          },
+          "t50": {
+            "csi": 0.345,
+            "far": 0.54,
+            "hr": 0.5798319327731093,
+            "n_valid": 257,
+            "n_ref_water_excluded": 0
+          }
+        }
+      },
+      "gfm": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_1111005_gfm.png",
+          "t10": "layers/t10/KuroSiwo_1111005_gfm.png",
+          "t25": "layers/t25/KuroSiwo_1111005_gfm.png",
+          "t50": "layers/t50/KuroSiwo_1111005_gfm.png"
+        },
+        "bounds": [
+          [
+            -18.066666666666663,
+            47.94999999999999
+          ],
+          [
+            -17.14999999999999,
+            48.79999999999998
+          ]
+        ],
+        "date": "20200126",
+        "scores": {
+          "t05": {
+            "csi": 0.332,
+            "far": 0.6584362139917695,
+            "hr": 0.9222222222222223,
+            "n_valid": 257,
+            "n_ref_water_excluded": 0
+          },
+          "t10": {
+            "csi": 0.20253164556962025,
+            "far": 0.7847533632286996,
+            "hr": 0.7741935483870968,
+            "n_valid": 257,
+            "n_ref_water_excluded": 0
+          },
+          "t25": {
+            "csi": 0.029850746268656716,
+            "far": 0.968421052631579,
+            "hr": 0.35294117647058826,
+            "n_valid": 257,
+            "n_ref_water_excluded": 0
+          },
+          "t50": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 257,
+            "n_ref_water_excluded": 0
+          }
+        }
+      },
+      "modis": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_1111005_modis.png",
+          "t10": "layers/t10/KuroSiwo_1111005_modis.png",
+          "t25": "layers/t25/KuroSiwo_1111005_modis.png",
+          "t50": "layers/t50/KuroSiwo_1111005_modis.png"
+        },
+        "bounds": [
+          [
+            -18.066666666666666,
+            47.95
+          ],
+          [
+            -17.15,
+            48.800000000000004
+          ]
+        ],
+        "date": "2020-01-26",
+        "scores": {
+          "t05": {
+            "csi": null,
+            "far": null,
+            "hr": null,
+            "n_valid": 0,
+            "n_ref_water_excluded": 0
+          },
+          "t10": {
+            "csi": null,
+            "far": null,
+            "hr": null,
+            "n_valid": 0,
+            "n_ref_water_excluded": 0
+          },
+          "t25": {
+            "csi": null,
+            "far": null,
+            "hr": null,
+            "n_valid": 0,
+            "n_ref_water_excluded": 0
+          },
+          "t50": {
+            "csi": null,
+            "far": null,
+            "hr": null,
+            "n_valid": 0,
+            "n_ref_water_excluded": 0
+          }
+        }
+      }
+    },
+    "KuroSiwo_1111006": {
+      "cama_flood": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_1111006_cama_flood.png",
+          "t10": "layers/t10/KuroSiwo_1111006_cama_flood.png",
+          "t25": "layers/t25/KuroSiwo_1111006_cama_flood.png",
+          "t50": "layers/t50/KuroSiwo_1111006_cama_flood.png"
+        },
+        "bounds": [
+          [
+            -17.21014399999557,
+            45.80841816746875
+          ],
+          [
+            -15.626778999995443,
+            47.44175452563356
+          ]
+        ],
+        "date": "2020-01-31"
+      },
+      "viirs": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_1111006_viirs.png",
+          "t10": "layers/t10/KuroSiwo_1111006_viirs.png",
+          "t25": "layers/t25/KuroSiwo_1111006_viirs.png",
+          "t50": "layers/t50/KuroSiwo_1111006_viirs.png"
+        },
+        "bounds": [
+          [
+            -16.733333333333334,
+            46.29999999999998
+          ],
+          [
+            -16.099999999999994,
+            46.96666666666667
+          ]
+        ],
+        "date": "2020-02-01",
+        "scores": {
+          "t05": {
+            "csi": 0.6643835616438356,
+            "far": 0.21138211382113822,
+            "hr": 0.8083333333333333,
+            "n_valid": 154,
+            "n_ref_water_excluded": 4
+          },
+          "t10": {
+            "csi": 0.556390977443609,
+            "far": 0.28846153846153844,
+            "hr": 0.7184466019417476,
+            "n_valid": 154,
+            "n_ref_water_excluded": 4
+          },
+          "t25": {
+            "csi": 0.3291139240506329,
+            "far": 0.4583333333333333,
+            "hr": 0.45614035087719296,
+            "n_valid": 154,
+            "n_ref_water_excluded": 4
+          },
+          "t50": {
+            "csi": 0.0625,
+            "far": 0.8461538461538461,
+            "hr": 0.09523809523809523,
+            "n_valid": 154,
+            "n_ref_water_excluded": 4
+          }
+        }
+      },
+      "gfm": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_1111006_gfm.png",
+          "t10": "layers/t10/KuroSiwo_1111006_gfm.png",
+          "t25": "layers/t25/KuroSiwo_1111006_gfm.png",
+          "t50": "layers/t50/KuroSiwo_1111006_gfm.png"
+        },
+        "bounds": [
+          [
+            -16.733333333333334,
+            46.29999999999998
+          ],
+          [
+            -16.11666666666666,
+            46.94999999999999
+          ]
+        ],
+        "date": "20200131",
+        "scores": {
+          "t05": {
+            "csi": 0.47580645161290325,
+            "far": 0.48695652173913045,
+            "hr": 0.8676470588235294,
+            "n_valid": 144,
+            "n_ref_water_excluded": 4
+          },
+          "t10": {
+            "csi": 0.3,
+            "far": 0.6666666666666666,
+            "hr": 0.75,
+            "n_valid": 144,
+            "n_ref_water_excluded": 4
+          },
+          "t25": {
+            "csi": 0.057692307692307696,
+            "far": 0.9361702127659575,
+            "hr": 0.375,
+            "n_valid": 144,
+            "n_ref_water_excluded": 4
+          },
+          "t50": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 144,
+            "n_ref_water_excluded": 4
+          }
+        }
+      },
+      "modis": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_1111006_modis.png",
+          "t10": "layers/t10/KuroSiwo_1111006_modis.png",
+          "t25": "layers/t25/KuroSiwo_1111006_modis.png",
+          "t50": "layers/t50/KuroSiwo_1111006_modis.png"
+        },
+        "bounds": [
+          [
+            -16.71666666666667,
+            46.3
+          ],
+          [
+            -16.116666666666667,
+            46.949999999999996
+          ]
+        ],
+        "date": "2020-01-31",
+        "scores": {
+          "t05": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 9,
+            "n_ref_water_excluded": 4
+          },
+          "t10": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 9,
+            "n_ref_water_excluded": 4
+          },
+          "t25": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 9,
+            "n_ref_water_excluded": 4
+          },
+          "t50": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 9,
+            "n_ref_water_excluded": 4
+          }
+        }
+      },
+      "reference_water": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_1111006_reference_water.png",
+          "t10": "layers/t10/KuroSiwo_1111006_reference_water.png",
+          "t25": "layers/t25/KuroSiwo_1111006_reference_water.png",
+          "t50": "layers/t50/KuroSiwo_1111006_reference_water.png"
+        },
+        "bounds": [
+          [
+            -16.71666666666667,
+            46.3
+          ],
+          [
+            -16.116666666666667,
+            46.949999999999996
+          ]
+        ],
+        "date": null,
+        "source_used": "modis"
+      }
+    },
+    "KuroSiwo_1111007": {
+      "cama_flood": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_1111007_cama_flood.png",
+          "t10": "layers/t10/KuroSiwo_1111007_cama_flood.png",
+          "t25": "layers/t25/KuroSiwo_1111007_cama_flood.png",
+          "t50": "layers/t50/KuroSiwo_1111007_cama_flood.png"
+        },
+        "bounds": [
+          [
+            24.424022000005426,
+            84.34182286212379
+          ],
+          [
+            26.64073300000566,
+            86.9918277697574
+          ]
+        ],
+        "date": "2019-09-18"
+      },
+      "viirs": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_1111007_viirs.png",
+          "t10": "layers/t10/KuroSiwo_1111007_viirs.png",
+          "t25": "layers/t25/KuroSiwo_1111007_viirs.png",
+          "t50": "layers/t50/KuroSiwo_1111007_viirs.png"
+        },
+        "bounds": [
+          [
+            24.91666666666667,
+            84.83333333333331
+          ],
+          [
+            26.166666666666664,
+            86.49999999999999
+          ]
+        ],
+        "date": "2019-09-20",
+        "scores": {
+          "t05": {
+            "csi": 0.4798239178283199,
+            "far": 0.502283105022831,
+            "hr": 0.930298719772404,
+            "n_valid": 1495,
+            "n_ref_water_excluded": 31
+          },
+          "t10": {
+            "csi": 0.40483870967741936,
+            "far": 0.5634782608695652,
+            "hr": 0.847972972972973,
+            "n_valid": 1495,
+            "n_ref_water_excluded": 31
+          },
+          "t25": {
+            "csi": 0.33181299885974913,
+            "far": 0.6176084099868594,
+            "hr": 0.714987714987715,
+            "n_valid": 1495,
+            "n_ref_water_excluded": 31
+          },
+          "t50": {
+            "csi": 0.19074074074074074,
+            "far": 0.7721238938053098,
+            "hr": 0.5392670157068062,
+            "n_valid": 1495,
+            "n_ref_water_excluded": 31
+          }
+        }
+      },
+      "gfm": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_1111007_gfm.png",
+          "t10": "layers/t10/KuroSiwo_1111007_gfm.png",
+          "t25": "layers/t25/KuroSiwo_1111007_gfm.png",
+          "t50": "layers/t50/KuroSiwo_1111007_gfm.png"
+        },
+        "bounds": [
+          [
+            24.91666666666667,
+            84.81666666666666
+          ],
+          [
+            26.166666666666664,
+            86.49999999999999
+          ]
+        ],
+        "date": "20190918",
+        "scores": {
+          "t05": {
+            "csi": 0.22313432835820896,
+            "far": 0.7743396226415095,
+            "hr": 0.9522292993630573,
+            "n_valid": 1508,
+            "n_ref_water_excluded": 31
+          },
+          "t10": {
+            "csi": 0.12542372881355932,
+            "far": 0.8725236864771748,
+            "hr": 0.8862275449101796,
+            "n_valid": 1508,
+            "n_ref_water_excluded": 31
+          },
+          "t25": {
+            "csi": 0.015604681404421327,
+            "far": 0.984354628422425,
+            "hr": 0.8571428571428571,
+            "n_valid": 1508,
+            "n_ref_water_excluded": 31
+          },
+          "t50": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 1508,
+            "n_ref_water_excluded": 31
+          }
+        }
+      },
+      "modis": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_1111007_modis.png",
+          "t10": "layers/t10/KuroSiwo_1111007_modis.png",
+          "t25": "layers/t25/KuroSiwo_1111007_modis.png",
+          "t50": "layers/t50/KuroSiwo_1111007_modis.png"
+        },
+        "bounds": [
+          [
+            24.916666666666668,
+            84.83333333333333
+          ],
+          [
+            26.166666666666668,
+            86.5
+          ]
+        ],
+        "date": "2019-09-18",
+        "scores": {
+          "t05": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 26,
+            "n_ref_water_excluded": 31
+          },
+          "t10": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 26,
+            "n_ref_water_excluded": 31
+          },
+          "t25": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 26,
+            "n_ref_water_excluded": 31
+          },
+          "t50": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 26,
+            "n_ref_water_excluded": 31
+          }
+        }
+      },
+      "reference_water": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_1111007_reference_water.png",
+          "t10": "layers/t10/KuroSiwo_1111007_reference_water.png",
+          "t25": "layers/t25/KuroSiwo_1111007_reference_water.png",
+          "t50": "layers/t50/KuroSiwo_1111007_reference_water.png"
+        },
+        "bounds": [
+          [
+            24.916666666666668,
+            84.83333333333333
+          ],
+          [
+            26.166666666666668,
+            86.5
+          ]
+        ],
+        "date": null,
+        "source_used": "modis"
+      }
+    },
+    "KuroSiwo_1111008": {
+      "cama_flood": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_1111008_cama_flood.png",
+          "t10": "layers/t10/KuroSiwo_1111008_cama_flood.png",
+          "t25": "layers/t25/KuroSiwo_1111008_cama_flood.png",
+          "t50": "layers/t50/KuroSiwo_1111008_cama_flood.png"
+        },
+        "bounds": [
+          [
+            13.457136000004537,
+            -84.14182249181809
+          ],
+          [
+            14.707161000004536,
+            -82.90848687442886
+          ]
+        ],
+        "date": "2020-08-16"
+      },
+      "viirs": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_1111008_viirs.png",
+          "t10": "layers/t10/KuroSiwo_1111008_viirs.png",
+          "t25": "layers/t25/KuroSiwo_1111008_viirs.png",
+          "t50": "layers/t50/KuroSiwo_1111008_viirs.png"
+        },
+        "bounds": [
+          [
+            13.933333333333337,
+            -83.65
+          ],
+          [
+            14.233333333333334,
+            -83.40000000000002
+          ]
+        ],
+        "date": "2020-08-15",
+        "scores": {
+          "t05": {
+            "csi": 0.26666666666666666,
+            "far": 0.7142857142857143,
+            "hr": 0.8,
+            "n_valid": 18,
+            "n_ref_water_excluded": 7
+          },
+          "t10": {
+            "csi": 0.25,
+            "far": 0.75,
+            "hr": 1.0,
+            "n_valid": 18,
+            "n_ref_water_excluded": 7
+          },
+          "t25": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 18,
+            "n_ref_water_excluded": 7
+          },
+          "t50": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 18,
+            "n_ref_water_excluded": 7
+          }
+        }
+      },
+      "gfm": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_1111008_gfm.png",
+          "t10": "layers/t10/KuroSiwo_1111008_gfm.png",
+          "t25": "layers/t25/KuroSiwo_1111008_gfm.png",
+          "t50": "layers/t50/KuroSiwo_1111008_gfm.png"
+        },
+        "bounds": [
+          [
+            13.933333333333337,
+            -83.65
+          ],
+          [
+            14.233333333333334,
+            -83.40000000000002
+          ]
+        ],
+        "date": "20200816",
+        "scores": {
+          "t05": {
+            "csi": 0.14285714285714285,
+            "far": 0.8571428571428571,
+            "hr": 1.0,
+            "n_valid": 18,
+            "n_ref_water_excluded": 7
+          },
+          "t10": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 18,
+            "n_ref_water_excluded": 7
+          },
+          "t25": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 18,
+            "n_ref_water_excluded": 7
+          },
+          "t50": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 18,
+            "n_ref_water_excluded": 7
+          }
+        }
+      },
+      "modis": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_1111008_modis.png",
+          "t10": "layers/t10/KuroSiwo_1111008_modis.png",
+          "t25": "layers/t25/KuroSiwo_1111008_modis.png",
+          "t50": "layers/t50/KuroSiwo_1111008_modis.png"
+        },
+        "bounds": [
+          [
+            13.95,
+            -83.65
+          ],
+          [
+            14.233333333333333,
+            -83.4
+          ]
+        ],
+        "date": "2020-08-16",
+        "scores": {
+          "t05": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 4,
+            "n_ref_water_excluded": 7
+          },
+          "t10": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 4,
+            "n_ref_water_excluded": 7
+          },
+          "t25": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 4,
+            "n_ref_water_excluded": 7
+          },
+          "t50": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 4,
+            "n_ref_water_excluded": 7
+          }
+        }
+      },
+      "reference_water": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_1111008_reference_water.png",
+          "t10": "layers/t10/KuroSiwo_1111008_reference_water.png",
+          "t25": "layers/t25/KuroSiwo_1111008_reference_water.png",
+          "t50": "layers/t50/KuroSiwo_1111008_reference_water.png"
+        },
+        "bounds": [
+          [
+            13.95,
+            -83.65
+          ],
+          [
+            14.233333333333333,
+            -83.4
+          ]
+        ],
+        "date": null,
+        "source_used": "modis"
+      }
+    },
+    "KuroSiwo_1111009": {
+      "cama_flood": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_1111009_cama_flood.png",
+          "t10": "layers/t10/KuroSiwo_1111009_cama_flood.png",
+          "t25": "layers/t25/KuroSiwo_1111009_cama_flood.png",
+          "t50": "layers/t50/KuroSiwo_1111009_cama_flood.png"
+        },
+        "bounds": [
+          [
+            24.807363000005466,
+            66.60845668777054
+          ],
+          [
+            29.45745600000596,
+            70.10846316955079
+          ]
+        ],
+        "date": "2022-09-11"
+      },
+      "gfm": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_1111009_gfm.png",
+          "t10": "layers/t10/KuroSiwo_1111009_gfm.png",
+          "t25": "layers/t25/KuroSiwo_1111009_gfm.png",
+          "t50": "layers/t50/KuroSiwo_1111009_gfm.png"
+        },
+        "bounds": [
+          [
+            25.299999999999997,
+            67.1
+          ],
+          [
+            28.983333333333334,
+            69.63333333333331
+          ]
+        ],
+        "date": "20220911",
+        "scores": {
+          "t05": {
+            "csi": 0.31807909604519774,
+            "far": 0.6793327908868999,
+            "hr": 0.9752536500866122,
+            "n_valid": 13342,
+            "n_ref_water_excluded": 507
+          },
+          "t10": {
+            "csi": 0.2365410199556541,
+            "far": 0.7601403003867254,
+            "hr": 0.944739638682253,
+            "n_valid": 13342,
+            "n_ref_water_excluded": 507
+          },
+          "t25": {
+            "csi": 0.14316755190729116,
+            "far": 0.8557353120058387,
+            "hr": 0.9495596477181746,
+            "n_valid": 13342,
+            "n_ref_water_excluded": 507
+          },
+          "t50": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 13342,
+            "n_ref_water_excluded": 507
+          }
+        }
+      },
+      "modis": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_1111009_modis.png",
+          "t10": "layers/t10/KuroSiwo_1111009_modis.png",
+          "t25": "layers/t25/KuroSiwo_1111009_modis.png",
+          "t50": "layers/t50/KuroSiwo_1111009_modis.png"
+        },
+        "bounds": [
+          [
+            25.3,
+            67.08333333333333
+          ],
+          [
+            28.983333333333334,
+            69.61666666666666
+          ]
+        ],
+        "date": "2022-09-11",
+        "scores": {
+          "t05": {
+            "csi": 0.5137614678899083,
+            "far": 0.47847398088391474,
+            "hr": 0.9718374181762826,
+            "n_valid": 13287,
+            "n_ref_water_excluded": 507
+          },
+          "t10": {
+            "csi": 0.45982414903804303,
+            "far": 0.5231130371975442,
+            "hr": 0.9278060776392061,
+            "n_valid": 13287,
+            "n_ref_water_excluded": 507
+          },
+          "t25": {
+            "csi": 0.4169518594569929,
+            "far": 0.5543226435800512,
+            "hr": 0.8661137440758294,
+            "n_valid": 13287,
+            "n_ref_water_excluded": 507
+          },
+          "t50": {
+            "csi": 0.36350800125509886,
+            "far": 0.6019584263872186,
+            "hr": 0.8073170731707318,
+            "n_valid": 13287,
+            "n_ref_water_excluded": 507
+          }
+        }
+      },
+      "reference_water": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_1111009_reference_water.png",
+          "t10": "layers/t10/KuroSiwo_1111009_reference_water.png",
+          "t25": "layers/t25/KuroSiwo_1111009_reference_water.png",
+          "t50": "layers/t50/KuroSiwo_1111009_reference_water.png"
+        },
+        "bounds": [
+          [
+            25.3,
+            67.08333333333333
+          ],
+          [
+            28.983333333333334,
+            69.61666666666666
+          ]
+        ],
+        "date": null,
+        "source_used": "modis"
+      }
+    },
+    "KuroSiwo_1111010": {
+      "cama_flood": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_1111010_cama_flood.png",
+          "t10": "layers/t10/KuroSiwo_1111010_cama_flood.png",
+          "t25": "layers/t25/KuroSiwo_1111010_cama_flood.png",
+          "t50": "layers/t50/KuroSiwo_1111010_cama_flood.png"
+        },
+        "bounds": [
+          [
+            -6.393260999995449,
+            -81.44181749158761
+          ],
+          [
+            -4.84322999999545,
+            -79.90848131861722
+          ]
+        ],
+        "date": "2017-03-11"
+      },
+      "viirs": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_1111010_viirs.png",
+          "t10": "layers/t10/KuroSiwo_1111010_viirs.png",
+          "t25": "layers/t25/KuroSiwo_1111010_viirs.png",
+          "t50": "layers/t50/KuroSiwo_1111010_viirs.png"
+        },
+        "bounds": [
+          [
+            -5.9166666666666705,
+            -80.95
+          ],
+          [
+            -5.333333333333329,
+            -80.38333333333335
+          ]
+        ],
+        "date": "2017-03-11",
+        "scores": {
+          "t05": {
+            "csi": 0.35064935064935066,
+            "far": 0.6437994722955145,
+            "hr": 0.9574468085106383,
+            "n_valid": 422,
+            "n_ref_water_excluded": 57
+          },
+          "t10": {
+            "csi": 0.3126760563380282,
+            "far": 0.6782608695652174,
+            "hr": 0.9173553719008265,
+            "n_valid": 422,
+            "n_ref_water_excluded": 57
+          },
+          "t25": {
+            "csi": 0.2571428571428571,
+            "far": 0.7362637362637363,
+            "hr": 0.9113924050632911,
+            "n_valid": 422,
+            "n_ref_water_excluded": 57
+          },
+          "t50": {
+            "csi": 0.2057142857142857,
+            "far": 0.7818181818181819,
+            "hr": 0.782608695652174,
+            "n_valid": 422,
+            "n_ref_water_excluded": 57
+          }
+        }
+      },
+      "gfm": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_1111010_gfm.png",
+          "t10": "layers/t10/KuroSiwo_1111010_gfm.png",
+          "t25": "layers/t25/KuroSiwo_1111010_gfm.png",
+          "t50": "layers/t50/KuroSiwo_1111010_gfm.png"
+        },
+        "bounds": [
+          [
+            -5.9166666666666705,
+            -80.95
+          ],
+          [
+            -5.333333333333329,
+            -80.40000000000002
+          ]
+        ],
+        "date": "20170311",
+        "scores": {
+          "t05": {
+            "csi": 0.24074074074074073,
+            "far": 0.7579787234042553,
+            "hr": 0.978494623655914,
+            "n_valid": 418,
+            "n_ref_water_excluded": 57
+          },
+          "t10": {
+            "csi": 0.1511627906976744,
+            "far": 0.8483965014577259,
+            "hr": 0.9811320754716981,
+            "n_valid": 418,
+            "n_ref_water_excluded": 57
+          },
+          "t25": {
+            "csi": 0.007352941176470588,
+            "far": 0.9926470588235294,
+            "hr": 1.0,
+            "n_valid": 418,
+            "n_ref_water_excluded": 57
+          },
+          "t50": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 418,
+            "n_ref_water_excluded": 57
+          }
+        }
+      },
+      "modis": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_1111010_modis.png",
+          "t10": "layers/t10/KuroSiwo_1111010_modis.png",
+          "t25": "layers/t25/KuroSiwo_1111010_modis.png",
+          "t50": "layers/t50/KuroSiwo_1111010_modis.png"
+        },
+        "bounds": [
+          [
+            -5.8999999999999995,
+            -80.95
+          ],
+          [
+            -5.333333333333333,
+            -80.4
+          ]
+        ],
+        "date": "2017-03-11",
+        "scores": {
+          "t05": {
+            "csi": 0.31412103746397696,
+            "far": 0.6822157434402333,
+            "hr": 0.9646017699115044,
+            "n_valid": 383,
+            "n_ref_water_excluded": 57
+          },
+          "t10": {
+            "csi": 0.2802547770700637,
+            "far": 0.7161290322580646,
+            "hr": 0.9565217391304348,
+            "n_valid": 383,
+            "n_ref_water_excluded": 57
+          },
+          "t25": {
+            "csi": 0.19678714859437751,
+            "far": 0.8,
+            "hr": 0.9245283018867925,
+            "n_valid": 383,
+            "n_ref_water_excluded": 57
+          },
+          "t50": {
+            "csi": 0.12080536912751678,
+            "far": 0.8732394366197183,
+            "hr": 0.72,
+            "n_valid": 383,
+            "n_ref_water_excluded": 57
+          }
+        }
+      },
+      "reference_water": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_1111010_reference_water.png",
+          "t10": "layers/t10/KuroSiwo_1111010_reference_water.png",
+          "t25": "layers/t25/KuroSiwo_1111010_reference_water.png",
+          "t50": "layers/t50/KuroSiwo_1111010_reference_water.png"
+        },
+        "bounds": [
+          [
+            -5.8999999999999995,
+            -80.95
+          ],
+          [
+            -5.333333333333333,
+            -80.4
+          ]
+        ],
+        "date": null,
+        "source_used": "modis"
+      }
+    },
+    "KuroSiwo_1111011": {
+      "cama_flood": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_1111011_cama_flood.png",
+          "t10": "layers/t10/KuroSiwo_1111011_cama_flood.png",
+          "t25": "layers/t25/KuroSiwo_1111011_cama_flood.png",
+          "t50": "layers/t50/KuroSiwo_1111011_cama_flood.png"
+        },
+        "bounds": [
+          [
+            16.223858000004558,
+            120.65855678497692
+          ],
+          [
+            18.940579000004846,
+            122.74189397651278
+          ]
+        ],
+        "date": "2020-11-13"
+      },
+      "viirs": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_1111011_viirs.png",
+          "t10": "layers/t10/KuroSiwo_1111011_viirs.png",
+          "t25": "layers/t25/KuroSiwo_1111011_viirs.png",
+          "t50": "layers/t50/KuroSiwo_1111011_viirs.png"
+        },
+        "bounds": [
+          [
+            16.71666666666667,
+            121.13333333333333
+          ],
+          [
+            18.450000000000003,
+            122.26666666666664
+          ]
+        ],
+        "date": "2020-11-18",
+        "scores": {
+          "t05": {
+            "csi": 0.7799442896935933,
+            "far": 0.16913946587537093,
+            "hr": 0.9271523178807947,
+            "n_valid": 380,
+            "n_ref_water_excluded": 0
+          },
+          "t10": {
+            "csi": 0.6909090909090909,
+            "far": 0.2348993288590604,
+            "hr": 0.8769230769230769,
+            "n_valid": 380,
+            "n_ref_water_excluded": 0
+          },
+          "t25": {
+            "csi": 0.423728813559322,
+            "far": 0.4791666666666667,
+            "hr": 0.6944444444444444,
+            "n_valid": 380,
+            "n_ref_water_excluded": 0
+          },
+          "t50": {
+            "csi": 0.15384615384615385,
+            "far": 0.8181818181818182,
+            "hr": 0.5,
+            "n_valid": 380,
+            "n_ref_water_excluded": 0
+          }
+        }
+      },
+      "gfm": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_1111011_gfm.png",
+          "t10": "layers/t10/KuroSiwo_1111011_gfm.png",
+          "t25": "layers/t25/KuroSiwo_1111011_gfm.png",
+          "t50": "layers/t50/KuroSiwo_1111011_gfm.png"
+        },
+        "bounds": [
+          [
+            16.71666666666667,
+            121.13333333333333
+          ],
+          [
+            18.450000000000003,
+            122.26666666666664
+          ]
+        ],
+        "date": "20201113",
+        "scores": {
+          "t05": {
+            "csi": 0.6732954545454546,
+            "far": 0.29673590504451036,
+            "hr": 0.9404761904761905,
+            "n_valid": 380,
+            "n_ref_water_excluded": 0
+          },
+          "t10": {
+            "csi": 0.5429447852760736,
+            "far": 0.40604026845637586,
+            "hr": 0.8634146341463415,
+            "n_valid": 380,
+            "n_ref_water_excluded": 0
+          },
+          "t25": {
+            "csi": 0.37727272727272726,
+            "far": 0.5677083333333334,
+            "hr": 0.7477477477477478,
+            "n_valid": 380,
+            "n_ref_water_excluded": 0
+          },
+          "t50": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 380,
+            "n_ref_water_excluded": 0
+          }
+        }
+      },
+      "modis": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_1111011_modis.png",
+          "t10": "layers/t10/KuroSiwo_1111011_modis.png",
+          "t25": "layers/t25/KuroSiwo_1111011_modis.png",
+          "t50": "layers/t50/KuroSiwo_1111011_modis.png"
+        },
+        "bounds": [
+          [
+            16.716666666666665,
+            121.13333333333333
+          ],
+          [
+            18.45,
+            122.24999999999999
+          ]
+        ],
+        "date": "2020-11-13",
+        "scores": {
+          "t05": {
+            "csi": null,
+            "far": null,
+            "hr": null,
+            "n_valid": 0,
+            "n_ref_water_excluded": 0
+          },
+          "t10": {
+            "csi": null,
+            "far": null,
+            "hr": null,
+            "n_valid": 0,
+            "n_ref_water_excluded": 0
+          },
+          "t25": {
+            "csi": null,
+            "far": null,
+            "hr": null,
+            "n_valid": 0,
+            "n_ref_water_excluded": 0
+          },
+          "t50": {
+            "csi": null,
+            "far": null,
+            "hr": null,
+            "n_valid": 0,
+            "n_ref_water_excluded": 0
+          }
+        }
+      }
+    },
+    "KuroSiwo_1111013": {
+      "cama_flood": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_1111013_cama_flood.png",
+          "t10": "layers/t10/KuroSiwo_1111013_cama_flood.png",
+          "t25": "layers/t25/KuroSiwo_1111013_cama_flood.png",
+          "t50": "layers/t50/KuroSiwo_1111013_cama_flood.png"
+        },
+        "bounds": [
+          [
+            36.9576060000057,
+            -91.72516986900862
+          ],
+          [
+            39.7076610000054,
+            -88.60849743047098
+          ]
+        ],
+        "date": "2017-05-04"
+      },
+      "viirs": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_1111013_viirs.png",
+          "t10": "layers/t10/KuroSiwo_1111013_viirs.png",
+          "t25": "layers/t25/KuroSiwo_1111013_viirs.png",
+          "t50": "layers/t50/KuroSiwo_1111013_viirs.png"
+        },
+        "bounds": [
+          [
+            37.45,
+            -91.23333333333333
+          ],
+          [
+            39.233333333333334,
+            -89.08333333333334
+          ]
+        ],
+        "date": "2017-05-07",
+        "scores": {
+          "t05": {
+            "csi": 0.559375,
+            "far": 0.32196969696969696,
+            "hr": 0.7617021276595745,
+            "n_valid": 849,
+            "n_ref_water_excluded": 0
+          },
+          "t10": {
+            "csi": 0.47338403041825095,
+            "far": 0.3377659574468085,
+            "hr": 0.6240601503759399,
+            "n_valid": 849,
+            "n_ref_water_excluded": 0
+          },
+          "t25": {
+            "csi": 0.28169014084507044,
+            "far": 0.36,
+            "hr": 0.33472803347280333,
+            "n_valid": 849,
+            "n_ref_water_excluded": 0
+          },
+          "t50": {
+            "csi": 0.03225806451612903,
+            "far": 0.8888888888888888,
+            "hr": 0.043478260869565216,
+            "n_valid": 849,
+            "n_ref_water_excluded": 0
+          }
+        }
+      },
+      "gfm": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_1111013_gfm.png",
+          "t10": "layers/t10/KuroSiwo_1111013_gfm.png",
+          "t25": "layers/t25/KuroSiwo_1111013_gfm.png",
+          "t50": "layers/t50/KuroSiwo_1111013_gfm.png"
+        },
+        "bounds": [
+          [
+            37.45,
+            -91.23333333333333
+          ],
+          [
+            39.233333333333334,
+            -89.08333333333334
+          ]
+        ],
+        "date": "20170504",
+        "scores": {
+          "t05": {
+            "csi": 0.2773109243697479,
+            "far": 0.6875,
+            "hr": 0.7112068965517241,
+            "n_valid": 849,
+            "n_ref_water_excluded": 0
+          },
+          "t10": {
+            "csi": 0.07801418439716312,
+            "far": 0.9122340425531915,
+            "hr": 0.4125,
+            "n_valid": 849,
+            "n_ref_water_excluded": 0
+          },
+          "t25": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": 0.0,
+            "n_valid": 849,
+            "n_ref_water_excluded": 0
+          },
+          "t50": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 849,
+            "n_ref_water_excluded": 0
+          }
+        }
+      },
+      "modis": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_1111013_modis.png",
+          "t10": "layers/t10/KuroSiwo_1111013_modis.png",
+          "t25": "layers/t25/KuroSiwo_1111013_modis.png",
+          "t50": "layers/t50/KuroSiwo_1111013_modis.png"
+        },
+        "bounds": [
+          [
+            37.45,
+            -91.23333333333333
+          ],
+          [
+            39.233333333333334,
+            -89.1
+          ]
+        ],
+        "date": "2017-05-04",
+        "scores": {
+          "t05": {
+            "csi": null,
+            "far": null,
+            "hr": null,
+            "n_valid": 0,
+            "n_ref_water_excluded": 0
+          },
+          "t10": {
+            "csi": null,
+            "far": null,
+            "hr": null,
+            "n_valid": 0,
+            "n_ref_water_excluded": 0
+          },
+          "t25": {
+            "csi": null,
+            "far": null,
+            "hr": null,
+            "n_valid": 0,
+            "n_ref_water_excluded": 0
+          },
+          "t50": {
+            "csi": null,
+            "far": null,
+            "hr": null,
+            "n_valid": 0,
+            "n_ref_water_excluded": 0
+          }
+        }
+      }
+    },
+    "KuroSiwo_118": {
+      "viirs": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_118_viirs.png",
+          "t10": "layers/t10/KuroSiwo_118_viirs.png",
+          "t25": "layers/t25/KuroSiwo_118_viirs.png",
+          "t50": "layers/t50/KuroSiwo_118_viirs.png"
+        },
+        "bounds": [
+          [
+            40.8,
+            -5.916666666666657
+          ],
+          [
+            43.5,
+            0.833333333333341
+          ]
+        ],
+        "date": "2015-02-05"
+      },
+      "gfm": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_118_gfm.png",
+          "t10": "layers/t10/KuroSiwo_118_gfm.png",
+          "t25": "layers/t25/KuroSiwo_118_gfm.png",
+          "t50": "layers/t50/KuroSiwo_118_gfm.png"
+        },
+        "bounds": [
+          [
+            40.8,
+            -5.900000000000006
+          ],
+          [
+            43.5,
+            0.8333333333333428
+          ]
+        ],
+        "date": "20150203"
+      },
+      "modis": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_118_modis.png",
+          "t10": "layers/t10/KuroSiwo_118_modis.png",
+          "t25": "layers/t25/KuroSiwo_118_modis.png",
+          "t50": "layers/t50/KuroSiwo_118_modis.png"
+        },
+        "bounds": [
+          [
+            40.8,
+            -5.9
+          ],
+          [
+            43.5,
+            0.8166666666666664
+          ]
+        ],
+        "date": "2015-02-02"
+      },
+      "reference_water": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_118_reference_water.png",
+          "t10": "layers/t10/KuroSiwo_118_reference_water.png",
+          "t25": "layers/t25/KuroSiwo_118_reference_water.png",
+          "t50": "layers/t50/KuroSiwo_118_reference_water.png"
+        },
+        "bounds": [
+          [
+            40.8,
+            -5.9
+          ],
+          [
+            43.5,
+            0.8166666666666664
+          ]
+        ],
+        "date": null,
+        "source_used": "modis"
+      }
+    },
+    "KuroSiwo_130": {
+      "viirs": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_130_viirs.png",
+          "t10": "layers/t10/KuroSiwo_130_viirs.png",
+          "t25": "layers/t25/KuroSiwo_130_viirs.png",
+          "t50": "layers/t50/KuroSiwo_130_viirs.png"
+        },
+        "bounds": [
+          [
+            16.099999999999994,
+            94.23333333333335
+          ],
+          [
+            17.950000000000003,
+            96.0833333333333
+          ]
+        ],
+        "date": "2015-09-11"
+      },
+      "gfm": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_130_gfm.png",
+          "t10": "layers/t10/KuroSiwo_130_gfm.png",
+          "t25": "layers/t25/KuroSiwo_130_gfm.png",
+          "t50": "layers/t50/KuroSiwo_130_gfm.png"
+        },
+        "bounds": [
+          [
+            16.099999999999994,
+            94.23333333333335
+          ],
+          [
+            17.950000000000003,
+            96.0833333333333
+          ]
+        ],
+        "date": "20150913"
+      },
+      "modis": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_130_modis.png",
+          "t10": "layers/t10/KuroSiwo_130_modis.png",
+          "t25": "layers/t25/KuroSiwo_130_modis.png",
+          "t50": "layers/t50/KuroSiwo_130_modis.png"
+        },
+        "bounds": [
+          [
+            16.116666666666667,
+            94.23333333333333
+          ],
+          [
+            17.95,
+            96.08333333333333
+          ]
+        ],
+        "date": "2015-09-13"
+      },
+      "reference_water": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_130_reference_water.png",
+          "t10": "layers/t10/KuroSiwo_130_reference_water.png",
+          "t25": "layers/t25/KuroSiwo_130_reference_water.png",
+          "t50": "layers/t50/KuroSiwo_130_reference_water.png"
+        },
+        "bounds": [
+          [
+            16.116666666666667,
+            94.23333333333333
+          ],
+          [
+            17.95,
+            96.08333333333333
+          ]
+        ],
+        "date": null,
+        "source_used": "modis"
+      }
+    },
+    "KuroSiwo_147": {
+      "viirs": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_147_viirs.png",
+          "t10": "layers/t10/KuroSiwo_147_viirs.png",
+          "t25": "layers/t25/KuroSiwo_147_viirs.png",
+          "t50": "layers/t50/KuroSiwo_147_viirs.png"
+        },
+        "bounds": [
+          [
+            53.233333333333334,
+            -3.566666666666663
+          ],
+          [
+            55.15,
+            0.1333333333333253
+          ]
+        ],
+        "date": "2015-12-07"
+      },
+      "gfm": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_147_gfm.png",
+          "t10": "layers/t10/KuroSiwo_147_gfm.png",
+          "t25": "layers/t25/KuroSiwo_147_gfm.png",
+          "t50": "layers/t50/KuroSiwo_147_gfm.png"
+        },
+        "bounds": [
+          [
+            53.25,
+            -3.566666666666663
+          ],
+          [
+            55.15,
+            0.1333333333333253
+          ]
+        ],
+        "date": "20151213"
+      },
+      "modis": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_147_modis.png",
+          "t10": "layers/t10/KuroSiwo_147_modis.png",
+          "t25": "layers/t25/KuroSiwo_147_modis.png",
+          "t50": "layers/t50/KuroSiwo_147_modis.png"
+        },
+        "bounds": [
+          [
+            53.25,
+            -3.5666666666666664
+          ],
+          [
+            55.15,
+            0.1166666666666667
+          ]
+        ],
+        "date": "2015-12-10"
+      },
+      "reference_water": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_147_reference_water.png",
+          "t10": "layers/t10/KuroSiwo_147_reference_water.png",
+          "t25": "layers/t25/KuroSiwo_147_reference_water.png",
+          "t50": "layers/t50/KuroSiwo_147_reference_water.png"
+        },
+        "bounds": [
+          [
+            53.25,
+            -3.5666666666666664
+          ],
+          [
+            55.15,
+            0.1166666666666667
+          ]
+        ],
+        "date": null,
+        "source_used": "modis"
+      }
+    },
+    "KuroSiwo_174": {
+      "cama_flood": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_174_cama_flood.png",
+          "t10": "layers/t10/KuroSiwo_174_cama_flood.png",
+          "t25": "layers/t25/KuroSiwo_174_cama_flood.png",
+          "t50": "layers/t50/KuroSiwo_174_cama_flood.png"
+        },
+        "bounds": [
+          [
+            40.30767300000534,
+            18.50836760957119
+          ],
+          [
+            43.19106400000503,
+            22.84170896796763
+          ]
+        ],
+        "date": "2016-08-07"
+      },
+      "viirs": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_174_viirs.png",
+          "t10": "layers/t10/KuroSiwo_174_viirs.png",
+          "t25": "layers/t25/KuroSiwo_174_viirs.png",
+          "t50": "layers/t50/KuroSiwo_174_viirs.png"
+        },
+        "bounds": [
+          [
+            40.78333333333333,
+            18.98333333333332
+          ],
+          [
+            42.71666666666667,
+            22.366666666666674
+          ]
+        ],
+        "date": "2016-08-11",
+        "scores": {
+          "t05": {
+            "csi": 0.1506849315068493,
+            "far": 0.8493150684931506,
+            "hr": 1.0,
+            "n_valid": 73,
+            "n_ref_water_excluded": 33
+          },
+          "t10": {
+            "csi": 0.0821917808219178,
+            "far": 0.9178082191780822,
+            "hr": 1.0,
+            "n_valid": 73,
+            "n_ref_water_excluded": 33
+          },
+          "t25": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 73,
+            "n_ref_water_excluded": 33
+          },
+          "t50": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 73,
+            "n_ref_water_excluded": 33
+          }
+        }
+      },
+      "gfm": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_174_gfm.png",
+          "t10": "layers/t10/KuroSiwo_174_gfm.png",
+          "t25": "layers/t25/KuroSiwo_174_gfm.png",
+          "t50": "layers/t50/KuroSiwo_174_gfm.png"
+        },
+        "bounds": [
+          [
+            40.78333333333333,
+            18.98333333333332
+          ],
+          [
+            42.7,
+            22.366666666666674
+          ]
+        ],
+        "date": "20160807",
+        "scores": {
+          "t05": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 72,
+            "n_ref_water_excluded": 33
+          },
+          "t10": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 72,
+            "n_ref_water_excluded": 33
+          },
+          "t25": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 72,
+            "n_ref_water_excluded": 33
+          },
+          "t50": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 72,
+            "n_ref_water_excluded": 33
+          }
+        }
+      },
+      "modis": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_174_modis.png",
+          "t10": "layers/t10/KuroSiwo_174_modis.png",
+          "t25": "layers/t25/KuroSiwo_174_modis.png",
+          "t50": "layers/t50/KuroSiwo_174_modis.png"
+        },
+        "bounds": [
+          [
+            40.78333333333334,
+            18.983333333333334
+          ],
+          [
+            42.7,
+            22.35
+          ]
+        ],
+        "date": "2016-08-07",
+        "scores": {
+          "t05": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 70,
+            "n_ref_water_excluded": 33
+          },
+          "t10": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 70,
+            "n_ref_water_excluded": 33
+          },
+          "t25": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 70,
+            "n_ref_water_excluded": 33
+          },
+          "t50": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 70,
+            "n_ref_water_excluded": 33
+          }
+        }
+      },
+      "reference_water": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_174_reference_water.png",
+          "t10": "layers/t10/KuroSiwo_174_reference_water.png",
+          "t25": "layers/t25/KuroSiwo_174_reference_water.png",
+          "t50": "layers/t50/KuroSiwo_174_reference_water.png"
+        },
+        "bounds": [
+          [
+            40.78333333333334,
+            18.983333333333334
+          ],
+          [
+            42.7,
+            22.35
+          ]
+        ],
+        "date": null,
+        "source_used": "modis"
+      }
+    },
+    "KuroSiwo_205": {
+      "cama_flood": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_205_cama_flood.png",
+          "t10": "layers/t10/KuroSiwo_205_cama_flood.png",
+          "t25": "layers/t25/KuroSiwo_205_cama_flood.png",
+          "t50": "layers/t50/KuroSiwo_205_cama_flood.png"
+        },
+        "bounds": [
+          [
+            5.423642000004543,
+            79.35848029997001
+          ],
+          [
+            7.5236840000045415,
+            81.97515181253905
+          ]
+        ],
+        "date": "2017-05-30"
+      },
+      "viirs": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_205_viirs.png",
+          "t10": "layers/t10/KuroSiwo_205_viirs.png",
+          "t25": "layers/t25/KuroSiwo_205_viirs.png",
+          "t50": "layers/t50/KuroSiwo_205_viirs.png"
+        },
+        "bounds": [
+          [
+            5.9166666666666705,
+            79.83333333333331
+          ],
+          [
+            7.049999999999997,
+            81.48333333333333
+          ]
+        ],
+        "date": "2017-06-04",
+        "scores": {
+          "t05": {
+            "csi": 0.03296703296703297,
+            "far": 0.967032967032967,
+            "hr": 1.0,
+            "n_valid": 153,
+            "n_ref_water_excluded": 14
+          },
+          "t10": {
+            "csi": 0.04,
+            "far": 0.96,
+            "hr": 1.0,
+            "n_valid": 153,
+            "n_ref_water_excluded": 14
+          },
+          "t25": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 153,
+            "n_ref_water_excluded": 14
+          },
+          "t50": {
+            "csi": null,
+            "far": null,
+            "hr": null,
+            "n_valid": 153,
+            "n_ref_water_excluded": 14
+          }
+        }
+      },
+      "gfm": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_205_gfm.png",
+          "t10": "layers/t10/KuroSiwo_205_gfm.png",
+          "t25": "layers/t25/KuroSiwo_205_gfm.png",
+          "t50": "layers/t50/KuroSiwo_205_gfm.png"
+        },
+        "bounds": [
+          [
+            5.9166666666666705,
+            79.81666666666666
+          ],
+          [
+            7.049999999999997,
+            81.49999999999999
+          ]
+        ],
+        "date": "20170530",
+        "scores": {
+          "t05": {
+            "csi": 0.06382978723404255,
+            "far": 0.9340659340659341,
+            "hr": 0.6666666666666666,
+            "n_valid": 153,
+            "n_ref_water_excluded": 14
+          },
+          "t10": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 153,
+            "n_ref_water_excluded": 14
+          },
+          "t25": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 153,
+            "n_ref_water_excluded": 14
+          },
+          "t50": {
+            "csi": null,
+            "far": null,
+            "hr": null,
+            "n_valid": 153,
+            "n_ref_water_excluded": 14
+          }
+        }
+      },
+      "modis": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_205_modis.png",
+          "t10": "layers/t10/KuroSiwo_205_modis.png",
+          "t25": "layers/t25/KuroSiwo_205_modis.png",
+          "t50": "layers/t50/KuroSiwo_205_modis.png"
+        },
+        "bounds": [
+          [
+            5.916666666666666,
+            79.83333333333333
+          ],
+          [
+            7.05,
+            81.48333333333333
+          ]
+        ],
+        "date": "2017-05-30",
+        "scores": {
+          "t05": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 4,
+            "n_ref_water_excluded": 14
+          },
+          "t10": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 4,
+            "n_ref_water_excluded": 14
+          },
+          "t25": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 4,
+            "n_ref_water_excluded": 14
+          },
+          "t50": {
+            "csi": null,
+            "far": null,
+            "hr": null,
+            "n_valid": 4,
+            "n_ref_water_excluded": 14
+          }
+        }
+      },
+      "reference_water": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_205_reference_water.png",
+          "t10": "layers/t10/KuroSiwo_205_reference_water.png",
+          "t25": "layers/t25/KuroSiwo_205_reference_water.png",
+          "t50": "layers/t50/KuroSiwo_205_reference_water.png"
+        },
+        "bounds": [
+          [
+            5.916666666666666,
+            79.83333333333333
+          ],
+          [
+            7.05,
+            81.48333333333333
+          ]
+        ],
+        "date": null,
+        "source_used": "modis"
+      }
+    },
+    "KuroSiwo_267": {
+      "cama_flood": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_267_cama_flood.png",
+          "t10": "layers/t10/KuroSiwo_267_cama_flood.png",
+          "t25": "layers/t25/KuroSiwo_267_cama_flood.png",
+          "t50": "layers/t50/KuroSiwo_267_cama_flood.png"
+        },
+        "bounds": [
+          [
+            53.87461100000388,
+            19.42503597384736
+          ],
+          [
+            56.60799900000359,
+            24.025044492760504
+          ]
+        ],
+        "date": "2018-02-02"
+      },
+      "viirs": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_267_viirs.png",
+          "t10": "layers/t10/KuroSiwo_267_viirs.png",
+          "t25": "layers/t25/KuroSiwo_267_viirs.png",
+          "t50": "layers/t50/KuroSiwo_267_viirs.png"
+        },
+        "bounds": [
+          [
+            54.36666666666667,
+            19.916666666666657
+          ],
+          [
+            56.13333333333333,
+            23.53333333333333
+          ]
+        ],
+        "date": "2018-02-04",
+        "scores": {
+          "t05": {
+            "csi": 0.1669491525423729,
+            "far": 0.826431718061674,
+            "hr": 0.8140495867768595,
+            "n_valid": 1220,
+            "n_ref_water_excluded": 0
+          },
+          "t10": {
+            "csi": 0.09657594381035997,
+            "far": 0.8967136150234741,
+            "hr": 0.5978260869565217,
+            "n_valid": 1220,
+            "n_ref_water_excluded": 0
+          },
+          "t25": {
+            "csi": 0.016016016016016016,
+            "far": 0.9826839826839827,
+            "hr": 0.17582417582417584,
+            "n_valid": 1220,
+            "n_ref_water_excluded": 0
+          },
+          "t50": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": 0.0,
+            "n_valid": 1220,
+            "n_ref_water_excluded": 0
+          }
+        }
+      },
+      "gfm": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_267_gfm.png",
+          "t10": "layers/t10/KuroSiwo_267_gfm.png",
+          "t25": "layers/t25/KuroSiwo_267_gfm.png",
+          "t50": "layers/t50/KuroSiwo_267_gfm.png"
+        },
+        "bounds": [
+          [
+            54.36666666666667,
+            19.916666666666657
+          ],
+          [
+            56.13333333333333,
+            23.53333333333333
+          ]
+        ],
+        "date": "20180131",
+        "scores": {
+          "t05": {
+            "csi": 0.0044014084507042256,
+            "far": 0.9955947136563876,
+            "hr": 0.8333333333333334,
+            "n_valid": 1220,
+            "n_ref_water_excluded": 0
+          },
+          "t10": {
+            "csi": 0.0009380863039399625,
+            "far": 0.9990610328638497,
+            "hr": 0.5,
+            "n_valid": 1220,
+            "n_ref_water_excluded": 0
+          },
+          "t25": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 1220,
+            "n_ref_water_excluded": 0
+          },
+          "t50": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 1220,
+            "n_ref_water_excluded": 0
+          }
+        }
+      },
+      "modis": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_267_modis.png",
+          "t10": "layers/t10/KuroSiwo_267_modis.png",
+          "t25": "layers/t25/KuroSiwo_267_modis.png",
+          "t50": "layers/t50/KuroSiwo_267_modis.png"
+        },
+        "bounds": [
+          [
+            54.36666666666667,
+            19.916666666666668
+          ],
+          [
+            56.13333333333333,
+            23.533333333333335
+          ]
+        ],
+        "date": "2018-02-02",
+        "scores": {
+          "t05": {
+            "csi": null,
+            "far": null,
+            "hr": null,
+            "n_valid": 0,
+            "n_ref_water_excluded": 0
+          },
+          "t10": {
+            "csi": null,
+            "far": null,
+            "hr": null,
+            "n_valid": 0,
+            "n_ref_water_excluded": 0
+          },
+          "t25": {
+            "csi": null,
+            "far": null,
+            "hr": null,
+            "n_valid": 0,
+            "n_ref_water_excluded": 0
+          },
+          "t50": {
+            "csi": null,
+            "far": null,
+            "hr": null,
+            "n_valid": 0,
+            "n_ref_water_excluded": 0
+          }
+        }
+      },
+      "reference_water": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_267_reference_water.png",
+          "t10": "layers/t10/KuroSiwo_267_reference_water.png",
+          "t25": "layers/t25/KuroSiwo_267_reference_water.png",
+          "t50": "layers/t50/KuroSiwo_267_reference_water.png"
+        },
+        "bounds": [
+          [
+            54.36666666666667,
+            19.916666666666668
+          ],
+          [
+            56.13333333333333,
+            23.533333333333335
+          ]
+        ],
+        "date": null,
+        "source_used": "modis"
+      }
+    },
+    "KuroSiwo_273": {
+      "cama_flood": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_273_cama_flood.png",
+          "t10": "layers/t10/KuroSiwo_273_cama_flood.png",
+          "t25": "layers/t25/KuroSiwo_273_cama_flood.png",
+          "t50": "layers/t50/KuroSiwo_273_cama_flood.png"
+        },
+        "bounds": [
+          [
+            39.65766000000541,
+            16.275030140243796
+          ],
+          [
+            43.957746000004946,
+            20.941705449286115
+          ]
+        ],
+        "date": "2018-03-11"
+      },
+      "viirs": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_273_viirs.png",
+          "t10": "layers/t10/KuroSiwo_273_viirs.png",
+          "t25": "layers/t25/KuroSiwo_273_viirs.png",
+          "t50": "layers/t50/KuroSiwo_273_viirs.png"
+        },
+        "bounds": [
+          [
+            40.13333333333333,
+            16.76666666666665
+          ],
+          [
+            43.483333333333334,
+            20.46666666666667
+          ]
+        ],
+        "date": "2018-03-10",
+        "scores": {
+          "t05": {
+            "csi": 0.2890625,
+            "far": 0.704,
+            "hr": 0.925,
+            "n_valid": 572,
+            "n_ref_water_excluded": 298
+          },
+          "t10": {
+            "csi": 0.18238993710691823,
+            "far": 0.8092105263157895,
+            "hr": 0.8055555555555556,
+            "n_valid": 572,
+            "n_ref_water_excluded": 298
+          },
+          "t25": {
+            "csi": 0.060836501901140684,
+            "far": 0.9333333333333333,
+            "hr": 0.41025641025641024,
+            "n_valid": 572,
+            "n_ref_water_excluded": 298
+          },
+          "t50": {
+            "csi": 0.008130081300813009,
+            "far": 0.9913793103448276,
+            "hr": 0.125,
+            "n_valid": 572,
+            "n_ref_water_excluded": 298
+          }
+        }
+      },
+      "gfm": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_273_gfm.png",
+          "t10": "layers/t10/KuroSiwo_273_gfm.png",
+          "t25": "layers/t25/KuroSiwo_273_gfm.png",
+          "t50": "layers/t50/KuroSiwo_273_gfm.png"
+        },
+        "bounds": [
+          [
+            40.13333333333333,
+            16.76666666666665
+          ],
+          [
+            43.483333333333334,
+            20.46666666666667
+          ]
+        ],
+        "date": "20180311",
+        "scores": {
+          "t05": {
+            "csi": 0.021825396825396824,
+            "far": 0.978,
+            "hr": 0.7333333333333333,
+            "n_valid": 572,
+            "n_ref_water_excluded": 298
+          },
+          "t10": {
+            "csi": 0.0021929824561403508,
+            "far": 0.9978070175438597,
+            "hr": 1.0,
+            "n_valid": 572,
+            "n_ref_water_excluded": 298
+          },
+          "t25": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 572,
+            "n_ref_water_excluded": 298
+          },
+          "t50": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 572,
+            "n_ref_water_excluded": 298
+          }
+        }
+      },
+      "modis": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_273_modis.png",
+          "t10": "layers/t10/KuroSiwo_273_modis.png",
+          "t25": "layers/t25/KuroSiwo_273_modis.png",
+          "t50": "layers/t50/KuroSiwo_273_modis.png"
+        },
+        "bounds": [
+          [
+            40.15,
+            16.766666666666666
+          ],
+          [
+            43.483333333333334,
+            20.466666666666665
+          ]
+        ],
+        "date": "2018-03-11",
+        "scores": {
+          "t05": {
+            "csi": 0.14506172839506173,
+            "far": 0.8540372670807453,
+            "hr": 0.9591836734693877,
+            "n_valid": 354,
+            "n_ref_water_excluded": 298
+          },
+          "t10": {
+            "csi": 0.05704697986577181,
+            "far": 0.9409722222222222,
+            "hr": 0.6296296296296297,
+            "n_valid": 354,
+            "n_ref_water_excluded": 298
+          },
+          "t25": {
+            "csi": 0.036585365853658534,
+            "far": 0.9615384615384616,
+            "hr": 0.42857142857142855,
+            "n_valid": 354,
+            "n_ref_water_excluded": 298
+          },
+          "t50": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": 0.0,
+            "n_valid": 354,
+            "n_ref_water_excluded": 298
+          }
+        }
+      },
+      "reference_water": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_273_reference_water.png",
+          "t10": "layers/t10/KuroSiwo_273_reference_water.png",
+          "t25": "layers/t25/KuroSiwo_273_reference_water.png",
+          "t50": "layers/t50/KuroSiwo_273_reference_water.png"
+        },
+        "bounds": [
+          [
+            40.15,
+            16.766666666666666
+          ],
+          [
+            43.483333333333334,
+            20.466666666666665
+          ]
+        ],
+        "date": null,
+        "source_used": "modis"
+      }
+    },
+    "KuroSiwo_275": {
+      "cama_flood": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_275_cama_flood.png",
+          "t10": "layers/t10/KuroSiwo_275_cama_flood.png",
+          "t25": "layers/t25/KuroSiwo_275_cama_flood.png",
+          "t50": "layers/t50/KuroSiwo_275_cama_flood.png"
+        },
+        "bounds": [
+          [
+            43.60773900000498,
+            13.541691744947581
+          ],
+          [
+            46.40779500000468,
+            18.04170007866696
+          ]
+        ],
+        "date": "2018-03-22"
+      },
+      "viirs": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_275_viirs.png",
+          "t10": "layers/t10/KuroSiwo_275_viirs.png",
+          "t25": "layers/t25/KuroSiwo_275_viirs.png",
+          "t50": "layers/t50/KuroSiwo_275_viirs.png"
+        },
+        "bounds": [
+          [
+            44.083333333333336,
+            14.033333333333331
+          ],
+          [
+            45.93333333333334,
+            17.566666666666663
+          ]
+        ],
+        "date": "2018-03-25",
+        "scores": {
+          "t05": {
+            "csi": 0.6032863849765259,
+            "far": 0.3762135922330097,
+            "hr": 0.948339483394834,
+            "n_valid": 944,
+            "n_ref_water_excluded": 16
+          },
+          "t10": {
+            "csi": 0.5717948717948718,
+            "far": 0.3898768809849521,
+            "hr": 0.901010101010101,
+            "n_valid": 944,
+            "n_ref_water_excluded": 16
+          },
+          "t25": {
+            "csi": 0.5561904761904762,
+            "far": 0.3209302325581395,
+            "hr": 0.7545219638242894,
+            "n_valid": 944,
+            "n_ref_water_excluded": 16
+          },
+          "t50": {
+            "csi": 0.4,
+            "far": 0.3588516746411483,
+            "hr": 0.5153846153846153,
+            "n_valid": 944,
+            "n_ref_water_excluded": 16
+          }
+        }
+      },
+      "gfm": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_275_gfm.png",
+          "t10": "layers/t10/KuroSiwo_275_gfm.png",
+          "t25": "layers/t25/KuroSiwo_275_gfm.png",
+          "t50": "layers/t50/KuroSiwo_275_gfm.png"
+        },
+        "bounds": [
+          [
+            44.083333333333336,
+            14.033333333333331
+          ],
+          [
+            45.916666666666664,
+            17.566666666666663
+          ]
+        ],
+        "date": "20180321",
+        "scores": {
+          "t05": {
+            "csi": 0.08363201911589008,
+            "far": 0.9150485436893204,
+            "hr": 0.8433734939759037,
+            "n_valid": 944,
+            "n_ref_water_excluded": 16
+          },
+          "t10": {
+            "csi": 0.0203527815468114,
+            "far": 0.9794801641586868,
+            "hr": 0.7142857142857143,
+            "n_valid": 944,
+            "n_ref_water_excluded": 16
+          },
+          "t25": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": 0.0,
+            "n_valid": 944,
+            "n_ref_water_excluded": 16
+          },
+          "t50": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 944,
+            "n_ref_water_excluded": 16
+          }
+        }
+      },
+      "modis": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_275_modis.png",
+          "t10": "layers/t10/KuroSiwo_275_modis.png",
+          "t25": "layers/t25/KuroSiwo_275_modis.png",
+          "t50": "layers/t50/KuroSiwo_275_modis.png"
+        },
+        "bounds": [
+          [
+            44.099999999999994,
+            14.033333333333333
+          ],
+          [
+            45.916666666666664,
+            17.566666666666666
+          ]
+        ],
+        "date": "2018-03-22",
+        "scores": {
+          "t05": {
+            "csi": 0.14285714285714285,
+            "far": 0.8484848484848485,
+            "hr": 0.7142857142857143,
+            "n_valid": 190,
+            "n_ref_water_excluded": 16
+          },
+          "t10": {
+            "csi": 0.12080536912751678,
+            "far": 0.8705035971223022,
+            "hr": 0.6428571428571429,
+            "n_valid": 190,
+            "n_ref_water_excluded": 16
+          },
+          "t25": {
+            "csi": 0.16666666666666666,
+            "far": 0.8032786885245902,
+            "hr": 0.5217391304347826,
+            "n_valid": 190,
+            "n_ref_water_excluded": 16
+          },
+          "t50": {
+            "csi": 0.1111111111111111,
+            "far": 0.8695652173913043,
+            "hr": 0.42857142857142855,
+            "n_valid": 190,
+            "n_ref_water_excluded": 16
+          }
+        }
+      },
+      "reference_water": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_275_reference_water.png",
+          "t10": "layers/t10/KuroSiwo_275_reference_water.png",
+          "t25": "layers/t25/KuroSiwo_275_reference_water.png",
+          "t50": "layers/t50/KuroSiwo_275_reference_water.png"
+        },
+        "bounds": [
+          [
+            44.099999999999994,
+            14.033333333333333
+          ],
+          [
+            45.916666666666664,
+            17.566666666666666
+          ]
+        ],
+        "date": null,
+        "source_used": "modis"
+      }
+    },
+    "KuroSiwo_277": {
+      "cama_flood": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_277_cama_flood.png",
+          "t10": "layers/t10/KuroSiwo_277_cama_flood.png",
+          "t25": "layers/t25/KuroSiwo_277_cama_flood.png",
+          "t50": "layers/t50/KuroSiwo_277_cama_flood.png"
+        },
+        "bounds": [
+          [
+            39.32432000000544,
+            24.575045511326206
+          ],
+          [
+            43.674407000004976,
+            29.22505412283623
+          ]
+        ],
+        "date": "2018-03-27"
+      },
+      "viirs": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_277_viirs.png",
+          "t10": "layers/t10/KuroSiwo_277_viirs.png",
+          "t25": "layers/t25/KuroSiwo_277_viirs.png",
+          "t50": "layers/t50/KuroSiwo_277_viirs.png"
+        },
+        "bounds": [
+          [
+            39.8,
+            25.066666666666663
+          ],
+          [
+            43.18333333333334,
+            28.75
+          ]
+        ],
+        "date": "2018-03-30",
+        "scores": {
+          "t05": {
+            "csi": 0.6609929078014184,
+            "far": 0.24717285945072698,
+            "hr": 0.8442028985507246,
+            "n_valid": 760,
+            "n_ref_water_excluded": 9
+          },
+          "t10": {
+            "csi": 0.4908814589665654,
+            "far": 0.3603960396039604,
+            "hr": 0.6785714285714286,
+            "n_valid": 760,
+            "n_ref_water_excluded": 9
+          },
+          "t25": {
+            "csi": 0.21967963386727687,
+            "far": 0.4696132596685083,
+            "hr": 0.2727272727272727,
+            "n_valid": 760,
+            "n_ref_water_excluded": 9
+          },
+          "t50": {
+            "csi": 0.05782312925170068,
+            "far": 0.7605633802816901,
+            "hr": 0.07083333333333333,
+            "n_valid": 760,
+            "n_ref_water_excluded": 9
+          }
+        }
+      },
+      "gfm": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_277_gfm.png",
+          "t10": "layers/t10/KuroSiwo_277_gfm.png",
+          "t25": "layers/t25/KuroSiwo_277_gfm.png",
+          "t50": "layers/t50/KuroSiwo_277_gfm.png"
+        },
+        "bounds": [
+          [
+            39.8,
+            25.066666666666663
+          ],
+          [
+            43.18333333333334,
+            28.73333333333332
+          ]
+        ],
+        "date": "20180327",
+        "scores": {
+          "t05": {
+            "csi": 0.26356589147286824,
+            "far": 0.7235772357723578,
+            "hr": 0.85,
+            "n_valid": 756,
+            "n_ref_water_excluded": 9
+          },
+          "t10": {
+            "csi": 0.13272727272727272,
+            "far": 0.8542914171656687,
+            "hr": 0.5983606557377049,
+            "n_valid": 756,
+            "n_ref_water_excluded": 9
+          },
+          "t25": {
+            "csi": 0.010752688172043012,
+            "far": 0.9887005649717514,
+            "hr": 0.18181818181818182,
+            "n_valid": 756,
+            "n_ref_water_excluded": 9
+          },
+          "t50": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 756,
+            "n_ref_water_excluded": 9
+          }
+        }
+      },
+      "modis": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_277_modis.png",
+          "t10": "layers/t10/KuroSiwo_277_modis.png",
+          "t25": "layers/t25/KuroSiwo_277_modis.png",
+          "t50": "layers/t50/KuroSiwo_277_modis.png"
+        },
+        "bounds": [
+          [
+            39.81666666666666,
+            25.066666666666666
+          ],
+          [
+            43.18333333333333,
+            28.733333333333334
+          ]
+        ],
+        "date": "2018-03-27",
+        "scores": {
+          "t05": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 113,
+            "n_ref_water_excluded": 9
+          },
+          "t10": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 113,
+            "n_ref_water_excluded": 9
+          },
+          "t25": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 113,
+            "n_ref_water_excluded": 9
+          },
+          "t50": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 113,
+            "n_ref_water_excluded": 9
+          }
+        }
+      },
+      "reference_water": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_277_reference_water.png",
+          "t10": "layers/t10/KuroSiwo_277_reference_water.png",
+          "t25": "layers/t25/KuroSiwo_277_reference_water.png",
+          "t50": "layers/t50/KuroSiwo_277_reference_water.png"
+        },
+        "bounds": [
+          [
+            39.81666666666666,
+            25.066666666666666
+          ],
+          [
+            43.18333333333333,
+            28.733333333333334
+          ]
+        ],
+        "date": null,
+        "source_used": "modis"
+      }
+    },
+    "KuroSiwo_279": {
+      "cama_flood": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_279_cama_flood.png",
+          "t10": "layers/t10/KuroSiwo_279_cama_flood.png",
+          "t25": "layers/t25/KuroSiwo_279_cama_flood.png",
+          "t50": "layers/t50/KuroSiwo_279_cama_flood.png"
+        },
+        "bounds": [
+          [
+            38.59097200000552,
+            -2.0250037502144798
+          ],
+          [
+            43.09106200000504,
+            3.325006157651611
+          ]
+        ],
+        "date": "2018-04-13"
+      },
+      "viirs": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_279_viirs.png",
+          "t10": "layers/t10/KuroSiwo_279_viirs.png",
+          "t25": "layers/t25/KuroSiwo_279_viirs.png",
+          "t50": "layers/t50/KuroSiwo_279_viirs.png"
+        },
+        "bounds": [
+          [
+            39.083333333333336,
+            -1.5500000000000114
+          ],
+          [
+            42.61666666666667,
+            2.8333333333333437
+          ]
+        ],
+        "date": "2018-04-17",
+        "scores": {
+          "t05": {
+            "csi": 0.47770700636942676,
+            "far": 0.4863013698630137,
+            "hr": 0.872093023255814,
+            "n_valid": 348,
+            "n_ref_water_excluded": 29
+          },
+          "t10": {
+            "csi": 0.38652482269503546,
+            "far": 0.5775193798449613,
+            "hr": 0.8195488721804511,
+            "n_valid": 348,
+            "n_ref_water_excluded": 29
+          },
+          "t25": {
+            "csi": 0.17989417989417988,
+            "far": 0.7605633802816901,
+            "hr": 0.41975308641975306,
+            "n_valid": 348,
+            "n_ref_water_excluded": 29
+          },
+          "t50": {
+            "csi": 0.014814814814814815,
+            "far": 0.9797979797979798,
+            "hr": 0.05263157894736842,
+            "n_valid": 348,
+            "n_ref_water_excluded": 29
+          }
+        }
+      },
+      "gfm": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_279_gfm.png",
+          "t10": "layers/t10/KuroSiwo_279_gfm.png",
+          "t25": "layers/t25/KuroSiwo_279_gfm.png",
+          "t50": "layers/t50/KuroSiwo_279_gfm.png"
+        },
+        "bounds": [
+          [
+            39.083333333333336,
+            -1.5500000000000114
+          ],
+          [
+            42.61666666666667,
+            2.8333333333333437
+          ]
+        ],
+        "date": "20180412",
+        "scores": {
+          "t05": {
+            "csi": 0.010309278350515464,
+            "far": 0.9895833333333334,
+            "hr": 0.5,
+            "n_valid": 344,
+            "n_ref_water_excluded": 29
+          },
+          "t10": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": 0.0,
+            "n_valid": 344,
+            "n_ref_water_excluded": 29
+          },
+          "t25": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 344,
+            "n_ref_water_excluded": 29
+          },
+          "t50": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 344,
+            "n_ref_water_excluded": 29
+          }
+        }
+      },
+      "modis": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_279_modis.png",
+          "t10": "layers/t10/KuroSiwo_279_modis.png",
+          "t25": "layers/t25/KuroSiwo_279_modis.png",
+          "t50": "layers/t50/KuroSiwo_279_modis.png"
+        },
+        "bounds": [
+          [
+            39.083333333333336,
+            -1.55
+          ],
+          [
+            42.61666666666667,
+            2.833333333333333
+          ]
+        ],
+        "date": "2018-04-13",
+        "scores": {
+          "t05": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 162,
+            "n_ref_water_excluded": 29
+          },
+          "t10": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 162,
+            "n_ref_water_excluded": 29
+          },
+          "t25": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 162,
+            "n_ref_water_excluded": 29
+          },
+          "t50": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 162,
+            "n_ref_water_excluded": 29
+          }
+        }
+      },
+      "reference_water": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_279_reference_water.png",
+          "t10": "layers/t10/KuroSiwo_279_reference_water.png",
+          "t25": "layers/t25/KuroSiwo_279_reference_water.png",
+          "t50": "layers/t50/KuroSiwo_279_reference_water.png"
+        },
+        "bounds": [
+          [
+            39.083333333333336,
+            -1.55
+          ],
+          [
+            42.61666666666667,
+            2.833333333333333
+          ]
+        ],
+        "date": null,
+        "source_used": "modis"
+      }
+    },
+    "KuroSiwo_321": {
+      "cama_flood": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_321_cama_flood.png",
+          "t10": "layers/t10/KuroSiwo_321_cama_flood.png",
+          "t25": "layers/t25/KuroSiwo_321_cama_flood.png",
+          "t50": "layers/t50/KuroSiwo_321_cama_flood.png"
+        },
+        "bounds": [
+          [
+            12.357114000004538,
+            -88.37516366501896
+          ],
+          [
+            15.290506000004536,
+            -84.80849039310957
+          ]
+        ],
+        "date": "2018-10-07"
+      },
+      "viirs": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_321_viirs.png",
+          "t10": "layers/t10/KuroSiwo_321_viirs.png",
+          "t25": "layers/t25/KuroSiwo_321_viirs.png",
+          "t50": "layers/t50/KuroSiwo_321_viirs.png"
+        },
+        "bounds": [
+          [
+            12.833333333333327,
+            -87.88333333333334
+          ],
+          [
+            14.816666666666663,
+            -85.28333333333335
+          ]
+        ],
+        "date": "2018-10-12",
+        "scores": {
+          "t05": {
+            "csi": 0.5518796992481203,
+            "far": 0.41467304625199364,
+            "hr": 0.9061728395061729,
+            "n_valid": 853,
+            "n_ref_water_excluded": 3
+          },
+          "t10": {
+            "csi": 0.515358361774744,
+            "far": 0.42034548944337813,
+            "hr": 0.8228882833787466,
+            "n_valid": 853,
+            "n_ref_water_excluded": 3
+          },
+          "t25": {
+            "csi": 0.36829268292682926,
+            "far": 0.49158249158249157,
+            "hr": 0.571969696969697,
+            "n_valid": 853,
+            "n_ref_water_excluded": 3
+          },
+          "t50": {
+            "csi": 0.11740890688259109,
+            "far": 0.8284023668639053,
+            "hr": 0.27102803738317754,
+            "n_valid": 853,
+            "n_ref_water_excluded": 3
+          }
+        }
+      },
+      "gfm": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_321_gfm.png",
+          "t10": "layers/t10/KuroSiwo_321_gfm.png",
+          "t25": "layers/t25/KuroSiwo_321_gfm.png",
+          "t50": "layers/t50/KuroSiwo_321_gfm.png"
+        },
+        "bounds": [
+          [
+            12.849999999999994,
+            -87.88333333333334
+          ],
+          [
+            14.816666666666663,
+            -85.30000000000001
+          ]
+        ],
+        "date": "20181007",
+        "scores": {
+          "t05": {
+            "csi": 0.10327868852459017,
+            "far": 0.8963815789473685,
+            "hr": 0.9692307692307692,
+            "n_valid": 829,
+            "n_ref_water_excluded": 3
+          },
+          "t10": {
+            "csi": 0.03359683794466403,
+            "far": 0.9662698412698413,
+            "hr": 0.8947368421052632,
+            "n_valid": 829,
+            "n_ref_water_excluded": 3
+          },
+          "t25": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 829,
+            "n_ref_water_excluded": 3
+          },
+          "t50": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 829,
+            "n_ref_water_excluded": 3
+          }
+        }
+      },
+      "modis": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_321_modis.png",
+          "t10": "layers/t10/KuroSiwo_321_modis.png",
+          "t25": "layers/t25/KuroSiwo_321_modis.png",
+          "t50": "layers/t50/KuroSiwo_321_modis.png"
+        },
+        "bounds": [
+          [
+            12.85,
+            -87.88333333333333
+          ],
+          [
+            14.816666666666666,
+            -85.3
+          ]
+        ],
+        "date": "2018-10-07",
+        "scores": {
+          "t05": {
+            "csi": null,
+            "far": null,
+            "hr": null,
+            "n_valid": 0,
+            "n_ref_water_excluded": 0
+          },
+          "t10": {
+            "csi": null,
+            "far": null,
+            "hr": null,
+            "n_valid": 0,
+            "n_ref_water_excluded": 0
+          },
+          "t25": {
+            "csi": null,
+            "far": null,
+            "hr": null,
+            "n_valid": 0,
+            "n_ref_water_excluded": 0
+          },
+          "t50": {
+            "csi": null,
+            "far": null,
+            "hr": null,
+            "n_valid": 0,
+            "n_ref_water_excluded": 0
+          }
+        }
+      },
+      "reference_water": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_321_reference_water.png",
+          "t10": "layers/t10/KuroSiwo_321_reference_water.png",
+          "t25": "layers/t25/KuroSiwo_321_reference_water.png",
+          "t50": "layers/t50/KuroSiwo_321_reference_water.png"
+        },
+        "bounds": [
+          [
+            12.849999999999994,
+            -87.88333333333334
+          ],
+          [
+            14.816666666666663,
+            -85.3
+          ]
+        ],
+        "date": null,
+        "source_used": "gfm"
+      }
+    },
+    "KuroSiwo_324": {
+      "cama_flood": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_324_cama_flood.png",
+          "t10": "layers/t10/KuroSiwo_324_cama_flood.png",
+          "t25": "layers/t25/KuroSiwo_324_cama_flood.png",
+          "t50": "layers/t50/KuroSiwo_324_cama_flood.png"
+        },
+        "bounds": [
+          [
+            41.541031000005205,
+            -0.6750012500987381
+          ],
+          [
+            44.424422000004895,
+            3.7583402934912318
+          ]
+        ],
+        "date": "2018-10-16"
+      },
+      "viirs": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_324_viirs.png",
+          "t10": "layers/t10/KuroSiwo_324_viirs.png",
+          "t25": "layers/t25/KuroSiwo_324_viirs.png",
+          "t50": "layers/t50/KuroSiwo_324_viirs.png"
+        },
+        "bounds": [
+          [
+            42.016666666666666,
+            -0.18333333333333712
+          ],
+          [
+            43.95,
+            3.2833333333333314
+          ]
+        ],
+        "date": "2018-10-21",
+        "scores": {
+          "t05": {
+            "csi": 0.43956043956043955,
+            "far": 0.5428571428571428,
+            "hr": 0.9195402298850575,
+            "n_valid": 211,
+            "n_ref_water_excluded": 1
+          },
+          "t10": {
+            "csi": 0.275,
+            "far": 0.7197452229299363,
+            "hr": 0.9361702127659575,
+            "n_valid": 211,
+            "n_ref_water_excluded": 1
+          },
+          "t25": {
+            "csi": 0.07017543859649122,
+            "far": 0.9272727272727272,
+            "hr": 0.6666666666666666,
+            "n_valid": 211,
+            "n_ref_water_excluded": 1
+          },
+          "t50": {
+            "csi": 0.03225806451612903,
+            "far": 0.9655172413793104,
+            "hr": 0.3333333333333333,
+            "n_valid": 211,
+            "n_ref_water_excluded": 1
+          }
+        }
+      },
+      "gfm": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_324_gfm.png",
+          "t10": "layers/t10/KuroSiwo_324_gfm.png",
+          "t25": "layers/t25/KuroSiwo_324_gfm.png",
+          "t50": "layers/t50/KuroSiwo_324_gfm.png"
+        },
+        "bounds": [
+          [
+            42.016666666666666,
+            -0.18333333333333712
+          ],
+          [
+            43.95,
+            3.2833333333333314
+          ]
+        ],
+        "date": "20181016",
+        "scores": {
+          "t05": {
+            "csi": 0.07386363636363637,
+            "far": 0.9257142857142857,
+            "hr": 0.9285714285714286,
+            "n_valid": 211,
+            "n_ref_water_excluded": 1
+          },
+          "t10": {
+            "csi": 0.0189873417721519,
+            "far": 0.9808917197452229,
+            "hr": 0.75,
+            "n_valid": 211,
+            "n_ref_water_excluded": 1
+          },
+          "t25": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 211,
+            "n_ref_water_excluded": 1
+          },
+          "t50": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 211,
+            "n_ref_water_excluded": 1
+          }
+        }
+      },
+      "modis": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_324_modis.png",
+          "t10": "layers/t10/KuroSiwo_324_modis.png",
+          "t25": "layers/t25/KuroSiwo_324_modis.png",
+          "t50": "layers/t50/KuroSiwo_324_modis.png"
+        },
+        "bounds": [
+          [
+            42.01666666666667,
+            -0.2
+          ],
+          [
+            43.95,
+            3.2666666666666666
+          ]
+        ],
+        "date": "2018-10-16",
+        "scores": {
+          "t05": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 9,
+            "n_ref_water_excluded": 1
+          },
+          "t10": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 9,
+            "n_ref_water_excluded": 1
+          },
+          "t25": {
+            "csi": null,
+            "far": null,
+            "hr": null,
+            "n_valid": 9,
+            "n_ref_water_excluded": 1
+          },
+          "t50": {
+            "csi": null,
+            "far": null,
+            "hr": null,
+            "n_valid": 9,
+            "n_ref_water_excluded": 1
+          }
+        }
+      },
+      "reference_water": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_324_reference_water.png",
+          "t10": "layers/t10/KuroSiwo_324_reference_water.png",
+          "t25": "layers/t25/KuroSiwo_324_reference_water.png",
+          "t50": "layers/t50/KuroSiwo_324_reference_water.png"
+        },
+        "bounds": [
+          [
+            42.01666666666667,
+            -0.2
+          ],
+          [
+            43.95,
+            3.2666666666666666
+          ]
+        ],
+        "date": null,
+        "source_used": "modis"
+      }
+    },
+    "KuroSiwo_411": {
+      "cama_flood": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_411_cama_flood.png",
+          "t10": "layers/t10/KuroSiwo_411_cama_flood.png",
+          "t25": "layers/t25/KuroSiwo_411_cama_flood.png",
+          "t50": "layers/t50/KuroSiwo_411_cama_flood.png"
+        },
+        "bounds": [
+          [
+            41.5576980000052,
+            5.641677114640353
+          ],
+          [
+            44.424422000004895,
+            9.691684614987668
+          ]
+        ],
+        "date": "2019-11-25"
+      },
+      "viirs": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_411_viirs.png",
+          "t10": "layers/t10/KuroSiwo_411_viirs.png",
+          "t25": "layers/t25/KuroSiwo_411_viirs.png",
+          "t50": "layers/t50/KuroSiwo_411_viirs.png"
+        },
+        "bounds": [
+          [
+            42.03333333333333,
+            6.116666666666674
+          ],
+          [
+            43.93333333333334,
+            9.199999999999989
+          ]
+        ],
+        "date": "2019-11-27",
+        "scores": {
+          "t05": {
+            "csi": 0.4411764705882353,
+            "far": 0.5588235294117647,
+            "hr": 1.0,
+            "n_valid": 35,
+            "n_ref_water_excluded": 5
+          },
+          "t10": {
+            "csi": 0.23529411764705882,
+            "far": 0.7647058823529411,
+            "hr": 1.0,
+            "n_valid": 35,
+            "n_ref_water_excluded": 5
+          },
+          "t25": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": 0.0,
+            "n_valid": 35,
+            "n_ref_water_excluded": 5
+          },
+          "t50": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 35,
+            "n_ref_water_excluded": 5
+          }
+        }
+      },
+      "gfm": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_411_gfm.png",
+          "t10": "layers/t10/KuroSiwo_411_gfm.png",
+          "t25": "layers/t25/KuroSiwo_411_gfm.png",
+          "t50": "layers/t50/KuroSiwo_411_gfm.png"
+        },
+        "bounds": [
+          [
+            42.03333333333333,
+            6.133333333333326
+          ],
+          [
+            43.93333333333334,
+            9.199999999999989
+          ]
+        ],
+        "date": "20191124",
+        "scores": {
+          "t05": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 33,
+            "n_ref_water_excluded": 2
+          },
+          "t10": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 33,
+            "n_ref_water_excluded": 2
+          },
+          "t25": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 33,
+            "n_ref_water_excluded": 2
+          },
+          "t50": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 33,
+            "n_ref_water_excluded": 2
+          }
+        }
+      },
+      "modis": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_411_modis.png",
+          "t10": "layers/t10/KuroSiwo_411_modis.png",
+          "t25": "layers/t25/KuroSiwo_411_modis.png",
+          "t50": "layers/t50/KuroSiwo_411_modis.png"
+        },
+        "bounds": [
+          [
+            42.05,
+            6.133333333333333
+          ],
+          [
+            43.93333333333333,
+            9.2
+          ]
+        ],
+        "date": "2019-11-25",
+        "scores": {
+          "t05": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 2,
+            "n_ref_water_excluded": 5
+          },
+          "t10": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 2,
+            "n_ref_water_excluded": 5
+          },
+          "t25": {
+            "csi": null,
+            "far": null,
+            "hr": null,
+            "n_valid": 2,
+            "n_ref_water_excluded": 5
+          },
+          "t50": {
+            "csi": null,
+            "far": null,
+            "hr": null,
+            "n_valid": 2,
+            "n_ref_water_excluded": 5
+          }
+        }
+      },
+      "reference_water": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_411_reference_water.png",
+          "t10": "layers/t10/KuroSiwo_411_reference_water.png",
+          "t25": "layers/t25/KuroSiwo_411_reference_water.png",
+          "t50": "layers/t50/KuroSiwo_411_reference_water.png"
+        },
+        "bounds": [
+          [
+            42.05,
+            6.133333333333333
+          ],
+          [
+            43.93333333333333,
+            9.2
+          ]
+        ],
+        "date": null,
+        "source_used": "modis"
+      }
+    },
+    "KuroSiwo_417": {
+      "cama_flood": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_417_cama_flood.png",
+          "t10": "layers/t10/KuroSiwo_417_cama_flood.png",
+          "t25": "layers/t25/KuroSiwo_417_cama_flood.png",
+          "t50": "layers/t50/KuroSiwo_417_cama_flood.png"
+        },
+        "bounds": [
+          [
+            38.740975000005506,
+            -9.775018102730868
+          ],
+          [
+            41.357694000005225,
+            -7.3083468679513945
+          ]
+        ],
+        "date": "2019-12-23"
+      },
+      "viirs": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_417_viirs.png",
+          "t10": "layers/t10/KuroSiwo_417_viirs.png",
+          "t25": "layers/t25/KuroSiwo_417_viirs.png",
+          "t50": "layers/t50/KuroSiwo_417_viirs.png"
+        },
+        "bounds": [
+          [
+            39.233333333333334,
+            -9.300000000000011
+          ],
+          [
+            40.88333333333333,
+            -7.783333333333331
+          ]
+        ],
+        "date": "2019-12-28",
+        "scores": {
+          "t05": {
+            "csi": 0.45,
+            "far": 0.5116279069767442,
+            "hr": 0.8513513513513513,
+            "n_valid": 186,
+            "n_ref_water_excluded": 3
+          },
+          "t10": {
+            "csi": 0.3220338983050847,
+            "far": 0.6481481481481481,
+            "hr": 0.7916666666666666,
+            "n_valid": 186,
+            "n_ref_water_excluded": 3
+          },
+          "t25": {
+            "csi": 0.1076923076923077,
+            "far": 0.8727272727272727,
+            "hr": 0.4117647058823529,
+            "n_valid": 186,
+            "n_ref_water_excluded": 3
+          },
+          "t50": {
+            "csi": 0.06896551724137931,
+            "far": 0.9090909090909091,
+            "hr": 0.2222222222222222,
+            "n_valid": 186,
+            "n_ref_water_excluded": 3
+          }
+        }
+      },
+      "gfm": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_417_gfm.png",
+          "t10": "layers/t10/KuroSiwo_417_gfm.png",
+          "t25": "layers/t25/KuroSiwo_417_gfm.png",
+          "t50": "layers/t50/KuroSiwo_417_gfm.png"
+        },
+        "bounds": [
+          [
+            39.233333333333334,
+            -9.300000000000011
+          ],
+          [
+            40.88333333333333,
+            -7.783333333333331
+          ]
+        ],
+        "date": "20191223",
+        "scores": {
+          "t05": {
+            "csi": 0.15037593984962405,
+            "far": 0.8449612403100775,
+            "hr": 0.8333333333333334,
+            "n_valid": 186,
+            "n_ref_water_excluded": 3
+          },
+          "t10": {
+            "csi": 0.11926605504587157,
+            "far": 0.8796296296296297,
+            "hr": 0.9285714285714286,
+            "n_valid": 186,
+            "n_ref_water_excluded": 3
+          },
+          "t25": {
+            "csi": 0.03636363636363636,
+            "far": 0.9636363636363636,
+            "hr": 1.0,
+            "n_valid": 186,
+            "n_ref_water_excluded": 3
+          },
+          "t50": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 186,
+            "n_ref_water_excluded": 3
+          }
+        }
+      },
+      "modis": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_417_modis.png",
+          "t10": "layers/t10/KuroSiwo_417_modis.png",
+          "t25": "layers/t25/KuroSiwo_417_modis.png",
+          "t50": "layers/t50/KuroSiwo_417_modis.png"
+        },
+        "bounds": [
+          [
+            39.233333333333334,
+            -9.3
+          ],
+          [
+            40.88333333333333,
+            -7.800000000000001
+          ]
+        ],
+        "date": "2019-12-23",
+        "scores": {
+          "t05": {
+            "csi": 0.15625,
+            "far": 0.8333333333333334,
+            "hr": 0.7142857142857143,
+            "n_valid": 38,
+            "n_ref_water_excluded": 3
+          },
+          "t10": {
+            "csi": 0.12903225806451613,
+            "far": 0.8571428571428571,
+            "hr": 0.5714285714285714,
+            "n_valid": 38,
+            "n_ref_water_excluded": 3
+          },
+          "t25": {
+            "csi": 0.1,
+            "far": 0.875,
+            "hr": 0.3333333333333333,
+            "n_valid": 38,
+            "n_ref_water_excluded": 3
+          },
+          "t50": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": 0.0,
+            "n_valid": 38,
+            "n_ref_water_excluded": 3
+          }
+        }
+      },
+      "reference_water": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_417_reference_water.png",
+          "t10": "layers/t10/KuroSiwo_417_reference_water.png",
+          "t25": "layers/t25/KuroSiwo_417_reference_water.png",
+          "t50": "layers/t50/KuroSiwo_417_reference_water.png"
+        },
+        "bounds": [
+          [
+            39.233333333333334,
+            -9.3
+          ],
+          [
+            40.88333333333333,
+            -7.800000000000001
+          ]
+        ],
+        "date": null,
+        "source_used": "modis"
+      }
+    },
+    "KuroSiwo_421": {
+      "cama_flood": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_421_cama_flood.png",
+          "t10": "layers/t10/KuroSiwo_421_cama_flood.png",
+          "t25": "layers/t25/KuroSiwo_421_cama_flood.png",
+          "t50": "layers/t50/KuroSiwo_421_cama_flood.png"
+        },
+        "bounds": [
+          [
+            41.14102300000525,
+            1.8583367748098174
+          ],
+          [
+            43.94107900000495,
+            5.958344367753922
+          ]
+        ],
+        "date": "2020-01-23"
+      },
+      "viirs": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_421_viirs.png",
+          "t10": "layers/t10/KuroSiwo_421_viirs.png",
+          "t25": "layers/t25/KuroSiwo_421_viirs.png",
+          "t50": "layers/t50/KuroSiwo_421_viirs.png"
+        },
+        "bounds": [
+          [
+            41.61666666666667,
+            2.333333333333343
+          ],
+          [
+            43.46666666666667,
+            5.466666666666669
+          ]
+        ],
+        "date": "2020-01-24",
+        "scores": {
+          "t05": {
+            "csi": 0.05737704918032787,
+            "far": 0.9420289855072463,
+            "hr": 0.8484848484848485,
+            "n_valid": 525,
+            "n_ref_water_excluded": 1
+          },
+          "t10": {
+            "csi": 0.04112554112554113,
+            "far": 0.9581497797356828,
+            "hr": 0.7037037037037037,
+            "n_valid": 525,
+            "n_ref_water_excluded": 1
+          },
+          "t25": {
+            "csi": 0.030395136778115502,
+            "far": 0.9692307692307692,
+            "hr": 0.7142857142857143,
+            "n_valid": 525,
+            "n_ref_water_excluded": 1
+          },
+          "t50": {
+            "csi": 0.004784688995215311,
+            "far": 0.9951690821256038,
+            "hr": 0.3333333333333333,
+            "n_valid": 525,
+            "n_ref_water_excluded": 1
+          }
+        }
+      },
+      "gfm": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_421_gfm.png",
+          "t10": "layers/t10/KuroSiwo_421_gfm.png",
+          "t25": "layers/t25/KuroSiwo_421_gfm.png",
+          "t50": "layers/t50/KuroSiwo_421_gfm.png"
+        },
+        "bounds": [
+          [
+            41.61666666666667,
+            2.333333333333343
+          ],
+          [
+            43.46666666666667,
+            5.466666666666669
+          ]
+        ],
+        "date": "20200123",
+        "scores": {
+          "t05": {
+            "csi": 0.047520661157024795,
+            "far": 0.9523809523809523,
+            "hr": 0.9583333333333334,
+            "n_valid": 525,
+            "n_ref_water_excluded": 1
+          },
+          "t10": {
+            "csi": 0.023965141612200435,
+            "far": 0.9757709251101322,
+            "hr": 0.6875,
+            "n_valid": 525,
+            "n_ref_water_excluded": 1
+          },
+          "t25": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": 0.0,
+            "n_valid": 525,
+            "n_ref_water_excluded": 1
+          },
+          "t50": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 525,
+            "n_ref_water_excluded": 1
+          }
+        }
+      },
+      "modis": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_421_modis.png",
+          "t10": "layers/t10/KuroSiwo_421_modis.png",
+          "t25": "layers/t25/KuroSiwo_421_modis.png",
+          "t50": "layers/t50/KuroSiwo_421_modis.png"
+        },
+        "bounds": [
+          [
+            41.63333333333333,
+            2.3333333333333335
+          ],
+          [
+            43.46666666666667,
+            5.466666666666667
+          ]
+        ],
+        "date": "2020-01-23",
+        "scores": {
+          "t05": {
+            "csi": null,
+            "far": null,
+            "hr": null,
+            "n_valid": 0,
+            "n_ref_water_excluded": 1
+          },
+          "t10": {
+            "csi": null,
+            "far": null,
+            "hr": null,
+            "n_valid": 0,
+            "n_ref_water_excluded": 1
+          },
+          "t25": {
+            "csi": null,
+            "far": null,
+            "hr": null,
+            "n_valid": 0,
+            "n_ref_water_excluded": 1
+          },
+          "t50": {
+            "csi": null,
+            "far": null,
+            "hr": null,
+            "n_valid": 0,
+            "n_ref_water_excluded": 1
+          }
+        }
+      },
+      "reference_water": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_421_reference_water.png",
+          "t10": "layers/t10/KuroSiwo_421_reference_water.png",
+          "t25": "layers/t25/KuroSiwo_421_reference_water.png",
+          "t50": "layers/t50/KuroSiwo_421_reference_water.png"
+        },
+        "bounds": [
+          [
+            41.63333333333333,
+            2.3333333333333335
+          ],
+          [
+            43.46666666666667,
+            5.466666666666667
+          ]
+        ],
+        "date": null,
+        "source_used": "modis"
+      }
+    },
+    "KuroSiwo_427": {
+      "cama_flood": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_427_cama_flood.png",
+          "t10": "layers/t10/KuroSiwo_427_cama_flood.png",
+          "t25": "layers/t25/KuroSiwo_427_cama_flood.png",
+          "t50": "layers/t50/KuroSiwo_427_cama_flood.png"
+        },
+        "bounds": [
+          [
+            56.924672000003554,
+            9.025016713695909
+          ],
+          [
+            59.808063000003244,
+            14.758360664805043
+          ]
+        ],
+        "date": "2020-02-22"
+      },
+      "viirs": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_427_viirs.png",
+          "t10": "layers/t10/KuroSiwo_427_viirs.png",
+          "t25": "layers/t25/KuroSiwo_427_viirs.png",
+          "t50": "layers/t50/KuroSiwo_427_viirs.png"
+        },
+        "bounds": [
+          [
+            57.4,
+            9.5
+          ],
+          [
+            59.31666666666666,
+            14.266666666666652
+          ]
+        ],
+        "date": "2020-02-19",
+        "scores": {
+          "t05": {
+            "csi": 0.5225653206650831,
+            "far": 0.46601941747572817,
+            "hr": 0.9606986899563319,
+            "n_valid": 440,
+            "n_ref_water_excluded": 239
+          },
+          "t10": {
+            "csi": 0.3300970873786408,
+            "far": 0.6666666666666666,
+            "hr": 0.9714285714285714,
+            "n_valid": 440,
+            "n_ref_water_excluded": 239
+          },
+          "t25": {
+            "csi": 0.0425531914893617,
+            "far": 0.9558823529411765,
+            "hr": 0.5454545454545454,
+            "n_valid": 440,
+            "n_ref_water_excluded": 239
+          },
+          "t50": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 440,
+            "n_ref_water_excluded": 239
+          }
+        }
+      },
+      "gfm": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_427_gfm.png",
+          "t10": "layers/t10/KuroSiwo_427_gfm.png",
+          "t25": "layers/t25/KuroSiwo_427_gfm.png",
+          "t50": "layers/t50/KuroSiwo_427_gfm.png"
+        },
+        "bounds": [
+          [
+            57.4,
+            9.5
+          ],
+          [
+            59.31666666666666,
+            14.266666666666652
+          ]
+        ],
+        "date": "20200224",
+        "scores": {
+          "t05": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 440,
+            "n_ref_water_excluded": 239
+          },
+          "t10": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 440,
+            "n_ref_water_excluded": 239
+          },
+          "t25": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 440,
+            "n_ref_water_excluded": 239
+          },
+          "t50": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 440,
+            "n_ref_water_excluded": 239
+          }
+        }
+      },
+      "modis": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_427_modis.png",
+          "t10": "layers/t10/KuroSiwo_427_modis.png",
+          "t25": "layers/t25/KuroSiwo_427_modis.png",
+          "t50": "layers/t50/KuroSiwo_427_modis.png"
+        },
+        "bounds": [
+          [
+            57.416666666666664,
+            9.5
+          ],
+          [
+            59.31666666666666,
+            14.266666666666666
+          ]
+        ],
+        "date": "2020-02-22",
+        "scores": {
+          "t05": {
+            "csi": 0.08290155440414508,
+            "far": 0.917098445595855,
+            "hr": 1.0,
+            "n_valid": 199,
+            "n_ref_water_excluded": 239
+          },
+          "t10": {
+            "csi": 0.031088082901554404,
+            "far": 0.9689119170984456,
+            "hr": 1.0,
+            "n_valid": 199,
+            "n_ref_water_excluded": 239
+          },
+          "t25": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 199,
+            "n_ref_water_excluded": 239
+          },
+          "t50": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 199,
+            "n_ref_water_excluded": 239
+          }
+        }
+      },
+      "reference_water": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_427_reference_water.png",
+          "t10": "layers/t10/KuroSiwo_427_reference_water.png",
+          "t25": "layers/t25/KuroSiwo_427_reference_water.png",
+          "t50": "layers/t50/KuroSiwo_427_reference_water.png"
+        },
+        "bounds": [
+          [
+            57.416666666666664,
+            9.5
+          ],
+          [
+            59.31666666666666,
+            14.266666666666666
+          ]
+        ],
+        "date": null,
+        "source_used": "modis"
+      }
+    },
+    "KuroSiwo_437": {
+      "cama_flood": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_437_cama_flood.png",
+          "t10": "layers/t10/KuroSiwo_437_cama_flood.png",
+          "t25": "layers/t25/KuroSiwo_437_cama_flood.png",
+          "t50": "layers/t50/KuroSiwo_437_cama_flood.png"
+        },
+        "bounds": [
+          [
+            42.107709000005144,
+            -2.6083381638447385
+          ],
+          [
+            44.907765000004844,
+            1.808336682212938
+          ]
+        ],
+        "date": "2020-05-13"
+      },
+      "viirs": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_437_viirs.png",
+          "t10": "layers/t10/KuroSiwo_437_viirs.png",
+          "t25": "layers/t25/KuroSiwo_437_viirs.png",
+          "t50": "layers/t50/KuroSiwo_437_viirs.png"
+        },
+        "bounds": [
+          [
+            42.583333333333336,
+            -2.1333333333333258
+          ],
+          [
+            44.43333333333334,
+            1.3333333333333428
+          ]
+        ],
+        "date": "2020-05-17",
+        "scores": {
+          "t05": {
+            "csi": 0.06611570247933884,
+            "far": 0.9327731092436975,
+            "hr": 0.8,
+            "n_valid": 143,
+            "n_ref_water_excluded": 0
+          },
+          "t10": {
+            "csi": 0.020618556701030927,
+            "far": 0.9791666666666666,
+            "hr": 0.6666666666666666,
+            "n_valid": 143,
+            "n_ref_water_excluded": 0
+          },
+          "t25": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": 0.0,
+            "n_valid": 143,
+            "n_ref_water_excluded": 0
+          },
+          "t50": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 143,
+            "n_ref_water_excluded": 0
+          }
+        }
+      },
+      "gfm": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_437_gfm.png",
+          "t10": "layers/t10/KuroSiwo_437_gfm.png",
+          "t25": "layers/t25/KuroSiwo_437_gfm.png",
+          "t50": "layers/t50/KuroSiwo_437_gfm.png"
+        },
+        "bounds": [
+          [
+            42.583333333333336,
+            -2.1166666666666742
+          ],
+          [
+            44.43333333333334,
+            1.3333333333333428
+          ]
+        ],
+        "date": "20200513",
+        "scores": {
+          "t05": {
+            "csi": 0.04201680672268908,
+            "far": 0.957983193277311,
+            "hr": 1.0,
+            "n_valid": 143,
+            "n_ref_water_excluded": 0
+          },
+          "t10": {
+            "csi": 0.010416666666666666,
+            "far": 0.9895833333333334,
+            "hr": 1.0,
+            "n_valid": 143,
+            "n_ref_water_excluded": 0
+          },
+          "t25": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 143,
+            "n_ref_water_excluded": 0
+          },
+          "t50": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 143,
+            "n_ref_water_excluded": 0
+          }
+        }
+      },
+      "modis": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_437_modis.png",
+          "t10": "layers/t10/KuroSiwo_437_modis.png",
+          "t25": "layers/t25/KuroSiwo_437_modis.png",
+          "t50": "layers/t50/KuroSiwo_437_modis.png"
+        },
+        "bounds": [
+          [
+            42.599999999999994,
+            -2.1333333333333333
+          ],
+          [
+            44.43333333333333,
+            1.3166666666666664
+          ]
+        ],
+        "date": "2020-05-13",
+        "scores": {
+          "t05": {
+            "csi": null,
+            "far": null,
+            "hr": null,
+            "n_valid": 0,
+            "n_ref_water_excluded": 0
+          },
+          "t10": {
+            "csi": null,
+            "far": null,
+            "hr": null,
+            "n_valid": 0,
+            "n_ref_water_excluded": 0
+          },
+          "t25": {
+            "csi": null,
+            "far": null,
+            "hr": null,
+            "n_valid": 0,
+            "n_ref_water_excluded": 0
+          },
+          "t50": {
+            "csi": null,
+            "far": null,
+            "hr": null,
+            "n_valid": 0,
+            "n_ref_water_excluded": 0
+          }
+        }
+      }
+    },
+    "KuroSiwo_445": {
+      "cama_flood": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_445_cama_flood.png",
+          "t10": "layers/t10/KuroSiwo_445_cama_flood.png",
+          "t25": "layers/t25/KuroSiwo_445_cama_flood.png",
+          "t50": "layers/t50/KuroSiwo_445_cama_flood.png"
+        },
+        "bounds": [
+          [
+            46.674467000004654,
+            22.9250424556291
+          ],
+          [
+            49.541191000004346,
+            27.625051159736007
+          ]
+        ],
+        "date": "2020-06-26"
+      },
+      "viirs": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_445_viirs.png",
+          "t10": "layers/t10/KuroSiwo_445_viirs.png",
+          "t25": "layers/t25/KuroSiwo_445_viirs.png",
+          "t50": "layers/t50/KuroSiwo_445_viirs.png"
+        },
+        "bounds": [
+          [
+            47.15,
+            23.416666666666657
+          ],
+          [
+            49.06666666666667,
+            27.133333333333326
+          ]
+        ],
+        "date": "2020-06-26",
+        "scores": {
+          "t05": {
+            "csi": null,
+            "far": null,
+            "hr": null,
+            "n_valid": 0,
+            "n_ref_water_excluded": 0
+          },
+          "t10": {
+            "csi": null,
+            "far": null,
+            "hr": null,
+            "n_valid": 0,
+            "n_ref_water_excluded": 0
+          },
+          "t25": {
+            "csi": null,
+            "far": null,
+            "hr": null,
+            "n_valid": 0,
+            "n_ref_water_excluded": 0
+          },
+          "t50": {
+            "csi": null,
+            "far": null,
+            "hr": null,
+            "n_valid": 0,
+            "n_ref_water_excluded": 0
+          }
+        }
+      },
+      "gfm": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_445_gfm.png",
+          "t10": "layers/t10/KuroSiwo_445_gfm.png",
+          "t25": "layers/t25/KuroSiwo_445_gfm.png",
+          "t50": "layers/t50/KuroSiwo_445_gfm.png"
+        },
+        "bounds": [
+          [
+            47.166666666666664,
+            23.416666666666657
+          ],
+          [
+            49.05,
+            27.133333333333326
+          ]
+        ],
+        "date": "20200624",
+        "scores": {
+          "t05": {
+            "csi": null,
+            "far": null,
+            "hr": null,
+            "n_valid": 0,
+            "n_ref_water_excluded": 0
+          },
+          "t10": {
+            "csi": null,
+            "far": null,
+            "hr": null,
+            "n_valid": 0,
+            "n_ref_water_excluded": 0
+          },
+          "t25": {
+            "csi": null,
+            "far": null,
+            "hr": null,
+            "n_valid": 0,
+            "n_ref_water_excluded": 0
+          },
+          "t50": {
+            "csi": null,
+            "far": null,
+            "hr": null,
+            "n_valid": 0,
+            "n_ref_water_excluded": 0
+          }
+        }
+      },
+      "modis": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_445_modis.png",
+          "t10": "layers/t10/KuroSiwo_445_modis.png",
+          "t25": "layers/t25/KuroSiwo_445_modis.png",
+          "t50": "layers/t50/KuroSiwo_445_modis.png"
+        },
+        "bounds": [
+          [
+            47.166666666666664,
+            23.416666666666668
+          ],
+          [
+            49.05,
+            27.133333333333333
+          ]
+        ],
+        "date": "2020-06-26",
+        "scores": {
+          "t05": {
+            "csi": null,
+            "far": null,
+            "hr": null,
+            "n_valid": 0,
+            "n_ref_water_excluded": 0
+          },
+          "t10": {
+            "csi": null,
+            "far": null,
+            "hr": null,
+            "n_valid": 0,
+            "n_ref_water_excluded": 0
+          },
+          "t25": {
+            "csi": null,
+            "far": null,
+            "hr": null,
+            "n_valid": 0,
+            "n_ref_water_excluded": 0
+          },
+          "t50": {
+            "csi": null,
+            "far": null,
+            "hr": null,
+            "n_valid": 0,
+            "n_ref_water_excluded": 0
+          }
+        }
+      },
+      "reference_water": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_445_reference_water.png",
+          "t10": "layers/t10/KuroSiwo_445_reference_water.png",
+          "t25": "layers/t25/KuroSiwo_445_reference_water.png",
+          "t50": "layers/t50/KuroSiwo_445_reference_water.png"
+        },
+        "bounds": [
+          [
+            47.166666666666664,
+            23.416666666666668
+          ],
+          [
+            49.05,
+            27.133333333333333
+          ]
+        ],
+        "date": null,
+        "source_used": "modis"
+      }
+    },
+    "KuroSiwo_470": {
+      "cama_flood": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_470_cama_flood.png",
+          "t10": "layers/t10/KuroSiwo_470_cama_flood.png",
+          "t25": "layers/t25/KuroSiwo_470_cama_flood.png",
+          "t50": "layers/t50/KuroSiwo_470_cama_flood.png"
+        },
+        "bounds": [
+          [
+            7.773689000004541,
+            -1.3583358489227555
+          ],
+          [
+            12.223778000004538,
+            2.4916712810369557
+          ]
+        ],
+        "date": "2020-10-14"
+      },
+      "viirs": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_470_viirs.png",
+          "t10": "layers/t10/KuroSiwo_470_viirs.png",
+          "t25": "layers/t25/KuroSiwo_470_viirs.png",
+          "t50": "layers/t50/KuroSiwo_470_viirs.png"
+        },
+        "bounds": [
+          [
+            8.249999999999998,
+            -0.8666666666666742
+          ],
+          [
+            11.733333333333334,
+            2.0
+          ]
+        ],
+        "date": "2020-10-13",
+        "scores": {
+          "t05": {
+            "csi": 0.5747126436781609,
+            "far": 0.3150684931506849,
+            "hr": 0.78125,
+            "n_valid": 90,
+            "n_ref_water_excluded": 105
+          },
+          "t10": {
+            "csi": 0.4430379746835443,
+            "far": 0.46153846153846156,
+            "hr": 0.7142857142857143,
+            "n_valid": 90,
+            "n_ref_water_excluded": 105
+          },
+          "t25": {
+            "csi": 0.16363636363636364,
+            "far": 0.7428571428571429,
+            "hr": 0.3103448275862069,
+            "n_valid": 90,
+            "n_ref_water_excluded": 105
+          },
+          "t50": {
+            "csi": 0.058823529411764705,
+            "far": 0.9047619047619048,
+            "hr": 0.13333333333333333,
+            "n_valid": 90,
+            "n_ref_water_excluded": 105
+          }
+        }
+      },
+      "gfm": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_470_gfm.png",
+          "t10": "layers/t10/KuroSiwo_470_gfm.png",
+          "t25": "layers/t25/KuroSiwo_470_gfm.png",
+          "t50": "layers/t50/KuroSiwo_470_gfm.png"
+        },
+        "bounds": [
+          [
+            8.249999999999998,
+            -0.8666666666666742
+          ],
+          [
+            11.733333333333334,
+            2.0
+          ]
+        ],
+        "date": "20201014",
+        "scores": {
+          "t05": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 90,
+            "n_ref_water_excluded": 105
+          },
+          "t10": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 90,
+            "n_ref_water_excluded": 105
+          },
+          "t25": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 90,
+            "n_ref_water_excluded": 105
+          },
+          "t50": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 90,
+            "n_ref_water_excluded": 105
+          }
+        }
+      },
+      "modis": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_470_modis.png",
+          "t10": "layers/t10/KuroSiwo_470_modis.png",
+          "t25": "layers/t25/KuroSiwo_470_modis.png",
+          "t50": "layers/t50/KuroSiwo_470_modis.png"
+        },
+        "bounds": [
+          [
+            8.266666666666666,
+            -0.8666666666666667
+          ],
+          [
+            11.733333333333333,
+            2.0
+          ]
+        ],
+        "date": "2020-10-14",
+        "scores": {
+          "t05": {
+            "csi": 0.4246575342465753,
+            "far": 0.515625,
+            "hr": 0.775,
+            "n_valid": 80,
+            "n_ref_water_excluded": 105
+          },
+          "t10": {
+            "csi": 0.2222222222222222,
+            "far": 0.75,
+            "hr": 0.6666666666666666,
+            "n_valid": 80,
+            "n_ref_water_excluded": 105
+          },
+          "t25": {
+            "csi": 0.06666666666666667,
+            "far": 0.9285714285714286,
+            "hr": 0.5,
+            "n_valid": 80,
+            "n_ref_water_excluded": 105
+          },
+          "t50": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 80,
+            "n_ref_water_excluded": 105
+          }
+        }
+      },
+      "reference_water": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_470_reference_water.png",
+          "t10": "layers/t10/KuroSiwo_470_reference_water.png",
+          "t25": "layers/t25/KuroSiwo_470_reference_water.png",
+          "t50": "layers/t50/KuroSiwo_470_reference_water.png"
+        },
+        "bounds": [
+          [
+            8.266666666666666,
+            -0.8666666666666667
+          ],
+          [
+            11.733333333333333,
+            2.0
+          ]
+        ],
+        "date": null,
+        "source_used": "modis"
+      }
+    },
+    "KuroSiwo_492": {
+      "cama_flood": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_492_cama_flood.png",
+          "t10": "layers/t10/KuroSiwo_492_cama_flood.png",
+          "t25": "layers/t25/KuroSiwo_492_cama_flood.png",
+          "t50": "layers/t50/KuroSiwo_492_cama_flood.png"
+        },
+        "bounds": [
+          [
+            41.75770200000518,
+            -2.675004953973911
+          ],
+          [
+            44.55775800000488,
+            1.7250031945514726
+          ]
+        ],
+        "date": "2021-01-02"
+      },
+      "viirs": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_492_viirs.png",
+          "t10": "layers/t10/KuroSiwo_492_viirs.png",
+          "t25": "layers/t25/KuroSiwo_492_viirs.png",
+          "t50": "layers/t50/KuroSiwo_492_viirs.png"
+        },
+        "bounds": [
+          [
+            42.25,
+            -2.1999999999999886
+          ],
+          [
+            44.083333333333336,
+            1.25
+          ]
+        ],
+        "date": "2020-12-31",
+        "scores": {
+          "t05": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 48,
+            "n_ref_water_excluded": 0
+          },
+          "t10": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 48,
+            "n_ref_water_excluded": 0
+          },
+          "t25": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 48,
+            "n_ref_water_excluded": 0
+          },
+          "t50": {
+            "csi": null,
+            "far": null,
+            "hr": null,
+            "n_valid": 48,
+            "n_ref_water_excluded": 0
+          }
+        }
+      },
+      "gfm": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_492_gfm.png",
+          "t10": "layers/t10/KuroSiwo_492_gfm.png",
+          "t25": "layers/t25/KuroSiwo_492_gfm.png",
+          "t50": "layers/t50/KuroSiwo_492_gfm.png"
+        },
+        "bounds": [
+          [
+            42.25,
+            -2.1999999999999886
+          ],
+          [
+            44.083333333333336,
+            1.25
+          ]
+        ],
+        "date": "20210102",
+        "scores": {
+          "t05": {
+            "csi": 0.1,
+            "far": 0.9,
+            "hr": 1.0,
+            "n_valid": 48,
+            "n_ref_water_excluded": 0
+          },
+          "t10": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 48,
+            "n_ref_water_excluded": 0
+          },
+          "t25": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 48,
+            "n_ref_water_excluded": 0
+          },
+          "t50": {
+            "csi": null,
+            "far": null,
+            "hr": null,
+            "n_valid": 48,
+            "n_ref_water_excluded": 0
+          }
+        }
+      },
+      "modis": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_492_modis.png",
+          "t10": "layers/t10/KuroSiwo_492_modis.png",
+          "t25": "layers/t25/KuroSiwo_492_modis.png",
+          "t50": "layers/t50/KuroSiwo_492_modis.png"
+        },
+        "bounds": [
+          [
+            42.25,
+            -2.2
+          ],
+          [
+            44.083333333333336,
+            1.233333333333333
+          ]
+        ],
+        "date": "2021-01-02",
+        "scores": {
+          "t05": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 10,
+            "n_ref_water_excluded": 0
+          },
+          "t10": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 10,
+            "n_ref_water_excluded": 0
+          },
+          "t25": {
+            "csi": null,
+            "far": null,
+            "hr": null,
+            "n_valid": 10,
+            "n_ref_water_excluded": 0
+          },
+          "t50": {
+            "csi": null,
+            "far": null,
+            "hr": null,
+            "n_valid": 10,
+            "n_ref_water_excluded": 0
+          }
+        }
+      },
+      "reference_water": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_492_reference_water.png",
+          "t10": "layers/t10/KuroSiwo_492_reference_water.png",
+          "t25": "layers/t25/KuroSiwo_492_reference_water.png",
+          "t50": "layers/t50/KuroSiwo_492_reference_water.png"
+        },
+        "bounds": [
+          [
+            42.25,
+            -2.2
+          ],
+          [
+            44.083333333333336,
+            1.233333333333333
+          ]
+        ],
+        "date": null,
+        "source_used": "modis"
+      }
+    },
+    "KuroSiwo_496": {
+      "cama_flood": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_496_cama_flood.png",
+          "t10": "layers/t10/KuroSiwo_496_cama_flood.png",
+          "t25": "layers/t25/KuroSiwo_496_cama_flood.png",
+          "t50": "layers/t50/KuroSiwo_496_cama_flood.png"
+        },
+        "bounds": [
+          [
+            41.09102200000525,
+            11.591688133669184
+          ],
+          [
+            43.957746000004946,
+            15.641695634016624
+          ]
+        ],
+        "date": "2021-01-27"
+      },
+      "gfm": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_496_gfm.png",
+          "t10": "layers/t10/KuroSiwo_496_gfm.png",
+          "t25": "layers/t25/KuroSiwo_496_gfm.png",
+          "t50": "layers/t50/KuroSiwo_496_gfm.png"
+        },
+        "bounds": [
+          [
+            41.56666666666667,
+            12.066666666666663
+          ],
+          [
+            43.46666666666667,
+            15.166666666666659
+          ]
+        ],
+        "date": "20210127",
+        "scores": {
+          "t05": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 91,
+            "n_ref_water_excluded": 11
+          },
+          "t10": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 91,
+            "n_ref_water_excluded": 11
+          },
+          "t25": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 91,
+            "n_ref_water_excluded": 11
+          },
+          "t50": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 91,
+            "n_ref_water_excluded": 11
+          }
+        }
+      },
+      "modis": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_496_modis.png",
+          "t10": "layers/t10/KuroSiwo_496_modis.png",
+          "t25": "layers/t25/KuroSiwo_496_modis.png",
+          "t50": "layers/t50/KuroSiwo_496_modis.png"
+        },
+        "bounds": [
+          [
+            41.583333333333336,
+            12.066666666666666
+          ],
+          [
+            43.46666666666667,
+            15.166666666666666
+          ]
+        ],
+        "date": "2021-01-27",
+        "scores": {
+          "t05": {
+            "csi": 0.012345679012345678,
+            "far": 0.9876543209876543,
+            "hr": 1.0,
+            "n_valid": 87,
+            "n_ref_water_excluded": 11
+          },
+          "t10": {
+            "csi": 0.012987012987012988,
+            "far": 0.987012987012987,
+            "hr": 1.0,
+            "n_valid": 87,
+            "n_ref_water_excluded": 11
+          },
+          "t25": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 87,
+            "n_ref_water_excluded": 11
+          },
+          "t50": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 87,
+            "n_ref_water_excluded": 11
+          }
+        }
+      },
+      "reference_water": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_496_reference_water.png",
+          "t10": "layers/t10/KuroSiwo_496_reference_water.png",
+          "t25": "layers/t25/KuroSiwo_496_reference_water.png",
+          "t50": "layers/t50/KuroSiwo_496_reference_water.png"
+        },
+        "bounds": [
+          [
+            41.583333333333336,
+            12.066666666666666
+          ],
+          [
+            43.46666666666667,
+            15.166666666666666
+          ]
+        ],
+        "date": null,
+        "source_used": "modis"
+      }
+    },
+    "KuroSiwo_497": {
+      "cama_flood": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_497_cama_flood.png",
+          "t10": "layers/t10/KuroSiwo_497_cama_flood.png",
+          "t25": "layers/t25/KuroSiwo_497_cama_flood.png",
+          "t50": "layers/t50/KuroSiwo_497_cama_flood.png"
+        },
+        "bounds": [
+          [
+            49.24118500000438,
+            3.1083390897318006
+          ],
+          [
+            53.57460500000391,
+            8.525015787727089
+          ]
+        ],
+        "date": "2021-02-03"
+      },
+      "modis": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_497_modis.png",
+          "t10": "layers/t10/KuroSiwo_497_modis.png",
+          "t25": "layers/t25/KuroSiwo_497_modis.png",
+          "t50": "layers/t50/KuroSiwo_497_modis.png"
+        },
+        "bounds": [
+          [
+            49.733333333333334,
+            3.6
+          ],
+          [
+            53.083333333333336,
+            8.033333333333333
+          ]
+        ],
+        "date": "2021-02-03",
+        "scores": {
+          "t05": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 6,
+            "n_ref_water_excluded": 0
+          },
+          "t10": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 6,
+            "n_ref_water_excluded": 0
+          },
+          "t25": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 6,
+            "n_ref_water_excluded": 0
+          },
+          "t50": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 6,
+            "n_ref_water_excluded": 0
+          }
+        }
+      }
+    },
+    "KuroSiwo_498": {
+      "cama_flood": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_498_cama_flood.png",
+          "t10": "layers/t10/KuroSiwo_498_cama_flood.png",
+          "t25": "layers/t25/KuroSiwo_498_cama_flood.png",
+          "t50": "layers/t50/KuroSiwo_498_cama_flood.png"
+        },
+        "bounds": [
+          [
+            43.041061000005044,
+            -0.34166729945287544
+          ],
+          [
+            45.924452000004734,
+            4.12500763920168
+          ]
+        ],
+        "date": "2021-02-02"
+      },
+      "modis": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_498_modis.png",
+          "t10": "layers/t10/KuroSiwo_498_modis.png",
+          "t25": "layers/t25/KuroSiwo_498_modis.png",
+          "t50": "layers/t50/KuroSiwo_498_modis.png"
+        },
+        "bounds": [
+          [
+            43.51666666666667,
+            0.13333333333333333
+          ],
+          [
+            45.45,
+            3.6333333333333333
+          ]
+        ],
+        "date": "2021-02-02",
+        "scores": {
+          "t05": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 46,
+            "n_ref_water_excluded": 0
+          },
+          "t10": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 46,
+            "n_ref_water_excluded": 0
+          },
+          "t25": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 46,
+            "n_ref_water_excluded": 0
+          },
+          "t50": {
+            "csi": null,
+            "far": null,
+            "hr": null,
+            "n_valid": 46,
+            "n_ref_water_excluded": 0
+          }
+        }
+      },
+      "reference_water": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_498_reference_water.png",
+          "t10": "layers/t10/KuroSiwo_498_reference_water.png",
+          "t25": "layers/t25/KuroSiwo_498_reference_water.png",
+          "t50": "layers/t50/KuroSiwo_498_reference_water.png"
+        },
+        "bounds": [
+          [
+            43.51666666666667,
+            0.13333333333333333
+          ],
+          [
+            45.45,
+            3.6333333333333333
+          ]
+        ],
+        "date": null,
+        "source_used": "modis"
+      }
+    },
+    "KuroSiwo_502": {
+      "cama_flood": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_502_cama_flood.png",
+          "t10": "layers/t10/KuroSiwo_502_cama_flood.png",
+          "t25": "layers/t25/KuroSiwo_502_cama_flood.png",
+          "t50": "layers/t50/KuroSiwo_502_cama_flood.png"
+        },
+        "bounds": [
+          [
+            50.9245520000042,
+            -11.091687207782094
+          ],
+          [
+            54.307953000003835,
+            -6.375011806142981
+          ]
+        ],
+        "date": "2021-02-23"
+      },
+      "gfm": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_502_gfm.png",
+          "t10": "layers/t10/KuroSiwo_502_gfm.png",
+          "t25": "layers/t25/KuroSiwo_502_gfm.png",
+          "t50": "layers/t50/KuroSiwo_502_gfm.png"
+        },
+        "bounds": [
+          [
+            51.416666666666664,
+            -10.599999999999994
+          ],
+          [
+            53.81666666666667,
+            -6.866666666666673
+          ]
+        ],
+        "date": "20210223",
+        "scores": {
+          "t05": {
+            "csi": 0.009174311926605505,
+            "far": 0.9907192575406032,
+            "hr": 0.4444444444444444,
+            "n_valid": 549,
+            "n_ref_water_excluded": 0
+          },
+          "t10": {
+            "csi": 0.0024937655860349127,
+            "far": 0.9974874371859297,
+            "hr": 0.25,
+            "n_valid": 549,
+            "n_ref_water_excluded": 0
+          },
+          "t25": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 549,
+            "n_ref_water_excluded": 0
+          },
+          "t50": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 549,
+            "n_ref_water_excluded": 0
+          }
+        }
+      },
+      "modis": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_502_modis.png",
+          "t10": "layers/t10/KuroSiwo_502_modis.png",
+          "t25": "layers/t25/KuroSiwo_502_modis.png",
+          "t50": "layers/t50/KuroSiwo_502_modis.png"
+        },
+        "bounds": [
+          [
+            51.416666666666664,
+            -10.6
+          ],
+          [
+            53.81666666666666,
+            -6.866666666666666
+          ]
+        ],
+        "date": "2021-02-23",
+        "scores": {
+          "t05": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 4,
+            "n_ref_water_excluded": 0
+          },
+          "t10": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 4,
+            "n_ref_water_excluded": 0
+          },
+          "t25": {
+            "csi": null,
+            "far": null,
+            "hr": null,
+            "n_valid": 4,
+            "n_ref_water_excluded": 0
+          },
+          "t50": {
+            "csi": null,
+            "far": null,
+            "hr": null,
+            "n_valid": 4,
+            "n_ref_water_excluded": 0
+          }
+        }
+      },
+      "reference_water": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_502_reference_water.png",
+          "t10": "layers/t10/KuroSiwo_502_reference_water.png",
+          "t25": "layers/t25/KuroSiwo_502_reference_water.png",
+          "t50": "layers/t50/KuroSiwo_502_reference_water.png"
+        },
+        "bounds": [
+          [
+            51.416666666666664,
+            -10.6
+          ],
+          [
+            53.81666666666666,
+            -6.866666666666666
+          ]
+        ],
+        "date": null,
+        "source_used": "modis"
+      }
+    },
+    "KuroSiwo_518": {
+      "cama_flood": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_518_cama_flood.png",
+          "t10": "layers/t10/KuroSiwo_518_cama_flood.png",
+          "t25": "layers/t25/KuroSiwo_518_cama_flood.png",
+          "t50": "layers/t50/KuroSiwo_518_cama_flood.png"
+        },
+        "bounds": [
+          [
+            48.724508000004434,
+            2.991672207005749
+          ],
+          [
+            53.05792800000397,
+            8.341682114871855
+          ]
+        ],
+        "date": "2021-07-15"
+      },
+      "modis": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_518_modis.png",
+          "t10": "layers/t10/KuroSiwo_518_modis.png",
+          "t25": "layers/t25/KuroSiwo_518_modis.png",
+          "t50": "layers/t50/KuroSiwo_518_modis.png"
+        },
+        "bounds": [
+          [
+            49.21666666666667,
+            3.466666666666667
+          ],
+          [
+            52.583333333333336,
+            7.85
+          ]
+        ],
+        "date": "2021-07-15",
+        "scores": {
+          "t05": {
+            "csi": null,
+            "far": null,
+            "hr": null,
+            "n_valid": 0,
+            "n_ref_water_excluded": 0
+          },
+          "t10": {
+            "csi": null,
+            "far": null,
+            "hr": null,
+            "n_valid": 0,
+            "n_ref_water_excluded": 0
+          },
+          "t25": {
+            "csi": null,
+            "far": null,
+            "hr": null,
+            "n_valid": 0,
+            "n_ref_water_excluded": 0
+          },
+          "t50": {
+            "csi": null,
+            "far": null,
+            "hr": null,
+            "n_valid": 0,
+            "n_ref_water_excluded": 0
+          }
+        }
+      }
+    },
+    "KuroSiwo_520": {
+      "cama_flood": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_520_cama_flood.png",
+          "t10": "layers/t10/KuroSiwo_520_cama_flood.png",
+          "t25": "layers/t25/KuroSiwo_520_cama_flood.png",
+          "t50": "layers/t50/KuroSiwo_520_cama_flood.png"
+        },
+        "bounds": [
+          [
+            49.0078470000044,
+            5.108342793606973
+          ],
+          [
+            53.374601000003935,
+            10.49168609653778
+          ]
+        ],
+        "date": "2021-07-16"
+      },
+      "modis": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_520_modis.png",
+          "t10": "layers/t10/KuroSiwo_520_modis.png",
+          "t25": "layers/t25/KuroSiwo_520_modis.png",
+          "t50": "layers/t50/KuroSiwo_520_modis.png"
+        },
+        "bounds": [
+          [
+            49.5,
+            5.6
+          ],
+          [
+            52.88333333333333,
+            10.0
+          ]
+        ],
+        "date": "2021-07-16",
+        "scores": {
+          "t05": {
+            "csi": null,
+            "far": null,
+            "hr": null,
+            "n_valid": 0,
+            "n_ref_water_excluded": 0
+          },
+          "t10": {
+            "csi": null,
+            "far": null,
+            "hr": null,
+            "n_valid": 0,
+            "n_ref_water_excluded": 0
+          },
+          "t25": {
+            "csi": null,
+            "far": null,
+            "hr": null,
+            "n_valid": 0,
+            "n_ref_water_excluded": 0
+          },
+          "t50": {
+            "csi": null,
+            "far": null,
+            "hr": null,
+            "n_valid": 0,
+            "n_ref_water_excluded": 0
+          }
+        }
+      },
+      "reference_water": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_520_reference_water.png",
+          "t10": "layers/t10/KuroSiwo_520_reference_water.png",
+          "t25": "layers/t25/KuroSiwo_520_reference_water.png",
+          "t50": "layers/t50/KuroSiwo_520_reference_water.png"
+        },
+        "bounds": [
+          [
+            49.5,
+            5.6
+          ],
+          [
+            52.88333333333333,
+            10.0
+          ]
+        ],
+        "date": null,
+        "source_used": "modis"
+      }
+    },
+    "KuroSiwo_554": {
+      "cama_flood": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_554_cama_flood.png",
+          "t10": "layers/t10/KuroSiwo_554_cama_flood.png",
+          "t25": "layers/t25/KuroSiwo_554_cama_flood.png",
+          "t50": "layers/t50/KuroSiwo_554_cama_flood.png"
+        },
+        "bounds": [
+          [
+            -29.260384999996845,
+            148.30860799104087
+          ],
+          [
+            -26.443661999996547,
+            152.17528181853143
+          ]
+        ],
+        "date": "2021-11-30"
+      },
+      "gfm": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_554_gfm.png",
+          "t10": "layers/t10/KuroSiwo_554_gfm.png",
+          "t25": "layers/t25/KuroSiwo_554_gfm.png",
+          "t50": "layers/t50/KuroSiwo_554_gfm.png"
+        },
+        "bounds": [
+          [
+            -28.766666666666666,
+            148.7833333333333
+          ],
+          [
+            -26.91666666666667,
+            151.68333333333337
+          ]
+        ],
+        "date": "20211204",
+        "scores": {
+          "t05": {
+            "csi": 0.22896698615548455,
+            "far": 0.7667269439421338,
+            "hr": 0.9253945480631277,
+            "n_valid": 3369,
+            "n_ref_water_excluded": 0
+          },
+          "t10": {
+            "csi": 0.15736961451247167,
+            "far": 0.836166194523135,
+            "hr": 0.7995391705069125,
+            "n_valid": 3369,
+            "n_ref_water_excluded": 0
+          },
+          "t25": {
+            "csi": 0.03336809176225235,
+            "far": 0.9655543595263725,
+            "hr": 0.5161290322580645,
+            "n_valid": 3369,
+            "n_ref_water_excluded": 0
+          },
+          "t50": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 3369,
+            "n_ref_water_excluded": 0
+          }
+        }
+      },
+      "modis": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_554_modis.png",
+          "t10": "layers/t10/KuroSiwo_554_modis.png",
+          "t25": "layers/t25/KuroSiwo_554_modis.png",
+          "t50": "layers/t50/KuroSiwo_554_modis.png"
+        },
+        "bounds": [
+          [
+            -28.76666666666667,
+            148.78333333333333
+          ],
+          [
+            -26.916666666666668,
+            151.68333333333334
+          ]
+        ],
+        "date": "2021-11-30",
+        "scores": {
+          "t05": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 171,
+            "n_ref_water_excluded": 0
+          },
+          "t10": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 171,
+            "n_ref_water_excluded": 0
+          },
+          "t25": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 171,
+            "n_ref_water_excluded": 0
+          },
+          "t50": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 171,
+            "n_ref_water_excluded": 0
+          }
+        }
+      },
+      "reference_water": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_554_reference_water.png",
+          "t10": "layers/t10/KuroSiwo_554_reference_water.png",
+          "t25": "layers/t25/KuroSiwo_554_reference_water.png",
+          "t50": "layers/t50/KuroSiwo_554_reference_water.png"
+        },
+        "bounds": [
+          [
+            -28.766666666666666,
+            148.7833333333333
+          ],
+          [
+            -26.91666666666667,
+            151.68333333333334
+          ]
+        ],
+        "date": null,
+        "source_used": "gfm"
+      }
+    },
+    "KuroSiwo_555": {
+      "cama_flood": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_555_cama_flood.png",
+          "t10": "layers/t10/KuroSiwo_555_cama_flood.png",
+          "t25": "layers/t25/KuroSiwo_555_cama_flood.png",
+          "t50": "layers/t50/KuroSiwo_555_cama_flood.png"
+        },
+        "bounds": [
+          [
+            39.07431500000547,
+            -4.425008194864687
+          ],
+          [
+            44.94109900000484,
+            0.45833418209719634
+          ]
+        ],
+        "date": "2021-12-10"
+      },
+      "modis": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_555_modis.png",
+          "t10": "layers/t10/KuroSiwo_555_modis.png",
+          "t25": "layers/t25/KuroSiwo_555_modis.png",
+          "t50": "layers/t50/KuroSiwo_555_modis.png"
+        },
+        "bounds": [
+          [
+            39.56666666666667,
+            -3.9499999999999997
+          ],
+          [
+            44.46666666666667,
+            -0.033333333333333215
+          ]
+        ],
+        "date": "2021-12-10",
+        "scores": {
+          "t05": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 2,
+            "n_ref_water_excluded": 0
+          },
+          "t10": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 2,
+            "n_ref_water_excluded": 0
+          },
+          "t25": {
+            "csi": null,
+            "far": null,
+            "hr": null,
+            "n_valid": 2,
+            "n_ref_water_excluded": 0
+          },
+          "t50": {
+            "csi": null,
+            "far": null,
+            "hr": null,
+            "n_valid": 2,
+            "n_ref_water_excluded": 0
+          }
+        }
+      },
+      "reference_water": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_555_reference_water.png",
+          "t10": "layers/t10/KuroSiwo_555_reference_water.png",
+          "t25": "layers/t25/KuroSiwo_555_reference_water.png",
+          "t50": "layers/t50/KuroSiwo_555_reference_water.png"
+        },
+        "bounds": [
+          [
+            39.56666666666667,
+            -3.9499999999999997
+          ],
+          [
+            44.46666666666667,
+            -0.033333333333333215
+          ]
+        ],
+        "date": null,
+        "source_used": "modis"
+      }
+    },
+    "KuroSiwo_559": {
+      "cama_flood": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_559_cama_flood.png",
+          "t10": "layers/t10/KuroSiwo_559_cama_flood.png",
+          "t25": "layers/t25/KuroSiwo_559_cama_flood.png",
+          "t50": "layers/t50/KuroSiwo_559_cama_flood.png"
+        },
+        "bounds": [
+          [
+            -20.360206999995903,
+            45.991751840323985
+          ],
+          [
+            -17.326812999995582,
+            49.69175869249325
+          ]
+        ],
+        "date": "2022-01-27"
+      },
+      "gfm": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_559_gfm.png",
+          "t10": "layers/t10/KuroSiwo_559_gfm.png",
+          "t25": "layers/t25/KuroSiwo_559_gfm.png",
+          "t50": "layers/t50/KuroSiwo_559_gfm.png"
+        },
+        "bounds": [
+          [
+            -19.86666666666666,
+            46.48333333333332
+          ],
+          [
+            -17.816666666666663,
+            49.21666666666667
+          ]
+        ],
+        "date": "20220127",
+        "scores": {
+          "t05": {
+            "csi": 0.039473684210526314,
+            "far": 0.9605263157894737,
+            "hr": 1.0,
+            "n_valid": 106,
+            "n_ref_water_excluded": 3
+          },
+          "t10": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 106,
+            "n_ref_water_excluded": 3
+          },
+          "t25": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 106,
+            "n_ref_water_excluded": 3
+          },
+          "t50": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 106,
+            "n_ref_water_excluded": 3
+          }
+        }
+      },
+      "modis": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_559_modis.png",
+          "t10": "layers/t10/KuroSiwo_559_modis.png",
+          "t25": "layers/t25/KuroSiwo_559_modis.png",
+          "t50": "layers/t50/KuroSiwo_559_modis.png"
+        },
+        "bounds": [
+          [
+            -19.866666666666667,
+            46.483333333333334
+          ],
+          [
+            -17.816666666666666,
+            49.2
+          ]
+        ],
+        "date": "2022-01-27",
+        "scores": {
+          "t05": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 60,
+            "n_ref_water_excluded": 3
+          },
+          "t10": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 60,
+            "n_ref_water_excluded": 3
+          },
+          "t25": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 60,
+            "n_ref_water_excluded": 3
+          },
+          "t50": {
+            "csi": null,
+            "far": null,
+            "hr": null,
+            "n_valid": 60,
+            "n_ref_water_excluded": 3
+          }
+        }
+      },
+      "reference_water": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_559_reference_water.png",
+          "t10": "layers/t10/KuroSiwo_559_reference_water.png",
+          "t25": "layers/t25/KuroSiwo_559_reference_water.png",
+          "t50": "layers/t50/KuroSiwo_559_reference_water.png"
+        },
+        "bounds": [
+          [
+            -19.866666666666667,
+            46.483333333333334
+          ],
+          [
+            -17.816666666666666,
+            49.2
+          ]
+        ],
+        "date": null,
+        "source_used": "modis"
+      }
+    },
+    "KuroSiwo_561": {
+      "cama_flood": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_561_cama_flood.png",
+          "t10": "layers/t10/KuroSiwo_561_cama_flood.png",
+          "t25": "layers/t25/KuroSiwo_561_cama_flood.png",
+          "t50": "layers/t50/KuroSiwo_561_cama_flood.png"
+        },
+        "bounds": [
+          [
+            -18.193496999995673,
+            32.15839288851997
+          ],
+          [
+            -13.660072999995444,
+            36.15840029627053
+          ]
+        ],
+        "date": "2022-01-26"
+      },
+      "gfm": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_561_gfm.png",
+          "t10": "layers/t10/KuroSiwo_561_gfm.png",
+          "t25": "layers/t25/KuroSiwo_561_gfm.png",
+          "t50": "layers/t50/KuroSiwo_561_gfm.png"
+        },
+        "bounds": [
+          [
+            -17.700000000000003,
+            32.650000000000006
+          ],
+          [
+            -14.149999999999991,
+            35.68333333333334
+          ]
+        ],
+        "date": "20220126",
+        "scores": {
+          "t05": {
+            "csi": 0.08878127522195318,
+            "far": 0.910786699107867,
+            "hr": 0.9482758620689655,
+            "n_valid": 1477,
+            "n_ref_water_excluded": 238
+          },
+          "t10": {
+            "csi": 0.05312208760484623,
+            "far": 0.9463276836158192,
+            "hr": 0.8382352941176471,
+            "n_valid": 1477,
+            "n_ref_water_excluded": 238
+          },
+          "t25": {
+            "csi": 0.01366120218579235,
+            "far": 0.9862068965517241,
+            "hr": 0.5882352941176471,
+            "n_valid": 1477,
+            "n_ref_water_excluded": 238
+          },
+          "t50": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 1477,
+            "n_ref_water_excluded": 238
+          }
+        }
+      },
+      "modis": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_561_modis.png",
+          "t10": "layers/t10/KuroSiwo_561_modis.png",
+          "t25": "layers/t25/KuroSiwo_561_modis.png",
+          "t50": "layers/t50/KuroSiwo_561_modis.png"
+        },
+        "bounds": [
+          [
+            -17.7,
+            32.65
+          ],
+          [
+            -14.15,
+            35.666666666666664
+          ]
+        ],
+        "date": "2022-01-26",
+        "scores": {
+          "t05": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 447,
+            "n_ref_water_excluded": 238
+          },
+          "t10": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 447,
+            "n_ref_water_excluded": 238
+          },
+          "t25": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 447,
+            "n_ref_water_excluded": 238
+          },
+          "t50": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 447,
+            "n_ref_water_excluded": 238
+          }
+        }
+      },
+      "reference_water": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_561_reference_water.png",
+          "t10": "layers/t10/KuroSiwo_561_reference_water.png",
+          "t25": "layers/t25/KuroSiwo_561_reference_water.png",
+          "t50": "layers/t50/KuroSiwo_561_reference_water.png"
+        },
+        "bounds": [
+          [
+            -17.7,
+            32.65
+          ],
+          [
+            -14.15,
+            35.666666666666664
+          ]
+        ],
+        "date": null,
+        "source_used": "modis"
+      }
+    },
+    "KuroSiwo_562": {
+      "cama_flood": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_562_cama_flood.png",
+          "t10": "layers/t10/KuroSiwo_562_cama_flood.png",
+          "t25": "layers/t25/KuroSiwo_562_cama_flood.png",
+          "t50": "layers/t50/KuroSiwo_562_cama_flood.png"
+        },
+        "bounds": [
+          [
+            -18.676839999995725,
+            136.9585869715535
+          ],
+          [
+            -15.843449999995443,
+            140.3919266632046
+          ]
+        ],
+        "date": "2022-02-03"
+      },
+      "gfm": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_562_gfm.png",
+          "t10": "layers/t10/KuroSiwo_562_gfm.png",
+          "t25": "layers/t25/KuroSiwo_562_gfm.png",
+          "t50": "layers/t50/KuroSiwo_562_gfm.png"
+        },
+        "bounds": [
+          [
+            -18.183333333333337,
+            137.43333333333334
+          ],
+          [
+            -16.316666666666663,
+            139.9
+          ]
+        ],
+        "date": "20220203",
+        "scores": {
+          "t05": {
+            "csi": 0.17543859649122806,
+            "far": 0.8177676537585421,
+            "hr": 0.8247422680412371,
+            "n_valid": 519,
+            "n_ref_water_excluded": 154
+          },
+          "t10": {
+            "csi": 0.10696517412935323,
+            "far": 0.8883116883116883,
+            "hr": 0.7166666666666667,
+            "n_valid": 519,
+            "n_ref_water_excluded": 154
+          },
+          "t25": {
+            "csi": 0.0136986301369863,
+            "far": 0.985,
+            "hr": 0.13636363636363635,
+            "n_valid": 519,
+            "n_ref_water_excluded": 154
+          },
+          "t50": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": 0.0,
+            "n_valid": 519,
+            "n_ref_water_excluded": 154
+          }
+        }
+      },
+      "modis": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_562_modis.png",
+          "t10": "layers/t10/KuroSiwo_562_modis.png",
+          "t25": "layers/t25/KuroSiwo_562_modis.png",
+          "t50": "layers/t50/KuroSiwo_562_modis.png"
+        },
+        "bounds": [
+          [
+            -18.183333333333334,
+            137.43333333333334
+          ],
+          [
+            -16.316666666666666,
+            139.9
+          ]
+        ],
+        "date": "2022-02-03",
+        "scores": {
+          "t05": {
+            "csi": 0.336734693877551,
+            "far": 0.65625,
+            "hr": 0.9428571428571428,
+            "n_valid": 115,
+            "n_ref_water_excluded": 154
+          },
+          "t10": {
+            "csi": 0.31521739130434784,
+            "far": 0.6704545454545454,
+            "hr": 0.8787878787878788,
+            "n_valid": 115,
+            "n_ref_water_excluded": 154
+          },
+          "t25": {
+            "csi": 0.31666666666666665,
+            "far": 0.6041666666666666,
+            "hr": 0.6129032258064516,
+            "n_valid": 115,
+            "n_ref_water_excluded": 154
+          },
+          "t50": {
+            "csi": 0.19047619047619047,
+            "far": 0.6363636363636364,
+            "hr": 0.2857142857142857,
+            "n_valid": 115,
+            "n_ref_water_excluded": 154
+          }
+        }
+      },
+      "reference_water": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_562_reference_water.png",
+          "t10": "layers/t10/KuroSiwo_562_reference_water.png",
+          "t25": "layers/t25/KuroSiwo_562_reference_water.png",
+          "t50": "layers/t50/KuroSiwo_562_reference_water.png"
+        },
+        "bounds": [
+          [
+            -18.183333333333334,
+            137.43333333333334
+          ],
+          [
+            -16.316666666666666,
+            139.9
+          ]
+        ],
+        "date": null,
+        "source_used": "modis"
+      }
+    },
+    "KuroSiwo_567": {
+      "cama_flood": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_567_cama_flood.png",
+          "t10": "layers/t10/KuroSiwo_567_cama_flood.png",
+          "t25": "layers/t25/KuroSiwo_567_cama_flood.png",
+          "t50": "layers/t50/KuroSiwo_567_cama_flood.png"
+        },
+        "bounds": [
+          [
+            -34.310485999996885,
+            148.67527533675118
+          ],
+          [
+            -28.627038999996778,
+            153.8752849668247
+          ]
+        ],
+        "date": "2022-03-02"
+      },
+      "gfm": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_567_gfm.png",
+          "t10": "layers/t10/KuroSiwo_567_gfm.png",
+          "t25": "layers/t25/KuroSiwo_567_gfm.png",
+          "t50": "layers/t50/KuroSiwo_567_gfm.png"
+        },
+        "bounds": [
+          [
+            -33.81666666666666,
+            149.16666666666669
+          ],
+          [
+            -29.099999999999994,
+            153.38333333333335
+          ]
+        ],
+        "date": "20220302",
+        "scores": {
+          "t05": {
+            "csi": 0.21997206703910616,
+            "far": 0.7784810126582279,
+            "hr": 0.9692307692307692,
+            "n_valid": 1807,
+            "n_ref_water_excluded": 15
+          },
+          "t10": {
+            "csi": 0.17103235747303544,
+            "far": 0.8287037037037037,
+            "hr": 0.9910714285714286,
+            "n_valid": 1807,
+            "n_ref_water_excluded": 15
+          },
+          "t25": {
+            "csi": 0.112,
+            "far": 0.888,
+            "hr": 1.0,
+            "n_valid": 1807,
+            "n_ref_water_excluded": 15
+          },
+          "t50": {
+            "csi": 0.0,
+            "far": 1.0,
+            "hr": null,
+            "n_valid": 1807,
+            "n_ref_water_excluded": 15
+          }
+        }
+      },
+      "modis": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_567_modis.png",
+          "t10": "layers/t10/KuroSiwo_567_modis.png",
+          "t25": "layers/t25/KuroSiwo_567_modis.png",
+          "t50": "layers/t50/KuroSiwo_567_modis.png"
+        },
+        "bounds": [
+          [
+            -33.81666666666666,
+            149.16666666666666
+          ],
+          [
+            -29.099999999999998,
+            153.38333333333333
+          ]
+        ],
+        "date": "2022-03-02",
+        "scores": {
+          "t05": {
+            "csi": 0.3858520900321543,
+            "far": 0.6065573770491803,
+            "hr": 0.9523809523809523,
+            "n_valid": 364,
+            "n_ref_water_excluded": 15
+          },
+          "t10": {
+            "csi": 0.35125448028673834,
+            "far": 0.6423357664233577,
+            "hr": 0.9514563106796117,
+            "n_valid": 364,
+            "n_ref_water_excluded": 15
+          },
+          "t25": {
+            "csi": 0.33004926108374383,
+            "far": 0.6616161616161617,
+            "hr": 0.9305555555555556,
+            "n_valid": 364,
+            "n_ref_water_excluded": 15
+          },
+          "t50": {
+            "csi": 0.23776223776223776,
+            "far": 0.7518248175182481,
+            "hr": 0.85,
+            "n_valid": 364,
+            "n_ref_water_excluded": 15
+          }
+        }
+      },
+      "reference_water": {
+        "png": {
+          "t05": "layers/t05/KuroSiwo_567_reference_water.png",
+          "t10": "layers/t10/KuroSiwo_567_reference_water.png",
+          "t25": "layers/t25/KuroSiwo_567_reference_water.png",
+          "t50": "layers/t50/KuroSiwo_567_reference_water.png"
+        },
+        "bounds": [
+          [
+            -33.81666666666666,
+            149.16666666666666
+          ],
+          [
+            -29.099999999999998,
+            153.38333333333333
+          ]
+        ],
+        "date": null,
+        "source_used": "modis"
+      }
+    }
+  }
+}

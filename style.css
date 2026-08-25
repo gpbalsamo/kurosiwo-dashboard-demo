@@ -1,0 +1,276 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+}
+
+header {
+  padding: 12px 20px;
+  background: #1f2937;
+  color: white;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 22px;
+}
+
+header p {
+  margin: 4px 0 0;
+  font-size: 14px;
+}
+
+#dashboard-nav {
+  margin-top: 6px;
+  font-size: 13px;
+}
+
+#dashboard-nav a {
+  color: #93c5fd;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: calc(100vh - 75px);
+}
+
+#map {
+  height: 100%;
+}
+
+#panel {
+  padding: 16px;
+  overflow-y: auto;
+  background: white;
+  border-left: 1px solid #ccc;
+}
+
+#event-title {
+  margin-top: 0;
+}
+
+#event-info {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+#threshold-control,
+#layer-control,
+#event-list-control,
+#score-control {
+  margin: 16px 0;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: #fafafa;
+}
+
+#threshold-control h3,
+#layer-control h3,
+#event-list-control h3,
+#score-control h3 {
+  margin: 0 0 8px;
+  font-size: 14px;
+}
+
+#threshold-control p.muted,
+#event-list-control p.muted,
+#score-control p.muted {
+  margin: 0 0 8px;
+}
+
+#event-count {
+  font-weight: normal;
+  font-size: 12px;
+}
+
+#event-list {
+  max-height: 220px;
+  overflow-y: auto;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+  background: white;
+}
+
+.event-list-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 6px 8px;
+  font-size: 12px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+}
+
+.event-list-item:last-child {
+  border-bottom: none;
+}
+
+.event-list-item:hover {
+  background: #f0f4ff;
+}
+
+.event-list-item.active {
+  background: #1f2937;
+  color: white;
+}
+
+.event-list-item .event-list-name {
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.event-list-item .event-list-place {
+  color: #888;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex: 1;
+  text-align: right;
+}
+
+.event-list-item.active .event-list-place {
+  color: #cbd5e1;
+}
+
+.event-list-item .event-list-date {
+  color: #666;
+  white-space: nowrap;
+}
+
+.event-list-item.active .event-list-date {
+  color: #cbd5e1;
+}
+
+.score-block {
+  margin-bottom: 12px;
+}
+
+.score-block:last-child {
+  margin-bottom: 0;
+}
+
+.score-block-title {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.score-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
+}
+
+.score-table th,
+.score-table td {
+  border: 1px solid #e5e5e5;
+  padding: 3px 6px;
+  text-align: center;
+}
+
+.score-table thead th {
+  background: #eef1f5;
+  font-weight: normal;
+  color: #555;
+}
+
+.score-table tbody th {
+  text-align: left;
+  color: #555;
+  font-weight: normal;
+  background: #fafafa;
+}
+
+#threshold-rows {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.threshold-btn {
+  font-size: 12px;
+  padding: 4px 10px;
+  border: 1px solid #bbb;
+  border-radius: 999px;
+  background: white;
+  cursor: pointer;
+}
+
+.threshold-btn.active {
+  background: #1f2937;
+  color: white;
+  border-color: #1f2937;
+}
+
+.layer-row {
+  padding: 4px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.layer-row:last-child {
+  border-bottom: none;
+}
+
+.layer-row-main {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+}
+
+.layer-row .swatch {
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+.layer-row .layer-label {
+  display: flex;
+  align-items: center;
+}
+
+.layer-row .layer-date {
+  font-size: 11px;
+  color: #666;
+}
+
+.layer-row input[type="range"] {
+  width: 70px;
+}
+
+.muted {
+  color: #888;
+  font-size: 13px;
+}
+
+#reference-figure {
+  margin-top: 8px;
+}
+
+#reference-figure summary {
+  cursor: pointer;
+  font-size: 13px;
+  color: #1f2937;
+}
+
+#event-image {
+  width: 100%;
+  height: auto;
+  max-height: 70vh;
+  object-fit: contain;
+  border: 1px solid #ccc;
+  margin-top: 8px;
+}
+
+.event-popup {
+  font-size: 13px;
+}
