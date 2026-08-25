@@ -44,10 +44,10 @@
     "Queensland_Floods": {
       "cama_flood": {
         "png": {
-          "t05": "layers/t05/Queensland_Floods_cama_flood.png?v=1787679362",
-          "t10": "layers/t10/Queensland_Floods_cama_flood.png?v=1787679362",
-          "t25": "layers/t25/Queensland_Floods_cama_flood.png?v=1787679362",
-          "t50": "layers/t50/Queensland_Floods_cama_flood.png?v=1787679362"
+          "t05": "layers/t05/Queensland_Floods_cama_flood.png?v=1787680122",
+          "t10": "layers/t10/Queensland_Floods_cama_flood.png?v=1787680122",
+          "t25": "layers/t25/Queensland_Floods_cama_flood.png?v=1787680122",
+          "t50": "layers/t50/Queensland_Floods_cama_flood.png?v=1787680122"
         },
         "bounds": [
           [
@@ -63,10 +63,10 @@
       },
       "viirs": {
         "png": {
-          "t05": "layers/t05/Queensland_Floods_viirs.png?v=1787679362",
-          "t10": "layers/t10/Queensland_Floods_viirs.png?v=1787679362",
-          "t25": "layers/t25/Queensland_Floods_viirs.png?v=1787679362",
-          "t50": "layers/t50/Queensland_Floods_viirs.png?v=1787679362"
+          "t05": "layers/t05/Queensland_Floods_viirs.png?v=1787680122",
+          "t10": "layers/t10/Queensland_Floods_viirs.png?v=1787680122",
+          "t25": "layers/t25/Queensland_Floods_viirs.png?v=1787680122",
+          "t50": "layers/t50/Queensland_Floods_viirs.png?v=1787680122"
         },
         "bounds": [
           [
@@ -112,10 +112,10 @@
       },
       "modis": {
         "png": {
-          "t05": "layers/t05/Queensland_Floods_modis.png?v=1787679364",
-          "t10": "layers/t10/Queensland_Floods_modis.png?v=1787679364",
-          "t25": "layers/t25/Queensland_Floods_modis.png?v=1787679364",
-          "t50": "layers/t50/Queensland_Floods_modis.png?v=1787679364"
+          "t05": "layers/t05/Queensland_Floods_modis.png?v=1787680124",
+          "t10": "layers/t10/Queensland_Floods_modis.png?v=1787680124",
+          "t25": "layers/t25/Queensland_Floods_modis.png?v=1787680124",
+          "t50": "layers/t50/Queensland_Floods_modis.png?v=1787680124"
         },
         "bounds": [
           [
@@ -161,10 +161,10 @@
       },
       "reference_water": {
         "png": {
-          "t05": "layers/t05/Queensland_Floods_reference_water.png?v=1787679366",
-          "t10": "layers/t10/Queensland_Floods_reference_water.png?v=1787679366",
-          "t25": "layers/t25/Queensland_Floods_reference_water.png?v=1787679366",
-          "t50": "layers/t50/Queensland_Floods_reference_water.png?v=1787679366"
+          "t05": "layers/t05/Queensland_Floods_reference_water.png?v=1787680126",
+          "t10": "layers/t10/Queensland_Floods_reference_water.png?v=1787680126",
+          "t25": "layers/t25/Queensland_Floods_reference_water.png?v=1787680126",
+          "t50": "layers/t50/Queensland_Floods_reference_water.png?v=1787680126"
         },
         "bounds": [
           [
