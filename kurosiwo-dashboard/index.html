@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>KuroSiwo Flood Events Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+  <header>
+    <h1>KuroSiwo Flood Events Dashboard</h1>
+    <p>Model vs. observations for clickable flood events from the KuroSiwo catalogue</p>
+    <nav id="dashboard-nav"><a href="../modis2016-dashboard/">Post-2016 named events (MODIS-only) →</a></nav>
+  </header>
+
+  <main>
+    <div id="map"></div>
+
+    <aside id="panel">
+      <div id="event-list-control">
+        <h3>Events <span id="event-count" class="muted"></span></h3>
+        <p class="muted">Sorted by peak flood date, newest first. Click an event to zoom the map to it.</p>
+        <div id="event-list"></div>
+      </div>
+
+      <h2 id="event-title">Select a flood event</h2>
+      <div id="event-info"></div>
+
+      <div id="score-control">
+        <h3>Benchmark scores</h3>
+        <p class="muted">CSI / FAR / HR vs. each observation source, at every flood-fraction threshold.</p>
+        <div id="score-tables"></div>
+      </div>
+
+      <div id="threshold-control">
+        <h3>Flood threshold</h3>
+        <p class="muted">Minimum flooded fraction of a ~1 arcmin cell to count as "flooded", applied the same way to the model and all observations.</p>
+        <div id="threshold-rows"></div>
+      </div>
+
+      <div id="layer-control">
+        <h3>Layers</h3>
+        <label id="no-interp-toggle"><input type="checkbox" id="no-interp-checkbox" /> No interpolation (native pixels)</label>
+        <div id="layer-rows"></div>
+        <p id="layer-empty" class="muted">No model/observation layers available for this event.</p>
+        <p class="muted"><span style="display:inline-block;width:12px;height:12px;border-radius:2px;margin-right:6px;vertical-align:-1px;background:rgba(120,120,120,0.6);"></span>Gray = no observation, VIIRS/MODIS (optical sensors blocked by cloud cover &mdash; irregular, can clear up on a later date). Genuinely unknown, not "confirmed not flooded" &mdash; excluded from that layer's CSI/FAR/HR scores.</p>
+        <p class="muted"><span style="display:inline-block;width:12px;height:12px;border-radius:2px;margin-right:6px;vertical-align:-1px;background:rgba(90,110,150,0.6);"></span>Slate blue = no observation, GFM (radar sees through cloud, but the satellite swath doesn't cover this area &mdash; a fixed strip, not weather-related). Also excluded from scoring.</p>
+        <p class="muted"><span style="display:inline-block;width:12px;height:12px;border-radius:2px;margin-right:6px;vertical-align:-1px;background-color:rgba(0,172,193,0.35);background-image:repeating-linear-gradient(45deg, rgba(0,172,193,0.9) 0, rgba(0,172,193,0.9) 2px, transparent 2px, transparent 6px);"></span>Hatched teal = known lake/river/reservoir (Reference water layer). This is a fixed geographic fact, not uncertainty &mdash; CaMa-Flood's flood fraction includes this extent, so it's excluded from scoring so it isn't counted as a false alarm.</p>
+      </div>
+      <details id="reference-figure">
+        <summary>Reference figure (discharge + flood fraction)</summary>
+        <img id="event-image" src="" alt="Flood event reference figure" />
+      </details>
+    </aside>
+  </main>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
