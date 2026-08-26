@@ -1,2 +1,11 @@
 flood_case,country,continent,date_start,date_end,lat_min,lat_max,lon_min,lon_max,max_flood_extent_km2,date_of_max_flood_extent,main_river_system
 Queensland_Floods,Australia,Oceania,20251215,20260110,-25.0,-10.0,135.0,150.0,0,20251229,North Queensland
+Mozambique_Floods,Mozambique,Africa,20251215,20260228,-27.0,-22.0,31.0,35.0,0,20260127,Limpopo-Incomati
+Zimbabwe_Floods,Zimbabwe,Africa,20260101,20260331,-22.5,-15.5,25.0,33.0,0,20260315,Zambezi-Limpopo
+Malawi_Floods,Malawi,Africa,20260101,20260228,-17.5,-9.5,32.5,36.0,0,20260122,Shire
+Zona_da_Mata_Floods,Brazil,South America,20260220,20260228,-23.0,-20.0,-44.5,-41.5,0,20260224,Paraibuna-Pomba
+Kenya_Floods,Kenya,Africa,20260306,20260531,-4.7,5.0,33.9,41.9,0,20260307,Athi-Nairobi
+Guangxi_Floods,China,Asia,20260705,20260712,20.5,24.5,107.0,110.5,0,20260706,Yu Jiang-Xi Jiang
+Chittagong_Floods,Bangladesh,Asia,20260712,20260720,20.5,23.5,91.5,94.5,0,20260715,Karnaphuli-Sangu
+Assam_Floods,India,Asia,20260719,20260815,25.5,28.5,91.5,95.5,0,20260808,Brahmaputra
+Indiana_Floods,United States,North America,20260811,20260815,37.0,41.0,-86.5,-82.0,0,20260815,White River
